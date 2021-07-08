@@ -1,0 +1,53 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><title>Usage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/theme.css"><link rel="stylesheet" type="text/css" href="../css/common-extended.css"></head><body id="usage"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="https://www.dita-ot.org/">Plugins for DITA Open Toolkit</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/dev">Docs</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/download">Download</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/plugins">Plugins</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></header><div class="container" id="content"><div class="row"><main role="main" class="col-lg-9"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title text-dark" id="ariaid-title1">Usage</h1>
+  <div class="body">
+    <section class="section" id="usage__automatically-displaying-a-splash-screen-when-running-a-build-job"><h2 class="title text-dark h3 mt-3">Automatically displaying a splash screen when running a build job</h2>
+      
+      <p class="p">
+         The plugin is pre-configured to run as part of the <span class="keyword parmname">depend.preprocess.pre</span>
+         build step. Running any ordinary build job will display a random cat photo.
+      </p>
+      <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">pdf</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--output</span> out <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> document.ditamap</code></pre>
+    </section>
+    <section class="section" id="usage__displaying-a-random-cat-photo"><h2 class="title text-dark h3 mt-3">Displaying a random Cat Photo</h2>
+      
+      <p class="p">
+         To display a random photo from the <a class="xref" href="https://thecatapi.com/" target="_blank" rel="external noopener">Cat API</a>, use the <span class="keyword option">cats</span>
+         transform.
+      </p>
+      <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">cats</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> document.ditamap</code></pre>
+    </section>
+    <section class="section" id="usage__displaying-a-random-xkcd-comic-strip"><h2 class="title text-dark h3 mt-3">Displaying a random XKCD Comic Strip</h2>
+      
+      <p class="p">
+         To display a random XKCD comic strip from <a class="xref" href="https://xkcd.com/" target="_blank" rel="external noopener">xkcd.com</a>, use the <span class="keyword option">xkcd</span>
+         transform.
+      </p>
+      <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xkcd</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> document.ditamap</code></pre>
+    </section>
+  </div>
+</article></main></div></div></body></html>

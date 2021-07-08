@@ -1,0 +1,91 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="keywords" content=", bodydiv, section, outputclass"><title>Usage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/theme.css"><link rel="stylesheet" type="text/css" href="../css/common-extended.css"></head><body id="usage"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="https://www.dita-ot.org/">Plugins for DITA Open Toolkit</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/dev">Docs</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/download">Download</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/plugins">Plugins</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></header><div class="container" id="content"><div class="row"><main role="main" class="col-lg-9"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title text-dark" id="ariaid-title1">Usage</h1>
+  
+  <div class="body">
+    <p class="p">
+       An HTML tabbed box is defined using a <code class="keyword markupname xmlelement">&lt;bodydiv&gt;</code> element
+       with an <code class="keyword markupname xmlatt">@outputclass=tabs</code>. The default size is 400px high.
+       Three other sizes are defined:
+    </p>
+    <ul class="ul">
+      <li class="li">
+         <span class="keyword option">small</span> - 200px
+      </li>
+      <li class="li">
+         <span class="keyword option">medium</span> - 600px
+      </li>
+      <li class="li">
+         <span class="keyword option">large</span> - 1000px
+      </li>
+    </ul>
+    <p class="p">
+       For each tab, just place a <code class="keyword markupname xmlelement">&lt;section&gt;</code> element with a <code class="keyword markupname xmlelement">&lt;title&gt;</code>
+       within the <code class="keyword markupname xmlelement">&lt;bodydiv&gt;</code> as shown:
+    </p>
+    <figure class="fig fignone"><figcaption><span class="fig--title-label">Figure 1. </span>Usage</figcaption>
+      
+      <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bodydiv</span> <span class="ph token attr-name">outputclass</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>tabs small<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>section</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>title</span><span class="ph token punctuation">&gt;</span></span>Lorem ipsum<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>title</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+      Lorem ipsum dolor sit amet consectetur adipiscing, elit malesuada 
+      ligula vehicula netus sollicitudin sociis, feugiat scelerisque luctus 
+      parturient pharetra.
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+      Dis pretium ante fringilla nunc velit nisi risus primis felis vel, 
+      venenatis auctor nascetur viverra non sagittis habitant condimentum 
+      integer. Himenaeos iaculis placerat neque nisl sodales faucibus ut
+      porttitor maecenas et quam posuere mauris, venenatis tortor scelerisque 
+      suspendisse magna malesuada rhoncus commodo feugiat pretium urna just.
+     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>section</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>section</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>title</span><span class="ph token punctuation">&gt;</span></span>Dolor sit amet<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>title</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+      Class ornare feugiat arcu parturient lacus mollis purus at, primis turpis
+      morbi libero ultricies hendrerit. Volutpat sed ullamcorper bibendum mi
+      sagittis ultricies ridiculus sociis nam, dapibus proin curae odio lacus
+      est dignissim ad, commodo ornare nec phasellus condimentum laoreet vehicula
+      porttitor.
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+      Himenaeos nunc aptent massa ridiculus auctor nisi pellentesque maecenas a
+      eleifend, fermentum fringilla semper nam viverra vivamus velit metus in
+      posuere, conubia tellus venenatis rutrum proin erat enim mi libero.
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>section</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bodydiv</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    </figure>
+    <p class="p">
+       When running an HTML based transform, the section will be transformed into a
+       tabbed dialog. e.g.:
+    </p>
+    <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> html5 <span class="keyword parmname">--output</span> out <span class="keyword parmname">--input</span> document.ditamap
+    </code></pre>
+    <p class="p">
+       To alter the CSS, amend the <span class="ph filepath">resource/tabs.css</span> file which is
+       copied over as part of the DITA processing.
+    </p>
+  </div>
+</article></main></div></div></body></html>

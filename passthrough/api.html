@@ -1,0 +1,112 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="keywords" content="ANT"><title>ANT Task</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/theme.css"><link rel="stylesheet" type="text/css" href="../css/common-extended.css"></head><body id="ant-task"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="https://www.dita-ot.org/">Plugins for DITA Open Toolkit</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/dev">Docs</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/download">Download</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/plugins">Plugins</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></header><div class="container" id="content"><div class="row"><main role="main" class="col-lg-9"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title text-dark" id="ariaid-title1">ANT Task</h1>
+  
+  <div class="body">
+    <p class="p">
+       The following ANT task is available from the DITA-OT Pass Through plug-in:
+    </p>
+  </div>
+  <article class="topic nested1" aria-labelledby="ariaid-title2" id="passthrough-iterate">
+    <h2 class="title text-dark" id="ariaid-title2">Passthrough-Iterate</h2>
+    <div class="body">
+      <section class="section" id="passthrough-iterate__description"><h3 class="title text-dark h3 mt-3">Description</h3>
+        
+        <p class="p">
+           Post process all files of a given format using the macro supplied.
+        </p>
+      </section>
+      <section class="section" id="passthrough-iterate__parameters"><h3 class="title text-dark h3 mt-3">Parameters</h3>
+        
+        <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+              <tr class="">
+                <th class="entry align-left" id="passthrough-iterate__parameters__entry__1">Attribute</th>
+                <th class="entry align-left" id="passthrough-iterate__parameters__entry__2">Description</th>
+                <th class="entry align-left" id="passthrough-iterate__parameters__entry__3">Required</th>
+              </tr>
+            </thead><tbody class="tbody">
+              <tr class="">
+                <td class="entry align-left" headers="passthrough-iterate__parameters__entry__1">format</td>
+                   <td class="entry align-left" headers="passthrough-iterate__parameters__entry__2">The <code class="keyword markupname xmlatt">@format</code> attribute used
+                   with the DITA <code class="keyword markupname xmlelement">&lt;map&gt;</code>
+                </td>
+                <td class="entry align-left" headers="passthrough-iterate__parameters__entry__3">Yes</td>
+              </tr>
+              <tr class="">
+                <td class="entry align-left" headers="passthrough-iterate__parameters__entry__1">macro</td>
+                   <td class="entry align-left" headers="passthrough-iterate__parameters__entry__2">The name of the <code class="keyword markupname xmlelement">&lt;macrodef&gt;</code>
+                   to run
+                </td>
+                <td class="entry align-left" headers="passthrough-iterate__parameters__entry__3">Yes</td>
+              </tr>
+            </tbody></table>
+      </section>
+      <section class="section" id="passthrough-iterate__example"><h3 class="title text-dark h3 mt-3">Example</h3>
+        
+        <pre class="pre codeblock border rounded language-xml scale-80"><code> <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>passthrough-iterate</span> <span class="ph token attr-name">format</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>NEW_FORMAT<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">macro</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>do-something<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+        <p class="p">
+           Files marked as <code class="keyword markupname xmlatt">@format="NEW_FORMAT"</code> should be processed by the <code class="ph codeph">macrodef</code>
+           called <code class="ph codeph">do-something</code>. The macro must offer an interface with <code class="ph codeph">src</code>,
+           <code class="ph codeph">dest</code>, <code class="ph codeph">title</code> and <code class="ph codeph">metadata</code>
+           attributes. All attributes will be pre-supplied by DITA-OT.
+        </p>
+        <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+              <tr class="">
+                <th class="entry align-left" id="passthrough-iterate__example__entry__1">Attribute</th>
+                <th class="entry align-left" id="passthrough-iterate__example__entry__2">Description</th>
+                <th class="entry align-left" id="passthrough-iterate__example__entry__3">Required</th>
+              </tr>
+            </thead><tbody class="tbody">
+              <tr class="">
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__1">src</td>
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__2">The source file which holds the raw input format</td>
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__3">Yes</td>
+              </tr>
+              <tr class="">
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__1">dest</td>
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__2">The destination file for the processed DITA</td>
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__3">Yes</td>
+              </tr>
+              <tr class="">
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__1">title</td>
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__2">The title to use for the DITA topic</td>
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__3">Yes</td>
+              </tr>
+              <tr class="">
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__1">metadata</td>
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__2">Any additional topic metadata to process (in XML format)</td>
+                <td class="entry align-left" headers="passthrough-iterate__example__entry__3">Yes</td>
+              </tr>
+            </tbody></table>
+        <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>macrodef</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>do-something<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>src<span class="ph token punctuation">"</span></span> <span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>dest<span class="ph token punctuation">"</span></span> <span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>title<span class="ph token punctuation">"</span></span> <span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>metadata<span class="ph token punctuation">"</span></span> <span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>sequential</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token comment">&lt;!-- Further processing --&gt;</span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>sequential</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>macrodef</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      </section>
+    </div>
+  </article>
+</article></main></div></div></body></html>
