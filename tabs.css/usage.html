@@ -3,7 +3,9 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="keywords" content=", bodydiv, section, outputclass"><title>Usage</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/theme.css"><link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"></head><body id="usage"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"></head><body id="usage"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
 
   <div class="container">
     <a class="navbar-brand" href="https://www.dita-ot.org/">
@@ -47,7 +49,7 @@
        For each tab, just place a <code class="keyword markupname xmlelement">&lt;section&gt;</code> element with a <code class="keyword markupname xmlelement">&lt;title&gt;</code>
        within the <code class="keyword markupname xmlelement">&lt;bodydiv&gt;</code> as shown:
     </p>
-    <figure class="fig fignone"><figcaption><span class="fig--title-label">Figure 1. </span>Usage</figcaption>
+    <figure class="fig figure w-100 mw-100 p-3">
       
       <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bodydiv</span> <span class="ph token attr-name">outputclass</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>tabs small<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>section</span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>lorem-ipsum<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
@@ -81,7 +83,8 @@
     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>section</span><span class="ph token punctuation">&gt;</span></span>
 <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bodydiv</span><span class="ph token punctuation">&gt;</span></span></code></pre>
-    </figure>
+    <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 1. </span>Usage</figcaption></figure>
+
     <p class="p">
        When running an HTML based transform, the section will be transformed into a
        tabbed dialog. e.g.:
