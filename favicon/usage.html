@@ -41,21 +41,15 @@
   </div>
       <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option"><span class="ph token punctuation">[</span>html5<span class="ph token operator">|</span>xhtml<span class="ph token punctuation">]</span></span> <span class="ph token punctuation">\</span>
   <span class="keyword parmname">--input</span> document.ditamap <span class="ph token punctuation">\</span>
-  <span class="keyword parmname">--args.faviconpath</span><span class="ph token operator">=</span><span class="keyword option">DESTINATION_PATH_OF_FAVICON</span>  <span class="ph token punctuation">\</span>
-  <span class="keyword parmname">--args.faviconroot</span><span class="ph token operator">=</span><span class="keyword option">SOURCE_PATH_OF_FAVICON</span></code></pre> 
-
+  <span class="keyword parmname">--args.faviconpath</span><span class="ph token operator">=</span><span class="ph filepath">DESTINATION_PATH_OF_FAVICON</span>  <span class="ph token punctuation">\</span>
+  <span class="keyword parmname">--args.faviconroot</span><span class="ph token operator">=</span><span class="ph filepath">SOURCE_PATH_OF_FAVICON</span></code></pre>
       <p class="p">
          To refer to an exisiting file hosted on a server, use a URL as the 
          <span class="keyword parmname">--args.faviconpath</span> parameter
       </p>
       <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option"><span class="ph token punctuation">[</span>html5<span class="ph token operator">|</span>xhtml<span class="ph token punctuation">]</span></span> <span class="ph token punctuation">\</span>
   <span class="keyword parmname">--input</span> document.ditamap <span class="ph token punctuation">\</span>
-  <span class="keyword parmname">--args.faviconpath</span><span class="ph token operator">=</span><span class="keyword option">ttps://example.com/static/assets</span></code></pre> 
-
-
-
-
-
+  <span class="keyword parmname">--args.faviconpath</span><span class="ph token operator">=</span><span class="ph filepath">https://example.com/static/assets</span></code></pre> 
     <section class="section" id="usage__parameter-reference"><h2 class="title text-primary h3 mt-3">Parameter Reference</h2>
       
       
@@ -73,9 +67,15 @@
            <span class="keyword parmname">args.faviconpath</span> - Specifies the destination directory to which the 
            favicon file is copied (relative to the output directory). Corresponds to the XSLT parameter 
            <code class="ph codeph">FAVICONPATH</code>. DITA-OT will copy the file to this location.
+
+           <div role="alert" class="note alert alert-success"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> If <span class="keyword parmname">args.faviconpath</span> is not set, the favicon file will be
+            copied to the root level of the output folder. To move the <span class="keyword parmname">favicon</span> file 
+            to an output subfolder named <span class="ph filepath">/static/assets</span>, set <span class="keyword parmname">
+            args.faviconpath</span> to <span class="ph filepath">/static/assets</span>.</div>
         </li>
         <li class="li">
            <span class="keyword parmname">args.faviconroot</span> - specifies the source directory that contains the favicon file. DITA-OT will copy the file from this location. Defaults to the image found within the plugin itself.
+           <div role="alert" class="note alert alert-warning"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span>  Enter the absolute path to the parent directory of the favicon file specified with <span class="keyword parmname">args.favicon</span>.</div>
         </li>
       </ul>
     </section>
