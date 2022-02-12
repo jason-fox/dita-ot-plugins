@@ -1,11 +1,11 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="abstract" content="This is a DITA-OT Plug-in to used extend the available input formats for DITA-OT. Non DITA input sources can be pre-processed using Pandoc to create create valid DITA source. Files written in multiple input formats can be directly added to a DITA map and processed as if they had been written in DITA."><meta name="description" content="This is a DITA-OT Plug-in to used extend the available input formats for DITA-OT. Non DITA input sources can be pre-processed using Pandoc to create create valid DITA source. Files written in multiple input formats can be directly added to a DITA map and processed as if they had been written in DITA."><meta name="keywords" content="Pandoc, plug-in"><title>Pandoc Plug-in</title><link rel="shortcut icon" href="../favicon/favicon.svg">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="abstract" content="This is a DITA-OT Plug-in to used extend the available input formats for DITA-OT. Non DITA input sources can be pre-processed using Pandoc to create create valid DITA source. Files written in multiple input formats can be directly added to a DITA map and processed as if they had been written in DITA."><meta name="description" content="This is a DITA-OT Plug-in to used extend the available input formats for DITA-OT. Non DITA input sources can be pre-processed using Pandoc to create create valid DITA source. Files written in multiple input formats can be directly added to a DITA map and processed as if they had been written in DITA."><meta name="keywords" content="Pandoc, plug-in, installing, , topicref, map, format"><title>Pandoc Plug-in</title><link rel="shortcut icon" href="../favicon/favicon.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css">
 <link rel="stylesheet" type="text/css" href="../css/theme.css">
-<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous"></head><body id="pandoc-plug-in"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous"></head><body id="pandoc-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy" data-bs-offset="10"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-menubar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to topic navigation</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
   <div class="container">
     <a class="navbar-brand" href="https://www.dita-ot.org/">
@@ -25,92 +25,351 @@
       </ul>
     </div>
   </div>
-</nav></header><div class="container" id="content"><div class="row"><nav class="col-lg-3" role="navigation"><div class="list-group me-3"><a class="list-group-item list-group-item-action" href="../index.html">DITA-OT Plugins</a><a class="list-group-item list-group-item-action" href="../audiobook/index.html">Audiobook Plug-in</a><a class="list-group-item list-group-item-action" href="../extend.css/index.html">Extended CSS Plug-in</a><a class="list-group-item list-group-item-action" href="../favicon/index.html">Favicon Plugin</a><a class="list-group-item list-group-item-action" href="../javadoc/index.html">Javadoc Plug-in</a><a class="list-group-item list-group-item-action active" href="../pandoc/index.html">Pandoc Plug-in</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="../pandoc/install.html">Install</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="../pandoc/usage.html">Usage</a><a class="list-group-item list-group-item-action" href="../passthrough/index.html">Passthrough Plugin</a><a class="list-group-item list-group-item-action" href="../postman/index.html">Postman Plug-in</a><a class="list-group-item list-group-item-action" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a><a class="list-group-item list-group-item-action" href="../prismjs/index.html">Prism-JS Plug-in</a><a class="list-group-item list-group-item-action" href="../readthedocs/index.html">ReadTheDocs Plug-in</a><a class="list-group-item list-group-item-action" href="../splash/index.html">Splash Screen Plug-in</a><a class="list-group-item list-group-item-action" href="../swagger/index.html">Swagger Plug-in</a><a class="list-group-item list-group-item-action" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a><a class="list-group-item list-group-item-action" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a><a class="list-group-item list-group-item-action" href="../unit-test/index.html">Unit Test Plug-in</a><a class="list-group-item list-group-item-action" href="../validate.svrl/index.html">DITA Validator Plug-in</a><a class="list-group-item list-group-item-action" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a><a class="list-group-item list-group-item-action" href="../watermark/index.html">Watermark Plug-in</a></div></nav><main role="main" class="col-lg-9"><article role="article" aria-labelledby="ariaid-title1">
-  <h1 class="title text-primary" id="ariaid-title1">Pandoc Plug-in</h1>
-  
-  
-  <div class="body"><div class="abstract">
-     <span class="shortdesc text-muted lead">
-       This is a DITA-OT Plug-in to used extend the available input formats for
-       DITA-OT. Non DITA input sources can be pre-processed using <a class="xref" href="https://pandoc.org/" target="_blank" rel="external noopener">Pandoc</a> to
-       create create valid DITA source. Files written in multiple input formats can be
-       directly added to a DITA <code class="keyword markupname xmlelement">&lt;map&gt;</code> and processed as if they
-       had been written in DITA.
-    </span>
-  </div></div>
-  <article class="topic nested1" aria-labelledby="ariaid-title2" id="background">
-    <h2 class="title text-primary h3 mt-3" id="ariaid-title2">Background</h2>
+</nav></header><nav class="navbar navbar-light bg-light px-3" role="navigation" id="bs-menubar-nav"><ul class="nav nav-pills" role="menubar"><li class="nav-item" role="none"><a role="menuitem" class="nav-link" href="../index.html">DITA-OT Plugins</a></li><li class="nav-item dropdown" role="none"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">Plug-Ins</a><ul class="dropdown-menu" role="menu"><li role="none"><a role="menuitem" class="dropdown-item" href="../audiobook/index.html">Audiobook Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../extend.css/index.html">Extended CSS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../favicon/index.html">Favicon Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../javadoc/index.html">Javadoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pandoc/index.html">Pandoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../passthrough/index.html">Passthrough Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../postman/index.html">Postman Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../prismjs/index.html">Prism-JS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../readthedocs/index.html">ReadTheDocs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../splash/index.html">Splash Screen Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../swagger/index.html">Swagger Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../unit-test/index.html">Unit Test Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl/index.html">DITA Validator Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../watermark/index.html">Watermark Plug-in</a></li></ul></li></ul></nav></div><div class="bs-container" id="content"><nav class="bs-sidebar-nav" role="navigation" id="bs-sidebar-nav"><nav class="nav nav-pills flex-column navbar-light bg-light" id="bs-scrollspy">
+    <a class="my-1 nav-link" href="#ariaid-title1">Pandoc Plug-in</a>
+    
+    
+    
+    <nav class="nav nav-pills flex-column ps-3">
+        <a class="my-1 nav-link" href="#ariaid-title2">Background</a>
+        
+    </nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title3">Install</a>
+    
+    
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title4">Installing Pandoc</a>
+    
+</nav>
+</nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title5">Usage</a>
+    
+    
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title6">Annotating files</a>
+    
+</nav>
+</nav>
+</nav></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span>Plug-Ins</span></li><li class="breadcrumb-item active" aria-current="page">Pandoc Plug-in</li></ol></nav>
+    <h1 class="title text-primary" id="ariaid-title1">Pandoc Plug-in</h1>
+    
+    
+    <div class="body"><div class="abstract">
+        <p class="shortdesc text-muted lead">
+           This is a DITA-OT Plug-in to used extend the available input formats for
+           DITA-OT. Non DITA input sources can be pre-processed using <a class="xref" href="https://pandoc.org/" target="_blank" rel="external noopener">Pandoc</a> to
+           create create valid DITA source. Files written in multiple input formats can be
+           directly added to a DITA <code class="keyword markupname xmlelement">&lt;map&gt;</code> and processed as if they
+           had been written in DITA.
+        </p>
+        <p class="p">
+        </p>
+    </div></div>
+    <article class="topic nested1" aria-labelledby="ariaid-title2" id="background">
+        <h2 class="title text-primary" id="ariaid-title2">Background</h2>
+        <div class="body">
+            <img class="image float-start me-3" src="https://jason-fox.github.io/fox.jason.passthrough.pandoc/pandoc-300x194.png" height="55">
+            <p class="p">
+               <dfn class="term">Pandoc</dfn> is a Haskell library for converting from one markup format
+               to another, and a command-line tool that uses this library. It can convert from
+               the following formats:
+            </p>
+            <ul class="ul">
+                <li class="li">
+                   <strong class="ph b">Markdown:</strong><code class="ph codeph">commonmark</code> (<a class="xref" href="http://commonmark.org" target="_blank" rel="external noopener">CommonMark</a> Markdown) ,<code class="ph codeph">gfm</code>
+                   (<a class="xref" href="https://help.github.com/articles/github-flavored-markdown/" target="_blank" rel="external noopener">GitHub-Flavored Markdown</a>) ,<code class="ph codeph">markdown</code>
+                   (<a class="xref" href="https://pandoc.org/MANUAL.html#pandocs-markdown" target="_blank" rel="external noopener">Pandoc’s Markdown</a>) ,<code class="ph codeph">markdown_mmd</code> (<a class="xref" href="http://fletcherpenney.net/multimarkdown/" target="_blank" rel="external noopener">MultiMarkdown</a>)
+                   ,<code class="ph codeph">markdown_phpextra</code> (<a class="xref" href="https://michelf.ca/projects/php-markdown/extra/" target="_blank" rel="external noopener">PHP Markdown Extra</a>) ,<code class="ph codeph">markdown_strict</code>
+                   (original unextended <a class="xref" href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external noopener">Markdown</a>)
+                </li>
+                <li class="li">
+                   <strong class="ph b">Wiki Formats:</strong><code class="ph codeph">dokuwiki</code> (<a class="xref" href="https://www.dokuwiki.org/dokuwiki" target="_blank" rel="external noopener">DokuWiki markup</a>)
+                   ,<code class="ph codeph">mediawiki</code> (<a class="xref" href="https://www.mediawiki.org/wiki/help:formatting" target="_blank" rel="external noopener">MediaWiki markup</a>) ,<code class="ph codeph">muse</code> (<a class="xref" href="https://amusewiki.org/library/manual" target="_blank" rel="external noopener">Muse</a>)
+                   ,<code class="ph codeph">tikiwiki</code> (<a class="xref" href="https://doc.tiki.org/wiki-syntax-text#the-markup-language-wiki-syntax" target="_blank" rel="external noopener">TikiWiki markup</a>) ,<code class="ph codeph">twiki</code>
+                   (<a class="xref" href="http://twiki.org/cgi-bin/view/twiki/textformattingrules" target="_blank" rel="external noopener">TWiki markup</a>) ,<code class="ph codeph">vimwiki</code>
+                   (<a class="xref" href="https://vimwiki.github.io" target="_blank" rel="external noopener">Vimwiki</a>)
+                </li>
+                <li class="li">
+                   <strong class="ph b">Other Formats:</strong><code class="ph codeph">creole</code> (<a class="xref" href="http://www.wikicreole.org/wiki/creole1.0" target="_blank" rel="external noopener">Creole 1.0</a>)
+                   ,<code class="ph codeph">docbook</code> (<a class="xref" href="http://docbook.org" target="_blank" rel="external noopener">DocBook</a>)
+                   ,<code class="ph codeph">docx</code> (<a class="xref" href="https://en.wikipedia.org/wiki/office-open-xml" target="_blank" rel="external noopener">Word docx</a>)
+                   ,<code class="ph codeph">epub</code> (<a class="xref" href="http://idpf.org/epub" target="_blank" rel="external noopener">EPUB</a>)
+                   ,<code class="ph codeph">fb2</code> (<a class="xref" href="http://www.fictionbook.org/index.php/eng:xml-schema-fictionbook-2.1" target="_blank" rel="external noopener">FictionBook2</a> e-book) ,<code class="ph codeph">haddock</code>
+                   (<a class="xref" href="https://www.haskell.org/haddock/doc/html/ch03s08.html" target="_blank" rel="external noopener">Haddock markup</a>) ,<code class="ph codeph">html</code>
+                   (<a class="xref" href="http://www.w3.org/html/" target="_blank" rel="external noopener">HTML</a>)
+                   ,<code class="ph codeph">ipynb</code> (<a class="xref" href="https://nbformat.readthedocs.io/en/latest/" target="_blank" rel="external noopener">Jupyter notebook</a>)
+                   ,<code class="ph codeph">jats</code> (<a class="xref" href="https://jats.nlm.nih.gov" target="_blank" rel="external noopener">JATS</a>
+                   XML) ,<code class="ph codeph">json</code> (JSON version of native AST) ,<code class="ph codeph">latex</code>
+                   (<a class="xref" href="http://latex-project.org" target="_blank" rel="external noopener">LaTeX</a>)
+                   ,<code class="ph codeph">man</code> (<a class="xref" href="http://man7.org/linux/man-pages/man7/groff-man.7.html" target="_blank" rel="external noopener">roff man</a>) ,<code class="ph codeph">native</code> (native Haskell) ,<code class="ph codeph">odt</code>
+                   (<a class="xref" href="http://en.wikipedia.org/wiki/opendocument" target="_blank" rel="external noopener">ODT</a>)
+                   ,<code class="ph codeph">opml</code> (<a class="xref" href="http://dev.opml.org/spec2.html" target="_blank" rel="external noopener">OPML</a>) ,<code class="ph codeph">org</code> (<a class="xref" href="http://orgmode.org" target="_blank" rel="external noopener">Emacs Org mode</a>) ,<code class="ph codeph">rst</code>
+                   (<a class="xref" href="http://docutils.sourceforge.net/docs/ref/rst/introduction.html" target="_blank" rel="external noopener">reStructuredText</a>) ,<code class="ph codeph">t2t</code>
+                   (<a class="xref" href="http://txt2tags.org" target="_blank" rel="external noopener">txt2tags</a>)
+                   ,<code class="ph codeph">textile</code> (<a class="xref" href="http://redcloth.org/textile" target="_blank" rel="external noopener">Textile</a>)
+                </li>
+            </ul>
+            <p class="p">
+               More information about <dfn class="term">Pandoc</dfn> can be found at <a class="xref" href="https://pandoc.org/" target="_blank" rel="external noopener">pandoc.org</a>.
+            </p>
+            <p class="p">
+               This plug-in contains a Lua template which extends the output formats supported by <dfn class="term">Pandoc</dfn>
+               to include DITA. The output consists of a single DITA topic for each input file
+               added to the ditamap.
+            </p>
+            <p class="p">
+               Unlike the standard <a class="xref" href="https://github.com/jelovirt/org.lwdita" target="_blank" rel="external noopener">Markdown Plug-in</a>, this plug-in does not
+               fail if the <code class="keyword markupname xmlelement">&lt;h1...h6&gt;</code> headers are incorrectly
+               incremented. This is because the Lua template has been designed to calculate
+               that headers are incrementing at most one level at a time - the downside of
+               this is that the output maybe unexpected.
+            </p>
+            <div role="alert" class="note alert alert-info"><span class="note__title">Note:</span> 
+               Note that because Pandoc’s intermediate representation of a document is less
+               expressive than many of the formats it converts between, one should not expect
+               perfect conversions between every format and every other. Pandoc attempts to
+               preserve the structural elements of a document, but not formatting details such
+               as margin size. And some document elements, such as complex tables, may not fit
+               into Pandoc’s simple document model. While conversions from Pandoc’s Markdown
+               to all formats aspire to be perfect, conversions from formats more expressive
+               than Pandoc’s Markdown can be expected to be lossy.
+            </div>
+        </div>
+    </article>
+    <article class="topic nested1" aria-labelledby="ariaid-title3" id="install">
+    <h2 class="title text-primary" id="ariaid-title3">Install</h2>
+    
     <div class="body">
-      <img class="image float-start me-3" src="https://jason-fox.github.io/fox.jason.passthrough.pandoc/pandoc-300x194.png" height="55">
-      <p class="p">
-         <dfn class="term">Pandoc</dfn> is a Haskell library for converting from one markup format to
-         another, and a command-line tool that uses this library. It can convert from
-         the following formats:
-      </p>
-      <ul class="ul">
-        <li class="li">
-           <strong class="ph b">Markdown:</strong><code class="ph codeph">commonmark</code> (<a class="xref" href="http://commonmark.org" target="_blank" rel="external noopener">CommonMark</a> Markdown) ,<code class="ph codeph">gfm</code>
-           (<a class="xref" href="https://help.github.com/articles/github-flavored-markdown/" target="_blank" rel="external noopener">GitHub-Flavored Markdown</a>) ,<code class="ph codeph">markdown</code>
-           (<a class="xref" href="https://pandoc.org/MANUAL.html#pandocs-markdown" target="_blank" rel="external noopener">Pandoc’s Markdown</a>) ,<code class="ph codeph">markdown_mmd</code> (<a class="xref" href="http://fletcherpenney.net/multimarkdown/" target="_blank" rel="external noopener">MultiMarkdown</a>)
-           ,<code class="ph codeph">markdown_phpextra</code> (<a class="xref" href="https://michelf.ca/projects/php-markdown/extra/" target="_blank" rel="external noopener">PHP Markdown Extra</a>) ,<code class="ph codeph">markdown_strict</code>
-           (original unextended <a class="xref" href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external noopener">Markdown</a>)
-        </li>
-        <li class="li">
-           <strong class="ph b">Wiki Formats:</strong><code class="ph codeph">dokuwiki</code> (<a class="xref" href="https://www.dokuwiki.org/dokuwiki" target="_blank" rel="external noopener">DokuWiki markup</a>)
-           ,<code class="ph codeph">mediawiki</code> (<a class="xref" href="https://www.mediawiki.org/wiki/help:formatting" target="_blank" rel="external noopener">MediaWiki markup</a>) ,<code class="ph codeph">muse</code> (<a class="xref" href="https://amusewiki.org/library/manual" target="_blank" rel="external noopener">Muse</a>)
-           ,<code class="ph codeph">tikiwiki</code> (<a class="xref" href="https://doc.tiki.org/wiki-syntax-text#the-markup-language-wiki-syntax" target="_blank" rel="external noopener">TikiWiki markup</a>) ,<code class="ph codeph">twiki</code>
-           (<a class="xref" href="http://twiki.org/cgi-bin/view/twiki/textformattingrules" target="_blank" rel="external noopener">TWiki markup</a>) ,<code class="ph codeph">vimwiki</code>
-           (<a class="xref" href="https://vimwiki.github.io" target="_blank" rel="external noopener">Vimwiki</a>)
-        </li>
-        <li class="li">
-           <strong class="ph b">Other Formats:</strong><code class="ph codeph">creole</code> (<a class="xref" href="http://www.wikicreole.org/wiki/creole1.0" target="_blank" rel="external noopener">Creole 1.0</a>)
-           ,<code class="ph codeph">docbook</code> (<a class="xref" href="http://docbook.org" target="_blank" rel="external noopener">DocBook</a>)
-           ,<code class="ph codeph">docx</code> (<a class="xref" href="https://en.wikipedia.org/wiki/office-open-xml" target="_blank" rel="external noopener">Word docx</a>)
-           ,<code class="ph codeph">epub</code> (<a class="xref" href="http://idpf.org/epub" target="_blank" rel="external noopener">EPUB</a>)
-           ,<code class="ph codeph">fb2</code> (<a class="xref" href="http://www.fictionbook.org/index.php/eng:xml-schema-fictionbook-2.1" target="_blank" rel="external noopener">FictionBook2</a> e-book) ,<code class="ph codeph">haddock</code>
-           (<a class="xref" href="https://www.haskell.org/haddock/doc/html/ch03s08.html" target="_blank" rel="external noopener">Haddock markup</a>) ,<code class="ph codeph">html</code>
-           (<a class="xref" href="http://www.w3.org/html/" target="_blank" rel="external noopener">HTML</a>)
-           ,<code class="ph codeph">ipynb</code> (<a class="xref" href="https://nbformat.readthedocs.io/en/latest/" target="_blank" rel="external noopener">Jupyter notebook</a>)
-           ,<code class="ph codeph">jats</code> (<a class="xref" href="https://jats.nlm.nih.gov" target="_blank" rel="external noopener">JATS</a>
-           XML) ,<code class="ph codeph">json</code> (JSON version of native AST) ,<code class="ph codeph">latex</code>
-           (<a class="xref" href="http://latex-project.org" target="_blank" rel="external noopener">LaTeX</a>)
-           ,<code class="ph codeph">man</code> (<a class="xref" href="http://man7.org/linux/man-pages/man7/groff-man.7.html" target="_blank" rel="external noopener">roff man</a>) ,<code class="ph codeph">native</code> (native Haskell) ,<code class="ph codeph">odt</code>
-           (<a class="xref" href="http://en.wikipedia.org/wiki/opendocument" target="_blank" rel="external noopener">ODT</a>)
-           ,<code class="ph codeph">opml</code> (<a class="xref" href="http://dev.opml.org/spec2.html" target="_blank" rel="external noopener">OPML</a>) ,<code class="ph codeph">org</code> (<a class="xref" href="http://orgmode.org" target="_blank" rel="external noopener">Emacs Org mode</a>) ,<code class="ph codeph">rst</code>
-           (<a class="xref" href="http://docutils.sourceforge.net/docs/ref/rst/introduction.html" target="_blank" rel="external noopener">reStructuredText</a>) ,<code class="ph codeph">t2t</code>
-           (<a class="xref" href="http://txt2tags.org" target="_blank" rel="external noopener">txt2tags</a>)
-           ,<code class="ph codeph">textile</code> (<a class="xref" href="http://redcloth.org/textile" target="_blank" rel="external noopener">Textile</a>)
-        </li>
-      </ul>
-      <p class="p">
-       More information about <dfn class="term">Pandoc</dfn> can be found at 
-       <a class="xref" href="https://pandoc.org/" target="_blank" rel="external noopener">pandoc.org</a>.
-      </p>
-      <p class="p">
-         This plug-in contains a Lua template which extends the output formats supported by 
-         <dfn class="term">Pandoc</dfn> to include DITA. The output consists of a single DITA topic for 
-         each input file added to the ditamap.
-      </p>
-      <p class="p">
-         Unlike the standard <a class="xref" href="https://github.com/jelovirt/org.lwdita" target="_blank" rel="external noopener">Markdown Plug-in</a>, this plug-in does not
-         fail if the <code class="keyword markupname xmlelement">&lt;h1...h6&gt;</code> headers are incorrectly incremented.
-         This is because the Lua template has been designed to calculate that headers are
-         incrementing at most one level at a time - the downside of this is that the
-         output maybe unexpected.
-      </p>
-      <div role="alert" class="note alert alert-info"><span class="note__title">Note:</span> 
-         Note that because Pandoc’s intermediate representation of a document is less
-         expressive than many of the formats it converts between, one should not expect
-         perfect conversions between every format and every other. Pandoc attempts to
-         preserve the structural elements of a document, but not formatting details such
-         as margin size. And some document elements, such as complex tables, may not fit
-         into Pandoc’s simple document model. While conversions from Pandoc’s Markdown
-         to all formats aspire to be perfect, conversions from formats more expressive
-         than Pandoc’s Markdown can be expected to be lossy.
-      </div>
+        <p class="p">
+           This plug-in needs <a class="xref" href="https://pandoc.org/" target="_blank" rel="external noopener">Pandoc</a>
+           running on  user's machine  to function correctly. It also requires the
+           presence of the <a class="xref" href="http://www.oopsconsultancy.com/software/xmltask/" target="_blank" rel="external noopener">xmltask</a> jar to edit XML files as part of
+           the ANT build. It therefore requires a series of commands to install the
+           relevant plug-in dependencies and configure Pandoc.
+        </p>
+        <p class="p">
+           Run the plug-in installation commands:
+        </p>
+        <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/doctales/org.doctales.xmltask/archive/master.zip
+<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
+<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip</code></pre>
+        <p class="p">
+           The <span class="keyword cmdname">dita</span> command line tool requires no additional configuration.
+        </p>
     </div>
-  </article>
-</article></main></div></div><footer role="contentinfo"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+    <article class="topic nested2" aria-labelledby="ariaid-title4" id="installing-pandoc">
+    <h3 class="title text-primary" id="ariaid-title4">Installing Pandoc</h3>
+    <div class="body">
+        <p class="p">
+           To download a copy of <dfn class="term">Pandoc</dfn> follow the instructions on the <a class="xref" href="https://github.com/jgm/pandoc/blob/master/install.md" target="_blank" rel="external noopener">Install page</a>.
+        </p>
+    </div>
+</article>
+</article>
+    <article class="topic nested1" aria-labelledby="ariaid-title5" id="usage">
+    <h2 class="title text-primary" id="ariaid-title5">Usage</h2>
+    
+    <div class="body">
+        <p class="p">
+           To mark a file to be passed through for <dfn class="term">Pandoc</dfn> processing, label
+           the <code class="keyword markupname xmlelement">&lt;topicref&gt;</code> with <code class="keyword markupname xmlatt">@format="pandoc"</code>
+           within the <code class="keyword markupname xmlelement">&lt;map&gt;</code> as shown:
+        </p>
+        <figure class="fig figure w-100 mw-100 p-3">
+            
+            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token prolog">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="ph token doctype">&lt;!DOCTYPE bookmap PUBLIC "-//OASIS//xmlattDTD DITA BookMap//EN" "bookmap.dtd"&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bookmap</span><span class="ph token punctuation">&gt;</span></span>
+    ...etc
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>chapter</span> <span class="ph token attr-name">format</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pandoc<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">href</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>sample.docx<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bookmap</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 1. </span>Usage</figcaption></figure>
+
+        <p class="p">
+           The additional file will run against the <dfn class="term">Pandoc</dfn><em class="ph i">XXX-to-DITA</em>
+           lua filter to be converted to a <code class="ph codeph">*.dita</code> file and will be added
+           to the build job without further processing. The <code class="keyword markupname xmlatt">@navtitle</code> of
+           the included <code class="keyword markupname xmlelement">&lt;topic&gt;</code> will be the same as root name of
+           the file. Any underscores in the filename will be replaced by spaces in title.
+        </p>
+    </div>
+    <article class="topic nested2" aria-labelledby="ariaid-title6" id="annotation">
+    <h3 class="title text-primary" id="ariaid-title6">Annotating files</h3>
+    <div class="body">
+        <p class="p">
+           The examples below use Markdown as a passthrough format, other formats need to
+           provide equivalent annotations to obtain full functionality. Where possible,
+           annotation aligns with the <a class="xref" href="https://www.dita-ot.org/dev/topics/markdown-dita-syntax-reference.html" target="_blank" rel="external noopener">Markdown DITA syntax reference</a> based on
+           <a class="xref" href="http://commonmark.org/" target="_blank" rel="external noopener">CommonMark</a>.
+           The chapter <code class="keyword markupname xmlelement">&lt;title&gt;</code> is taken from the first header
+           found. Thereafter the document is processed as expected:
+        </p>
+        <figure class="fig figure w-100 mw-100 p-3">
+            
+            <pre class="pre codeblock border rounded language-markdown scale-80"><code><span class="ph token title important"><span class="ph token punctuation">#</span> Chapter title</span>
+
+The abstract (if any) goes here...
+
+<span class="ph token title important"><span class="ph token punctuation">##</span> Topic 1</span>
+
+Body of topic 1 goes here.
+
+<span class="ph token title important"><span class="ph token punctuation">##</span> Topic 2</span>
+
+Body of topic 2 goes here.
+...etc</code></pre>
+        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 2. </span>Markdown</figcaption></figure>
+
+        <p class="p">
+           Ideally input files should only contain a single <code class="ph codeph">#</code> header.
+        </p>
+        <p class="p">
+           Pandoc <a class="xref" href="http://pandoc.org/manual.html#extension-header-attributes" target="_blank" rel="external noopener">header_attributes</a> can be used to define <code class="keyword markupname xmlatt">@id</code>
+           or <code class="keyword markupname xmlatt">@outputclass</code> attributes:
+        </p>
+        <figure class="fig figure w-100 mw-100 p-3">
+            
+            <pre class="pre codeblock border rounded language-markdown scale-80"><code><span class="ph token title important"><span class="ph token punctuation">#</span> Topic title {#carrot .juice}</span></code></pre>
+        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 3. </span>ID and outputclass</figcaption></figure>
+
+        <p class="p">
+           The following class values in <a class="xref" href="http://pandoc.org/manual.html#extension-header-attributes" target="_blank" rel="external noopener">header_attributes</a> have a special meaning on header levels.
+        </p>
+        <ul class="ul">
+            <li class="li">
+<code class="ph codeph">section</code>
+            </li>
+            <li class="li">
+<code class="ph codeph">example</code>
+            </li>
+        </ul>
+        <p class="p">
+           They are used to generate <code class="keyword markupname xmlelement">&lt;section&gt;</code> and
+           <code class="keyword markupname xmlelement">&lt;example&gt;</code> elements:
+        </p>
+        <figure class="fig figure w-100 mw-100 p-3">
+            
+            <pre class="pre codeblock border rounded language-markdown scale-80"><code><span class="ph token title important"><span class="ph token punctuation">#</span> Topic title</span>
+
+<span class="ph token title important"><span class="ph token punctuation">##</span> Section title {.section}</span>
+<span class="ph token title important"><span class="ph token punctuation">##</span> Example title {.example}</span></code></pre>
+        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 4. </span>Sections</figcaption></figure>
+
+        <section class="section" id="annotation__metadata"><h4 class="title text-primary">Metadata</h4>
+            
+            <p class="p">
+<a class="xref" href="http://www.yaml.org/" target="_blank" rel="external noopener">YAML</a>
+   metadata block as defined in Pandoc pandoc_metadata_block can be used to specify
+   different metadata elements. The supported elements are:
+            </p>
+            <ul class="ul">
+                <li class="li">
+<code class="ph codeph">author</code>
+                </li>
+                <li class="li">
+<code class="ph codeph">source</code>
+                </li>
+                <li class="li">
+<code class="ph codeph">publisher</code>
+                </li>
+                <li class="li">
+<code class="ph codeph">permissions</code>
+                </li>
+                <li class="li">
+<code class="ph codeph">audience</code>
+                </li>
+                <li class="li">
+<code class="ph codeph">category</code>
+                </li>
+                <li class="li">
+<code class="ph codeph">keyword</code>
+                </li>
+                <li class="li">
+<code class="ph codeph">resourceid</code>
+                </li>
+                <li class="li">
+<code class="ph codeph">shortdesc</code>
+                </li>
+            </ul>
+            <p class="p">
+               Unrecognized keys are output using data element.
+            </p>
+            <figure class="fig figure w-100 mw-100 p-3">
+                
+                <pre class="pre codeblock border rounded language-yaml scale-80"><code><span class="ph token punctuation">---</span>
+<span class="ph token key atrule">author</span><span class="ph token punctuation">:</span>
+    <span class="ph token punctuation">-</span> Author One
+    <span class="ph token punctuation">-</span> Author Two
+<span class="ph token key atrule">source</span><span class="ph token punctuation">:</span> Source
+<span class="ph token key atrule">publisher</span><span class="ph token punctuation">:</span> Publisher
+<span class="ph token key atrule">permissions</span><span class="ph token punctuation">:</span> Permissions
+<span class="ph token key atrule">audience</span><span class="ph token punctuation">:</span> Audience
+<span class="ph token key atrule">category</span><span class="ph token punctuation">:</span> Category
+<span class="ph token key atrule">keyword</span><span class="ph token punctuation">:</span>
+    <span class="ph token punctuation">-</span> Keyword1
+    <span class="ph token punctuation">-</span> Keyword2
+<span class="ph token key atrule">resourceid</span><span class="ph token punctuation">:</span>
+    <span class="ph token punctuation">-</span> Resourceid1
+    <span class="ph token punctuation">-</span> Resourceid2
+<span class="ph token key atrule">workflow</span><span class="ph token punctuation">:</span> review
+<span class="ph token punctuation">---</span></code></pre>
+            <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 5. </span>Markdown with Metadata</figcaption></figure>
+
+            <figure class="fig figure w-100 mw-100 p-3">
+                
+                <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>title</span><span class="ph token punctuation">&gt;</span></span>Sample with YAML header<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>title</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>prolog</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>author</span><span class="ph token punctuation">&gt;</span></span>Author One<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>author</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>author</span><span class="ph token punctuation">&gt;</span></span>Author Two<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>author</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>source</span><span class="ph token punctuation">&gt;</span></span>Source<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>source</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>publisher</span><span class="ph token punctuation">&gt;</span></span>Publisher<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>publisher</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>permissions</span> <span class="ph token attr-name">view</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Permissions<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>metadata</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>audience</span> <span class="ph token attr-name">audience</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Audience<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>category</span><span class="ph token punctuation">&gt;</span></span>Category<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>category</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>keywords</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>keyword</span><span class="ph token punctuation">&gt;</span></span>Keyword1<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>keyword</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>keyword</span><span class="ph token punctuation">&gt;</span></span>Keyword2<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>keyword</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>keywords</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>metadata</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>resourceid</span> <span class="ph token attr-name">appid</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Resourceid1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>resourceid</span> <span class="ph token attr-name">appid</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Resourceid2<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>data</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>workflow<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>review<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>prolog</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 6. </span>Sample output with YAML header</figcaption></figure>
+
+            <p class="p">
+               Ditamap <code class="keyword markupname xmlelement">&lt;topicmeta&gt;</code> processing is also supported.
+            </p>
+            <figure class="fig figure w-100 mw-100 p-3">
+                
+                <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token prolog">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="ph token doctype">&lt;!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd"&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bookmap</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>chapter</span> <span class="ph token attr-name">format</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pandoc<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">processing-role</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>normal<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>topic<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">href</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>markdown.md<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>topicmeta</span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>shortdesc</span><span class="ph token punctuation">&gt;</span></span>This is where the shortdesc goes<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>shortdesc</span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>metadata</span><span class="ph token punctuation">&gt;</span></span>
+                 <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>keywords</span><span class="ph token punctuation">&gt;</span></span>
+                    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>keyword</span><span class="ph token punctuation">&gt;</span></span>Keyword1<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>keyword</span><span class="ph token punctuation">&gt;</span></span>
+                    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>keyword</span><span class="ph token punctuation">&gt;</span></span>Keyword2<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>keyword</span><span class="ph token punctuation">&gt;</span></span>
+                <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>keywords</span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>metadata</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>topicmeta</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>chapter</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bookmap</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 7. </span>Ditamap TopicMeta for Pandoc Files</figcaption></figure>
+
+            <p class="p">
+               This allows for topic metadata to be added to files for formats other than Markdown.
+            </p>
+        </section>
+    </div>
+</article>
+</article>
+</article></main></div><footer role="contentinfo"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
   <div class="container">
     <div class="row">
       <div class="col">

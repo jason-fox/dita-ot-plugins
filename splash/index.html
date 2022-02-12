@@ -1,11 +1,11 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="abstract" content="This simple DITA-OT plug-in automatically displays a random cat picture from the Cat API or an xkcd comic strip as a splash screen whilst waiting for a build job to complete."><meta name="description" content="This simple DITA-OT plug-in automatically displays a random cat picture from the Cat API or an xkcd comic strip as a splash screen whilst waiting for a build job to complete."><meta name="keywords" content="splash screen, plug-in, Cats API, XKCD"><title>Splash Screen Plug-in</title><link rel="shortcut icon" href="../favicon/favicon.svg">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="abstract" content="This simple DITA-OT plug-in automatically displays a random cat picture from the Cat API or an xkcd comic strip as a splash screen whilst waiting for a build job to complete."><meta name="description" content="This simple DITA-OT plug-in automatically displays a random cat picture from the Cat API or an xkcd comic strip as a splash screen whilst waiting for a build job to complete."><meta name="keywords" content="splash screen, plug-in, Cats API, XKCD, installing"><title>Splash Screen Plug-in</title><link rel="shortcut icon" href="../favicon/favicon.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css">
 <link rel="stylesheet" type="text/css" href="../css/theme.css">
-<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous"></head><body id="splash-screen-plug-in"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous"></head><body id="splash-screen-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy" data-bs-offset="10"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-menubar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to topic navigation</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
   <div class="container">
     <a class="navbar-brand" href="https://www.dita-ot.org/">
@@ -25,70 +25,155 @@
       </ul>
     </div>
   </div>
-</nav></header><div class="container" id="content"><div class="row"><nav class="col-lg-3" role="navigation"><div class="list-group me-3"><a class="list-group-item list-group-item-action" href="../index.html">DITA-OT Plugins</a><a class="list-group-item list-group-item-action" href="../audiobook/index.html">Audiobook Plug-in</a><a class="list-group-item list-group-item-action" href="../extend.css/index.html">Extended CSS Plug-in</a><a class="list-group-item list-group-item-action" href="../favicon/index.html">Favicon Plugin</a><a class="list-group-item list-group-item-action" href="../javadoc/index.html">Javadoc Plug-in</a><a class="list-group-item list-group-item-action" href="../pandoc/index.html">Pandoc Plug-in</a><a class="list-group-item list-group-item-action" href="../passthrough/index.html">Passthrough Plugin</a><a class="list-group-item list-group-item-action" href="../postman/index.html">Postman Plug-in</a><a class="list-group-item list-group-item-action" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a><a class="list-group-item list-group-item-action" href="../prismjs/index.html">Prism-JS Plug-in</a><a class="list-group-item list-group-item-action" href="../readthedocs/index.html">ReadTheDocs Plug-in</a><a class="list-group-item list-group-item-action active" href="../splash/index.html">Splash Screen Plug-in</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="../splash/install.html">Install</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="../splash/usage.html">Usage</a><a class="list-group-item list-group-item-action" href="../swagger/index.html">Swagger Plug-in</a><a class="list-group-item list-group-item-action" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a><a class="list-group-item list-group-item-action" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a><a class="list-group-item list-group-item-action" href="../unit-test/index.html">Unit Test Plug-in</a><a class="list-group-item list-group-item-action" href="../validate.svrl/index.html">DITA Validator Plug-in</a><a class="list-group-item list-group-item-action" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a><a class="list-group-item list-group-item-action" href="../watermark/index.html">Watermark Plug-in</a></div></nav><main role="main" class="col-lg-9"><article role="article" aria-labelledby="ariaid-title1">
-  <h1 class="title text-primary" id="ariaid-title1">Splash Screen Plug-in</h1>
-  
-  
-  <div class="body"><div class="abstract">
-     <span class="shortdesc text-muted lead">
-       This simple DITA-OT plug-in automatically displays a random cat picture from the
-       <a class="xref" href="http://thecatapi.com/" target="_blank" rel="external noopener">Cat API</a>
-       or an <a class="xref" href="https://xkcd.com/" target="_blank" rel="external noopener">xkcd</a>
-       comic strip as a splash screen whilst waiting for a build job to complete.
-    </span>
-  </div></div>
-  <article class="topic nested1" aria-labelledby="ariaid-title2" id="example-splash-screen">
-    <h2 class="title text-primary h3 mt-3" id="ariaid-title2">Example</h2>
-    <div class="body">
-      <section class="section" id="example-splash-screen__the-cat-api"><h3 class="title text-primary h4">The Cat API</h3>
+</nav></header><nav class="navbar navbar-light bg-light px-3" role="navigation" id="bs-menubar-nav"><ul class="nav nav-pills" role="menubar"><li class="nav-item" role="none"><a role="menuitem" class="nav-link" href="../index.html">DITA-OT Plugins</a></li><li class="nav-item dropdown" role="none"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">Plug-Ins</a><ul class="dropdown-menu" role="menu"><li role="none"><a role="menuitem" class="dropdown-item" href="../audiobook/index.html">Audiobook Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../extend.css/index.html">Extended CSS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../favicon/index.html">Favicon Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../javadoc/index.html">Javadoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pandoc/index.html">Pandoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../passthrough/index.html">Passthrough Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../postman/index.html">Postman Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../prismjs/index.html">Prism-JS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../readthedocs/index.html">ReadTheDocs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../splash/index.html">Splash Screen Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../swagger/index.html">Swagger Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../unit-test/index.html">Unit Test Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl/index.html">DITA Validator Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../watermark/index.html">Watermark Plug-in</a></li></ul></li></ul></nav></div><div class="bs-container" id="content"><nav class="bs-sidebar-nav" role="navigation" id="bs-sidebar-nav"><nav class="nav nav-pills flex-column navbar-light bg-light" id="bs-scrollspy">
+    <a class="my-1 nav-link" href="#ariaid-title1">Splash Screen Plug-in</a>
+    
+    
+    
+    <nav class="nav nav-pills flex-column ps-3">
+        <a class="my-1 nav-link" href="#ariaid-title2">Examples</a>
         
-        <img class="image float-start mt-1 me-3" src="https://cdn2.thecatapi.com/logos/thecatapi_256xW.png" height="55">
-        <p class="p">
-           The Cat API was created by Aden Forshaw back in 2012 as a way to give back and
-           help teach people to code, it’s now been used by thousands of App developers
-           making all sorts of weird &amp; wonderful creations.
+    </nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title3">Install</a>
+    
+    
+    
+</nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title4">Usage</a>
+    
+</nav>
+</nav></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span>Plug-Ins</span></li><li class="breadcrumb-item active" aria-current="page">Splash Screen Plug-in</li></ol></nav>
+    <h1 class="title text-primary" id="ariaid-title1">Splash Screen Plug-in</h1>
+    
+    
+    <div class="body"><div class="abstract">
+        <p class="shortdesc text-muted lead">
+           This simple DITA-OT plug-in automatically displays a random cat picture from the
+           <a class="xref" href="http://thecatapi.com/" target="_blank" rel="external noopener">Cat API</a>
+           or an <a class="xref" href="https://xkcd.com/" target="_blank" rel="external noopener">xkcd</a>
+           comic strip as a splash screen whilst waiting for a build job to complete.
         </p>
         <p class="p">
-           It allows anyone to build apps that search for Cat images, upload their own,
-           vote or favourite them, and to allow their users to do the same.
         </p>
-        <p class="p">
-           It’s completely free to use &amp; primarily a learning tool to teach anyone the
-           basics of using APIs in a fun &amp; interesting way. Perfect for classrooms,
-           hackathons, or weekend side projects.
-        </p>
-        <figure class="fig figure w-100 mw-100 p-3">
-          
-          <img class="image figure-img img-fluid border rounded img-fluid img-thumbnail" src="http://thecatapi.com/api/images/get?format=src&amp;type=gif" alt="">
-        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 1. </span>Image from Cat API</figcaption></figure>
+    </div></div>
+    <article class="topic nested1" aria-labelledby="ariaid-title2" id="example-splash-screen">
+        <h2 class="title text-primary" id="ariaid-title2">Examples</h2>
+        <div class="body">
+            <section class="section" id="example-splash-screen__the-cat-api"><h3 class="title text-primary h4 text-secondary">The Cat API</h3>
+                
+                <img class="image float-start mt-1 me-3" src="https://cdn2.thecatapi.com/logos/thecatapi_256xW.png" height="55">
+                <p class="p">
+                   The <dfn class="term">Cat API</dfn> was created by Aden Forshaw back in 2012 as a way to
+                   give back and help teach people to code, it’s now been used by thousands of App
+                   developers making all sorts of weird &amp; wonderful creations.
+                </p>
+                <p class="p">
+                   It allows anyone to build apps that search for Cat images, upload their own,
+                   vote or favourite them, and to allow their users to do the same.
+                </p>
+                <p class="p">
+                   It’s completely free to use &amp; primarily a learning tool to teach anyone the
+                   basics of using APIs in a fun &amp; interesting way. Perfect for classrooms,
+                   hackathons, or weekend side projects.
+                </p>
+                <figure class="fig figure w-100 mw-100 p-3">
+                    
+                    <img class="image figure-img img-fluid border rounded img-fluid img-thumbnail" src="http://thecatapi.com/api/images/get?format=src&amp;type=gif" alt="">
+                <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 1. </span>Image from Cat API</figcaption></figure>
 
-      </section>
-      <section class="section" id="example-splash-screen__xkcd"><h3 class="title text-primary h4">XKCD</h3>
-        
-        <img class="image float-start mt-1 me-3" src="https://xkcd.com/s/0b7742.png" height="55">
-        <p class="p">
-           xkcd, sometimes styled XKCD is a webcomic created by Randall Munroe. The comic’s
-           tagline describes it as "A webcomic of romance, sarcasm, math, and language".
-           Munroe states on the comic’s website that the name of the comic is not an
-           initialism but "just a word with no phonetic pronunciation".
-        </p>
-        <p class="p">
-           The subject matter of the comic varies from statements on life and love to
-           mathematical, programming, and scientific in-jokes. Some strips feature simple
-           humor or pop-culture references. Although it has a cast of stick figures, the
-           comic occasionally features landscapes, graphs and charts, and intricate
-           mathematical patterns such as fractals. New cartoons are added three times a
-           week, on Mondays, Wednesdays, and Fridays.
-        </p>
-        <figure class="fig figure w-100 mw-100 p-3">
-          
-          <img class="image figure-img img-fluid border rounded img-fluid img-thumbnail" src="https://imgs.xkcd.com/comics/compiling.png" alt="">
-        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 2. </span>Image from XKCD</figcaption></figure>
+            </section>
+            <section class="section" id="example-splash-screen__xkcd"><h3 class="title text-primary h4 text-secondary">XKCD</h3>
+                
+                <img class="image float-start mt-1 me-3" src="https://xkcd.com/s/0b7742.png" height="55">
+                <p class="p">
+                   <dfn class="term">xkcd</dfn>, sometimes styled <dfn class="term">XKCD</dfn> is a webcomic created by
+                   Randall Munroe. The comic’s tagline describes it as "A webcomic of romance,
+                   sarcasm, math, and language". Munroe states on the comic’s website that the
+                   name of the comic is not an initialism but "just a word with no phonetic
+                   pronunciation".
+                </p>
+                <p class="p">
+                   The subject matter of the comic varies from statements on life and love to
+                   mathematical, programming, and scientific in-jokes. Some strips feature simple
+                   humor or pop-culture references. Although it has a cast of stick figures, the
+                   comic occasionally features landscapes, graphs and charts, and intricate
+                   mathematical patterns such as fractals. New cartoons are added three times a
+                   week, on Mondays, Wednesdays, and Fridays.
+                </p>
+                <figure class="fig figure w-100 mw-100 p-3">
+                    
+                    <img class="image figure-img img-fluid border rounded img-fluid img-thumbnail" src="https://imgs.xkcd.com/comics/compiling.png" alt="">
+                <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 2. </span>Image from XKCD</figcaption></figure>
 
-      </section>
+            </section>
+        </div>
+    </article>
+    <article class="topic nested1" aria-labelledby="ariaid-title3" id="install">
+    <h2 class="title text-primary" id="ariaid-title3">Install</h2>
+    
+    
+    <div class="body"><div class="abstract">
+        <p class="shortdesc text-muted lead">
+           This is a standalone plug-in without dependencies which can be installed from
+           the command line.
+        </p>
+        <p class="p">
+           The splash screen plug-in relies on the use of ANT to obtain and display the
+           splash screen image. ANT 1.9+ is recommended. Older versions of the <code class="keyword markupname xmlelement">&lt;get&gt;</code>
+           task may fail or timeout when requesting HTTPS images.
+        </p>
     </div>
-  </article>
-</article></main></div></div><footer role="contentinfo"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+        <p class="p">
+           Run the plug-in installation commands:
+        </p>
+        <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/fox.jason.splash/archive/master.zip</code></pre>
+        <p class="p">
+           The <span class="keyword cmdname">dita</span> command line tool requires no additional configuration.
+        </p>
+        <p class="p">
+           To switch to displaying XKCD images, amend the <code class="ph codeph">pom.xml</code> within
+           the plug-in directly and  replace the line <code class="keyword markupname xmlelement">&lt;feature
+           extension="depend.preprocess.pre" value="cats.splash"/&gt;</code> with
+           <code class="keyword markupname xmlelement">&lt;feature extension="depend.preprocess.pre" value="xkcd.splash"/&gt;</code>.
+        </p>
+    </div>
+</article>
+    <article class="topic nested1" aria-labelledby="ariaid-title4" id="usage">
+    <h2 class="title text-primary" id="ariaid-title4">Usage</h2>
+    <div class="body">
+        <section class="section" id="usage__automatically-displaying-a-splash-screen-when-running-a-build-job"><h3 class="title text-primary h4 text-secondary">Automatically displaying a splash screen when running a build job</h3>
+            
+            <p class="p">
+               The plugin is pre-configured to run as part of the <span class="keyword parmname">depend.preprocess.pre</span>
+               build step. Running any ordinary build job will display a random cat photo.
+            </p>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">pdf</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--output</span> out <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> <span class="ph filepath">document.ditamap</span></code></pre>
+        </section>
+        <section class="section" id="usage__displaying-a-random-cat-photo"><h3 class="title text-primary h4 text-secondary">Displaying a random Cat Photo</h3>
+            
+            <p class="p">
+               To display a random photo from the <a class="xref" href="https://thecatapi.com/" target="_blank" rel="external noopener">Cat API</a>, use the <span class="keyword option">cats</span>
+               transform.
+            </p>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">cats</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> <span class="ph filepath">document.ditamap</span></code></pre>
+        </section>
+        <section class="section" id="usage__displaying-a-random-xkcd-comic-strip"><h3 class="title text-primary h4 text-secondary">Displaying a random XKCD Comic Strip</h3>
+            
+            <p class="p">
+               To display a random XKCD comic strip from <a class="xref" href="https://xkcd.com/" target="_blank" rel="external noopener">xkcd.com</a>, use the <span class="keyword option">xkcd</span>
+               transform.
+            </p>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xkcd</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> <span class="ph filepath">document.ditamap</span></code></pre>
+        </section>
+    </div>
+</article>
+</article></main></div><footer role="contentinfo"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
   <div class="container">
     <div class="row">
       <div class="col">

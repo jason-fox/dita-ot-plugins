@@ -1,11 +1,11 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="abstract" content="The Spelling and Grammar Checker plug-in for DITA OT is an extension of the base DITA Validator which adds simple rule-based spelling and grammar validation for the text elements within DITA documents."><meta name="description" content="The Spelling and Grammar Checker plug-in for DITA OT is an extension of the base DITA Validator which adds simple rule-based spelling and grammar validation for the text elements within DITA documents."><meta name="keywords" content="spell-checking, auto-correction, plug-in"><title>Spelling and Grammar Checker Plug-in</title><link rel="shortcut icon" href="../favicon/favicon.svg">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="abstract" content="The Spelling and Grammar Checker plug-in for DITA OT is an extension of the base DITA Validator which adds simple rule-based spelling and grammar validation for the text elements within DITA documents."><meta name="description" content="The Spelling and Grammar Checker plug-in for DITA OT is an extension of the base DITA Validator which adds simple rule-based spelling and grammar validation for the text elements within DITA documents."><meta name="keywords" content="spell-checking, auto-correction, plug-in, installing, ANT"><title>Spelling and Grammar Checker Plug-in</title><link rel="shortcut icon" href="../favicon/favicon.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css">
 <link rel="stylesheet" type="text/css" href="../css/theme.css">
-<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous"></head><body id="spelling-and-grammar-checker-plug-in"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous"></head><body id="spelling-and-grammar-checker-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy" data-bs-offset="10"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-menubar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to topic navigation</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
   <div class="container">
     <a class="navbar-brand" href="https://www.dita-ot.org/">
@@ -25,46 +25,608 @@
       </ul>
     </div>
   </div>
-</nav></header><div class="container" id="content"><div class="row"><nav class="col-lg-3" role="navigation"><div class="list-group me-3"><a class="list-group-item list-group-item-action" href="../index.html">DITA-OT Plugins</a><a class="list-group-item list-group-item-action" href="../audiobook/index.html">Audiobook Plug-in</a><a class="list-group-item list-group-item-action" href="../extend.css/index.html">Extended CSS Plug-in</a><a class="list-group-item list-group-item-action" href="../favicon/index.html">Favicon Plugin</a><a class="list-group-item list-group-item-action" href="../javadoc/index.html">Javadoc Plug-in</a><a class="list-group-item list-group-item-action" href="../pandoc/index.html">Pandoc Plug-in</a><a class="list-group-item list-group-item-action" href="../passthrough/index.html">Passthrough Plugin</a><a class="list-group-item list-group-item-action" href="../postman/index.html">Postman Plug-in</a><a class="list-group-item list-group-item-action" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a><a class="list-group-item list-group-item-action" href="../prismjs/index.html">Prism-JS Plug-in</a><a class="list-group-item list-group-item-action" href="../readthedocs/index.html">ReadTheDocs Plug-in</a><a class="list-group-item list-group-item-action" href="../splash/index.html">Splash Screen Plug-in</a><a class="list-group-item list-group-item-action" href="../swagger/index.html">Swagger Plug-in</a><a class="list-group-item list-group-item-action" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a><a class="list-group-item list-group-item-action" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a><a class="list-group-item list-group-item-action" href="../unit-test/index.html">Unit Test Plug-in</a><a class="list-group-item list-group-item-action" href="../validate.svrl/index.html">DITA Validator Plug-in</a><a class="list-group-item list-group-item-action active" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="../validate.svrl.text-rules/install.html">Install</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="../validate.svrl.text-rules/usage.html">Usage</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="../validate.svrl.text-rules/configuration.html">Configuration</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="../validate.svrl.text-rules/error-messages.html">Error Messages</a><a class="list-group-item list-group-item-action" href="../watermark/index.html">Watermark Plug-in</a></div></nav><main role="main" class="col-lg-9"><article role="article" aria-labelledby="ariaid-title1">
-  <h1 class="title text-primary" id="ariaid-title1">Spelling and Grammar Checker Plug-in</h1>
-  
-  
-  <div class="body"><div class="abstract">
-     <span class="shortdesc text-muted lead">
-       The Spelling and Grammar Checker plug-in for DITA OT is an <strong class="ph b">extension</strong> of
-       the base <a class="xref" href="../validate.svrl/index.html" title="The DITA Validator plug-in for DITA-OT is a structure, style and content checker for DITA documents. The plug-in returns information about the compliance of the document against a modifiable series of validator rules. The plug-in also supports standard XML validation.">DITA Validator</a> 
-       which adds simple rule-based <strong class="ph b">spelling and grammar</strong> validation for the text
-       elements within DITA documents.
-    </span>
-  </div>
-    <p class="p">
-       The plug-in supports three <code class="ph codeph">transtypes</code>:
-    </p>
-    <ul class="ul">
-      <li class="li">
-         <span class="keyword option">auto-correct</span> - remove reported spelling and grammar errors from
-         a DITA document
-      </li>
-      <li class="li">
-         <span class="keyword option">text-rules</span> - create an error report in <dfn class="term">Schematron Validation Report Language</dfn>
-         (<code class="ph codeph">SVRL</code>) format
-      </li>
-      <li class="li">
-         <span class="keyword option">text-rules-echo</span> - display the results of an <code class="ph codeph">SVRL</code>
-         error report in a human-readable format
-      </li>
-    </ul>
-    <p class="p">
-       More information about <code class="ph codeph">SVRL</code> can be found at <a class="xref" href="http://www.schematron.com/validators.html" target="_blank" rel="external noopener">www.schematron.com</a>.
-    </p>
-    <p class="p">
-       Most of the spell-checking rules are based on a list of <a class="xref" href="https://en.wikipedia.org/wiki/wikipedia:lists-of-common-misspellings" target="_blank" rel="external noopener">known typographical errors and faults</a>,
-       and the ruleset can be easily altered to include new constraints. Checking
-       against a list of known errors means that no false positives should occur, but
-       the existing list will never be fully comprehensive.
-    </p>
-  </div>
-</article></main></div></div><footer role="contentinfo"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+</nav></header><nav class="navbar navbar-light bg-light px-3" role="navigation" id="bs-menubar-nav"><ul class="nav nav-pills" role="menubar"><li class="nav-item" role="none"><a role="menuitem" class="nav-link" href="../index.html">DITA-OT Plugins</a></li><li class="nav-item dropdown" role="none"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">Plug-Ins</a><ul class="dropdown-menu" role="menu"><li role="none"><a role="menuitem" class="dropdown-item" href="../audiobook/index.html">Audiobook Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../extend.css/index.html">Extended CSS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../favicon/index.html">Favicon Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../javadoc/index.html">Javadoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pandoc/index.html">Pandoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../passthrough/index.html">Passthrough Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../postman/index.html">Postman Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../prismjs/index.html">Prism-JS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../readthedocs/index.html">ReadTheDocs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../splash/index.html">Splash Screen Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../swagger/index.html">Swagger Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../unit-test/index.html">Unit Test Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl/index.html">DITA Validator Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../watermark/index.html">Watermark Plug-in</a></li></ul></li></ul></nav></div><div class="bs-container" id="content"><nav class="bs-sidebar-nav" role="navigation" id="bs-sidebar-nav"><nav class="nav nav-pills flex-column navbar-light bg-light" id="bs-scrollspy">
+    <a class="my-1 nav-link" href="#ariaid-title1">Spelling and Grammar Checker Plug-in</a>
+    
+    
+    
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title2">Install</a>
+    
+    
+    
+</nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title3">Usage</a>
+    
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title4">Command Line</a>
+    
+</nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title5">Using ANT</a>
+    
+    
+</nav>
+</nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title6">Configuration</a>
+    
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title7">Ignoring Validator Rules</a>
+    
+</nav>
+</nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title8">Error Messages</a>
+    
+</nav>
+</nav></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span>Plug-Ins</span></li><li class="breadcrumb-item active" aria-current="page">Spelling and Grammar Checker Plug-in</li></ol></nav>
+    <h1 class="title text-primary" id="ariaid-title1">Spelling and Grammar Checker Plug-in</h1>
+    
+    
+    <div class="body"><div class="abstract">
+         <span class="shortdesc text-muted lead">
+           The Spelling and Grammar Checker plug-in for DITA OT is an <strong class="ph b">extension</strong> of
+           the base <a class="xref" href="../validate.svrl/index.html" title="The DITA Validator plug-in for DITA-OT is a structure, style and content checker for DITA documents. The plug-in returns information about the compliance of the document against a modifiable series of validator rules. The plug-in also supports standard XML validation.">DITA Validator</a>
+           which adds simple rule-based <strong class="ph b">spelling and grammar</strong> validation for the
+           text elements within DITA documents.
+        </span>
+    </div>
+        <p class="p">
+           The plug-in supports three <code class="ph codeph">transtypes</code>:
+        </p>
+        <ul class="ul">
+            <li class="li">
+               <span class="keyword option">auto-correct</span> - remove reported spelling and grammar errors from
+               a DITA document
+            </li>
+            <li class="li">
+               <span class="keyword option">text-rules</span> - create an error report in <dfn class="term">Schematron Validation Report Language</dfn>
+               (<code class="ph codeph">SVRL</code>) format
+            </li>
+            <li class="li">
+               <span class="keyword option">text-rules-echo</span> - display the results of an <code class="ph codeph">SVRL</code>
+               error report in a human-readable format
+            </li>
+        </ul>
+        <p class="p">
+           More information about <code class="ph codeph">SVRL</code> can be found at <a class="xref" href="http://www.schematron.com/validators.html" target="_blank" rel="external noopener">www.schematron.com</a>.
+        </p>
+        <p class="p">
+           Most of the spell-checking rules are based on a list of <a class="xref" href="https://en.wikipedia.org/wiki/wikipedia:lists-of-common-misspellings" target="_blank" rel="external noopener">known typographical errors and faults</a>,
+           and the ruleset can be easily altered to include new constraints. Checking
+           against a list of known errors means that no false positives should occur, but
+           the existing list will never be fully comprehensive.
+        </p>
+    </div>
+    <article class="topic nested1" aria-labelledby="ariaid-title2" id="install">
+    <h2 class="title text-primary" id="ariaid-title2">Install</h2>
+    
+    
+    <div class="body"><div class="abstract">
+         <span class="shortdesc text-muted lead">
+           This plug-in extends the standard <code class="ph codeph">com.here.validate.svrl</code>
+           plug-in which should also be installed on the machine.  It has no further
+           external dependencies, and can be installed from the command line.
+        </span>
+    </div>
+        <p class="p">
+           Run the plug-in installation command:
+        </p>
+        <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/com.here.validate.svrl/archive/master.zip
+<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/com.here.validate.svrl.text-rules/archive/master.zip</code></pre>
+        <p class="p">
+           The <span class="keyword cmdname">dita</span> command line tool requires no additional configuration.
+        </p>
+    </div>
+</article>
+    <article class="topic nested1" aria-labelledby="ariaid-title3" id="usage">
+    <h2 class="title text-primary" id="ariaid-title3">Usage</h2>
+    <div class="body"></div>
+    <article class="topic nested2" aria-labelledby="ariaid-title4" id="command-line">
+    <h3 class="title text-primary" id="ariaid-title4">Command Line</h3>
+    <div class="body">
+        <div role="alert" class="note alert alert-success"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> 
+           A test document can be found within the plug-in at:
+           <span class="ph filepath">PATH_TO_DITA_OT/plugins/com.here.validate.svrl.text-rules/sample</span>
+        </div>
+        <section class="section" id="command-line__creating-an-svrl-file"><h4 class="title text-primary h4 text-secondary">Creating an SVRL file</h4>
+            
+            <p class="p">
+               To create an SVRL file with the spell-checker plug-in use the <span class="keyword option">text-rules</span>
+               transform with the <span class="keyword parmname">--args.validate.mode=report</span> parameter.
+            </p>
+            <ul class="ul">
+                <li class="li">
+                   From a terminal prompt move to the directory holding the document to validate
+                </li>
+                <li class="li">
+                   SVRL file creation can be run like any other DITA-OT transform:
+                </li>
+            </ul>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">text-rules</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--output</span> out <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> <span class="ph filepath">document.ditamap</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--args.validate.mode</span><span class="ph token operator">=</span><span class="keyword option">report</span></code></pre>
+            <p class="p">
+               Once the command has run, an <code class="ph codeph">SVRL</code> file is created:
+            </p>
+            <figure class="fig figure w-100 mw-100 p-3">
+                
+                <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token prolog">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">svrl:</span>schematron-output</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>active-pattern</span> <span class="ph token attr-name">role</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>dita<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>/incorrect-spelling.dita<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fired-rule</span> <span class="ph token attr-name">context</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>common<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">role</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>grammar<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fired-rule</span> <span class="ph token attr-name">context</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>default-lang<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">role</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>spelling<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>failed-assert</span> <span class="ph token attr-name">role</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>error<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">location</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>/topic/body[1]/section[2]/p[1]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>diagnostic-reference</span> <span class="ph token attr-name">diagnostic</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>incorrect-spelling<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      Line 17: p - [incorrect-spelling]
+      The word 'separate' is spelt incorrectly ('seperate') in the following text:
+
+      Seperate accommodation can be found within the main building...
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>diagnostic-reference</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>failed-assert</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fired-rule</span> <span class="ph token attr-name">context</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>default-lang<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">role</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>grammar<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fired-rule</span> <span class="ph token attr-name">context</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>english<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">role</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>grammar<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">svrl:</span>schematron-output</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 1. </span>SVRL Output</figcaption></figure>
+
+        </section>
+        <section class="section" id="command-line__echoing-results-to-the-command-line"><h4 class="title text-primary h4 text-secondary">Echoing results to the command line</h4>
+            
+            <p class="p">
+               To echo results to the command line with the spell-checker plug-in use the
+               <span class="keyword option">text-rules</span> transform without specifying a <span class="keyword option">report</span>.
+            </p>
+            <ul class="ul">
+                <li class="li">
+                   Spell-checking (<span class="keyword option">text-rules</span>) can be run like any other DITA-OT
+                   transform:
+                </li>
+            </ul>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">text-rules</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> <span class="ph filepath">document.ditamap</span></code></pre>
+            <p class="p">
+               Once the command has run, all errors and warnings are echoed to the command line:
+            </p>
+            <figure class="fig figure w-100 mw-100 p-3">
+                
+                <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="ph token punctuation">[</span>ERROR<span class="ph token punctuation">]</span>  <span class="ph token punctuation">[</span>/topics/incorrect-spelling.dita<span class="ph token punctuation">]</span>
+ Line <span class="ph token number">17</span>: p - <span class="ph token punctuation">[</span>incorrect-spelling<span class="ph token punctuation">]</span>
+The word <span class="ph token string">'separate'</span> is spelt incorrectly <span class="ph token punctuation">(</span><span class="ph token string">'seperate'</span><span class="ph token punctuation">)</span> <span class="ph token keyword">in</span> the following text:
+Seperate accommodation can be found within the main building.</code></pre>
+            <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 2. </span>Command Line Output</figcaption></figure>
+
+            <p class="p">
+               Additionally, if an error occurs, the command will fail:
+            </p>
+            <figure class="fig figure w-100 mw-100 p-3">
+                
+                <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="ph token punctuation">[</span>ERROR<span class="ph token punctuation">]</span>  <span class="ph token punctuation">[</span>/topics/incorrect-spelling.dita<span class="ph token punctuation">]</span>
+ Line <span class="ph token number">17</span>: p - <span class="ph token punctuation">[</span>incorrect-spelling<span class="ph token punctuation">]</span>
+The word <span class="ph token string">'separate'</span> is spelt incorrectly <span class="ph token punctuation">(</span><span class="ph token string">'seperate'</span><span class="ph token punctuation">)</span> <span class="ph token keyword">in</span> the following text:
+Seperate accommodation can be found within the main building.
+Found <span class="ph token number">1</span> Errors <span class="ph token number">0</span> Warnings
+Error: <span class="ph token punctuation">[</span>SVRL001F<span class="ph token punctuation">]</span><span class="ph token punctuation">[</span>FATAL<span class="ph token punctuation">]</span> Error: Errors detected during validation</code></pre>
+            <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 3. </span>Command Line Output with Failure</figcaption></figure>
+
+        </section>
+        <section class="section" id="command-line__auto-correction-from-the-command-line"><h4 class="title text-primary h4 text-secondary">Auto-correction from the command line</h4>
+            
+            <p class="p">
+               To auto-correct spelling mistakes with the spell-checker plug-in use the
+               <span class="keyword option">auto-correct</span> transform.
+            </p>
+            <ul class="ul">
+                <li class="li">
+                   Auto-correction (<span class="keyword option">auto-correct</span>) can be run like any other
+                   DITA-OT transform:
+                </li>
+            </ul>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">auto-correct</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> <span class="ph filepath">document.ditamap</span></code></pre>
+            <p class="p">
+               Once the command has run spelling mistakes will have been removed from the document.
+            </p>
+            <div role="alert" class="note alert alert-info"><span class="note__title">Note:</span> 
+               The auto-correct <span class="keyword option">transtype</span> only removes spelling, duplicate and
+               grammar errors specified in the dictionary files
+            </div>
+        </section>
+        <section class="section" id="command-line__parameter-reference"><h4 class="title text-primary h4 text-secondary">Parameter Reference</h4>
+            
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            <ul class="ul">
+                <li class="li">
+                   <span class="keyword parmname">args.validate.ignore.rules</span> - Comma separated list of rule
+                   IDs to be ignored
+                </li>
+                <li class="li">
+                   <span class="keyword parmname">args.validate.blacklist</span> - Comma separated list of words
+                   that should not be present in the running text
+                </li>
+                <li class="li">
+                   <span class="keyword parmname">args.validate.cachefile</span> - Specifies the location of cache
+                   file to be used. Validation will only run across altered files if this
+                   parameter is present
+                </li>
+                <li class="li">
+                   <span class="keyword parmname">args.validate.check.case</span> - Comma separated list of words
+                   which have a specified capitalization
+                </li>
+                <li class="li">
+                   <span class="keyword parmname">args.validate.color</span> - When set, errors and warnings are
+                   Output highlighted using ANSI color codes
+                </li>
+                <li class="li">
+                   <span class="keyword parmname">args.validate.mode</span> - Validation reporting mode. The
+                   following values are supported:
+                    <ul class="ul">
+                        <li class="li">
+                           <span class="keyword option">strict</span> - Outputs both warnings and errors. Fails on errors and
+                           warnings.
+                        </li>
+                        <li class="li">
+                           <span class="keyword option">default</span> - Outputs both warnings and errors. Fails on errors only
+                        </li>
+                        <li class="li">
+                           <span class="keyword option">lax</span> - Ignores all warnings and outputs errors only. Fails on
+                           Errors only
+                        </li>
+                        <li class="li">
+                           <span class="keyword option">report</span> - Creates an SVRL file
+                        </li>
+                    </ul>
+                </li>
+                <li class="li">
+                   <span class="keyword parmname">svrl.customization.dir</span> - Specifies the customization directory
+                </li>
+                <li class="li">
+                   <span class="keyword parmname">svrl.filter.file</span> - Specifies the location of the XSL file
+                   used to filter the echo output. If this parameter is not present, the default
+                   echo output format will be used.
+                </li>
+                <li class="li">
+                   <span class="keyword parmname">text-rules.ruleset.file</span> - Specifies severity of the rules
+                   to apply. If this parameter is not present, default severity levels will be used.
+                </li>
+            </ul>
+        </section>
+    </div>
+</article>
+    <article class="topic nested2" aria-labelledby="ariaid-title5" id="using-ant">
+    <h3 class="title text-primary" id="ariaid-title5">Using ANT</h3>
+    
+    <div class="body">
+        <p class="p">
+           An ANT build file is supplied in the same directory as the sample document. The
+           main target can be seen below:
+        </p>
+        <figure class="fig figure w-100 mw-100 p-3">
+            
+            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>dirname</span> <span class="ph token attr-name">property</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>dita.dir<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">file</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>PATH_TO_DITA_OT<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>property</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>dita.exec<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>${dita.dir}/bin/dita<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>property</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>args.input<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>PATH_TO_DITA_DOCUMENT/document.ditamap<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>target</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>spell-check<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">description</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>spell-check a document<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token comment">&lt;!-- For Unix run the DITA executable--&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec</span> <span class="ph token attr-name">executable</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>${dita.exec}<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">osfamily</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>unix<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">failonerror</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>true<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>-input<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>${args.input}<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>-output<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>${dita.dir}/out/svrl<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>-format<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>text-rules-echo<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token comment">&lt;!-- validation transform specific parameters --&gt;</span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>--args.validate.blacklist=(kilo)?metre|colour|teh|seperate<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>--args.validate.check.case=Bluetooth|HTTP[S]? |IoT|JSON|Java|Javadoc|JavaScript|XML<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>--args.validate.color=true<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>exec</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token comment">&lt;!-- For Windows run from a DOS command --&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec</span> <span class="ph token attr-name">dir</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>${dita.dir}/bin<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">executable</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>cmd<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">osfamily</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>windows<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">failonerror</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>true<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>/C<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>arg</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>dita -input ${args.input} -output ${dita.dir}/out/svrl -format text-rules-echo --args.validate.blacklist=<span class="ph token entity">&amp;amp;</span>quot;(kilo)?metre|colour|teh|seperate<span class="ph token entity">&amp;amp;</span>quot; --args.validate.check.case=<span class="ph token entity">&amp;amp;</span>quot;Bluetooth|HTTP[S]? |IoT|JSON|Java|Javadoc|JavaScript|XML<span class="ph token entity">&amp;amp;</span>quot;<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>exec</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>target</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 4. </span>ANT Target</figcaption></figure>
+
+    </div>
+</article>
+</article>
+    <article class="topic nested1" aria-labelledby="ariaid-title6" id="configuration">
+    <h2 class="title text-primary" id="ariaid-title6">Configuration</h2>
+    <div class="body">
+        <section class="section" id="configuration__internationalization"><h3 class="title text-primary h4 text-secondary">Internationalization</h3>
+            
+            <p class="p">
+               The spelling and grammar checker currently supports three languages:
+            </p>
+            <ul class="ul">
+                <li class="li">
+                   <span class="keyword option">en</span> - English
+                </li>
+                <li class="li">
+                   <span class="keyword option">de</span> - German
+                </li>
+                <li class="li">
+                   <span class="keyword option">fr</span> - French
+                </li>
+            </ul>
+            <p class="p">
+               The language checked is based on the <code class="ph codeph">default.language</code> setting
+               of the DITA Open toolkit. This can be modified in the
+               <span class="ph filepath">lib/configuration.properties</span> file.
+            </p>
+            <p class="p">
+               Please note that error messages have <strong class="ph b">not</strong> been internationalized into
+               French and currently all error messages will be displayed in English.
+            </p>
+            <p class="p">
+               Sample lists of duplicated and mis-spelt words are available in all three
+               languages. Grammar and punctuation lists have only been supplied for <span class="keyword option">en</span>.
+            </p>
+            <p class="p">
+               Additional languages can be added by creating a new language folder and files
+               under <span class="ph filepath">cfg/dictionary</span>.
+            </p>
+        </section>
+        <section class="section" id="configuration__adding-new-mis-spellings-to-the-plug-in"><h3 class="title text-primary h4 text-secondary">Adding new mis-spellings to the plug-in</h3>
+            
+            <p class="p">
+               The list of misspelt words to check when spell-checking can be altered by
+               amending entries in the xml files under <span class="ph filepath">cfg/dictionary</span>.
+               The plug-in recognizes four types of errors:
+            </p>
+            <ul class="ul">
+                <li class="li">
+                   <code class="ph codeph">duplicates.xml</code> - Duplicated words.
+                </li>
+                <li class="li">
+                   <code class="ph codeph">grammar.xml</code> - Grammar errors (includes a ban on the use of
+                   contractions in formal text )
+                </li>
+                <li class="li">
+                   <code class="ph codeph">punctuation.xml</code> - Punctuation marks (includes a ban on smart
+                   quotes).
+                </li>
+                <li class="li">
+                   <code class="ph codeph">spelling.xml</code> - Spelling mistakes
+                </li>
+            </ul>
+            <p class="p">
+               Each entry takes the form of a pair:
+            </p>
+            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>entry</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>mistake</span><span class="ph token punctuation">&gt;</span></span>accessable<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>mistake</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>corrected</span><span class="ph token punctuation">&gt;</span></span>accessible<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>corrected</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>entry</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>entry</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>mistake</span><span class="ph token punctuation">&gt;</span></span>acident<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>mistake</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>corrected</span><span class="ph token punctuation">&gt;</span></span>accident<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>corrected</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>entry</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>entry</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>mistake</span><span class="ph token punctuation">&gt;</span></span>accidentaly<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>mistake</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>corrected</span><span class="ph token punctuation">&gt;</span></span>accidentally<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>corrected</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>entry</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        </section>
+        <section class="section" id="configuration__altering-the-severity-of-a-validator-rule"><h3 class="title text-primary h4 text-secondary">Altering the severity of a validator rule</h3>
+            
+            <p class="p">
+               The severity of a validator rule can be altered by amending entries in the
+               <span class="ph filepath">cfg/ruleset/default.xml</span> file The plug-in supports four
+               severity levels:
+            </p>
+            <ul class="ul">
+                <li class="li">
+                   <strong class="ph b">FATAL</strong> - Fatal rules will fail validation and cannot be overridden.
+                </li>
+                <li class="li">
+                   <strong class="ph b">ERROR</strong> - Error rules will fail validation. Errors can be overridden as
+                   described above.
+                </li>
+                <li class="li">
+                   <strong class="ph b">WARNING</strong> - Warning rules will display a warning on validation, but do not
+                   fail the validation. Warnings can also be individually overridden.
+                </li>
+                <li class="li">
+                   <strong class="ph b">INACTIVE</strong> - Inactive rules are not applied.
+                </li>
+            </ul>
+            <p class="p">
+               A custom ruleset file can be passed into the plug-in using the
+               <code class="ph codeph">text-rules.ruleset.file</code> parameter.
+            </p>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> text-rules-echo <span class="keyword parmname">--input</span> <span class="ph filepath">document.ditamap</span> --text-rules.ruleset.file<span class="ph token operator">=</span>PATH_TO_CUSTOM/ruleset.xml</code></pre>
+        </section>
+    </div>
+    <article class="topic nested2" aria-labelledby="ariaid-title7" id="ignoring-rules">
+    <h3 class="title text-primary" id="ariaid-title7">Ignoring Validator Rules</h3>
+    <div class="body">
+        <section class="section" id="ignoring-rules__removing-a-rule-globally"><h4 class="title text-primary h4 text-secondary">Removing a rule globally</h4>
+            
+            <p class="p">
+               Rules can be made inactive by altering the severity (see above). Alternatively a
+               rule can be commented out in the XSL configuration file.
+            </p>
+        </section>
+        <section class="section" id="ignoring-rules__ignoring-a-rule-throughout-a-document"><h4 class="title text-primary h4 text-secondary">Ignoring a rule throughout a document</h4>
+            
+            <p class="p">
+               Individual rules can be ignored by passing the <code class="ph codeph">args.validate.ignore.rules</code>
+               parameter to the command line. The value of the parameter should be a
+               comma-delimited list of each <code class="ph codeph">rule-id</code> to ignore.
+            </p>
+            <p class="p">
+               For example to ignore the <code class="ph codeph">latin-abbreviation</code> validation rule
+               within a document you would run:
+            </p>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> -f text-rules-echo <span class="keyword parmname">--input</span> <span class="ph filepath">document.ditamap</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--args.validate.ignore.rules</span><span class="ph token operator">=</span>latin-abbreviation</code></pre>
+        </section>
+        <section class="section" id="ignoring-rules__ignoring-a-specific-instance-of-a-rule"><h4 class="title text-primary h4 text-secondary">Ignoring a specific instance of a rule</h4>
+            
+            <p class="p">
+               Specific instances of a rule can be ignored by adding a comment within the <code class="ph codeph">*.dita</code>
+               file. The comment should start with <code class="ph codeph">ignore-rule</code> and needs to
+               be added at the location where the error is flagged.
+            </p>
+            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token comment">&lt;!--
+    This is an example of a spelling mistake
+--&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token comment">&lt;!-- ignore-rule:incorrect-spelling --&gt;</span>
+    I have deliberately misspelt the word accidentaly (sic) - it should be written with a double l.
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        </section>
+        <section class="section" id="ignoring-rules__ignoring-all-warningserrors-within-a-block-of-text"><h4 class="title text-primary h4 text-secondary">Ignoring all warnings/errors within a block of text</h4>
+            
+            <ul class="ul">
+                <li class="li">
+                    <p class="p">
+                       A block of DITA can be excluded from firing all rules at <strong class="ph b">WARNING</strong> level by
+                       adding the comment <code class="ph codeph">ignore-all-warnings</code> to the block.
+                    </p>
+                </li>
+                <li class="li">
+                    <p class="p">
+                       A block of DITA can be excluded from firing all rules at <strong class="ph b">ERROR</strong> level by
+                       adding the comment <code class="ph codeph">ignore-all-errors</code> to the block.
+                    </p>
+                </li>
+                <li class="li">
+                    <p class="p">
+                       Rules set at <strong class="ph b">FATAL</strong> level cannot be ignored.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </div>
+</article>
+</article>
+    <article class="topic nested1" aria-labelledby="ariaid-title8" id="error-messages">
+    <h2 class="title text-primary" id="ariaid-title8">Error Messages</h2>
+    <div class="body">
+        <section class="section" id="error-messages__sample-document"><h3 class="title text-primary h4 text-secondary">Sample Document</h3>
+            
+            <p class="p">
+               A sample document can be found within the plug-in which can used to test plug-in
+               rules. The document covers both positive and negative test cases. The sample
+               document contains valid DITA which can be built as an HTML or as a PDF document
+               - please use the <span class="keyword option">html</span> or <span class="keyword option">pdf</span> transform to
+               read the contents or examine the <code class="ph codeph">*.dita</code> files directly.
+            </p>
+            <p class="p">
+               A complete list of rules covered by the plug-in can be found below. The final <code class="keyword markupname xmlelement">&lt;chapters&gt;</code>
+               of the sample document contain a set of test DITA <code class="keyword markupname xmlelement">&lt;topics&gt;</code>,
+               each demonstrating a broken validation rule.
+            </p>
+            <p class="p">
+               The <code class="keyword markupname xmlelement">&lt;topic&gt;</code> files are sorted as follows:
+            </p>
+            <ul class="ul">
+                <li class="li">
+                   The base validation DITA-OT plugin (<code class="ph codeph">com.here.validate.svrl</code>) -
+                   this <code class="keyword markupname xmlelement">&lt;chapter&gt;</code> contains two common textual validation
+                   rules.
+                </li>
+                <li class="li">
+                   The text-rules DITA-OT plugin (<code class="ph codeph">com.here.validate.svrl.text-rules</code>)
+                   - This <code class="keyword markupname xmlelement">&lt;chapter&gt;</code> contains a set of English language
+                   spelling and grammar rules.
+                </li>
+            </ul>
+        </section>
+        <section class="section" id="error-messages__spell-checker-error-messages"><h3 class="title text-primary h4 text-secondary">Spell-checker Error Messages</h3>
+            
+            <p class="p">
+               The following table list the spell-checker error messages by message ID.
+            </p>
+            <table class="table align-middle"><caption></caption><colgroup><col style="width:23%"><col style="width:36%"><col style="width:39%"></colgroup><thead class="thead">
+                        <tr class="">
+                            <th class="entry align-left" id="error-messages__spell-checker-error-messages__entry__1">Message ID</th>
+                            <th class="entry align-left" id="error-messages__spell-checker-error-messages__entry__2">Message</th>
+                            <th class="entry align-left" id="error-messages__spell-checker-error-messages__entry__3">Corrective Action/Comment</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">a-followed-by-vowel</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">In the following text, change  to  where appropriate:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">In English, the general guideline is that the indefinite article in front of count nouns that begin with a vowel sound should be .</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">an-followed-by-consonant</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">In the following text, change  to  where appropriate:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">In English, the general guideline is that the indefinite article in front of count nouns that begin with a consonant sound should be .</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">blacklisted-word</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The word  is not allowed in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated word has been banned from use. Rewrite the phrase using alternatives.</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">duplicated-punctuation</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The punctuation mark  is duplicated in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated punctuation mark is duplicated. Delete the duplicated punctuation mark.</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">duplicated-words</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The word  is duplicated in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated word is duplicated. Delete the duplicated word..</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">incorrect-capitalization</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The word  is incorrectly capitalized in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated word is not capitalized correctly. Fix the capitalization.</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">incorrect-grammar</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The phrase  is grammatically incorrect in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated phrase does not make sense. Rewrite the phrase using the correct grammar.</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">incorrect-punctuation</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The punctuation mark  has been used incorrectly in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated punctuation mark is non-standard. Replace with a corrected punctuation mark.</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">incorrect-spelling</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The word  is a spelling mistake in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated word is not spelled correctly. Fix the spelling. It is assumed that documentation follows US English spelling conventions.</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">latin-abbreviation</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The accronym i.e or e.g has been used in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">Latin accronyms are difficult to understand. Consider rewriting the phrase using alternatives, such as "for example"</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">sentence-capitalization</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The run on sentence in the following text does not start with a capital letter</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated sentence is not punctuated correctly. Fix the punctuation.</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">split-inifinitive</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The phrase  is written using a split-infinitive in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated sentence includes a split-infinitive, which is considered poor grammatical style - consider rephrasing the sentence.</td>
+                        </tr>
+                        <tr class="">
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__1">where-not-were</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__2">The word  has been used to start a subordinate clause in the following text:</td>
+                            <td class="entry align-left" headers="error-messages__spell-checker-error-messages__entry__3">The indicated sentence does not make sense. Rewrite the phrase using the correct grammar.</td>
+                        </tr>
+                    </tbody></table>
+        </section>
+    </div>
+</article>
+</article></main></div><footer role="contentinfo"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
   <div class="container">
     <div class="row">
       <div class="col">
