@@ -203,7 +203,7 @@
     <h3 class="title text-primary" id="ariaid-title4">Automatic Translation Services</h3>
     <div class="body">
         <p class="p">
-           Several publically available <strong class="ph b">automatic translation</strong> cloud services are
+           Several publicly available <strong class="ph b">automatic translation</strong> cloud services are
            available for use, they typically offer a <em class="ph i">try-before-you-buy</em> option and
            generally offer sample access to the service for without cost. Upgrading to a
            paid version will be necessary when transforming larger documents.
@@ -480,7 +480,7 @@
                <code class="keyword markupname xmlelement">&lt;target&gt;</code> elements.
             </div>
             <p class="p">
-               2. to populate an exisiting XLIFF 1.2 File with auto-translated text:
+               2. to populate an existing XLIFF 1.2 File with auto-translated text:
             </p>
             <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xliff-translate</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> translate.xlf <span class="ph token punctuation">\</span>
@@ -575,7 +575,7 @@
             <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 6. </span>XLIFF 2.1 output</figcaption></figure>
 
             <p class="p">
-               4. to populate an exisiting XLIFF 2.1 File with auto-translated text:
+               4. to populate an existing XLIFF 2.1 File with auto-translated text:
             </p>
             <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xliff-translate</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> translate.xlf --translate.service<span class="ph token operator">=</span><span class="ph token punctuation">[</span>bing<span class="ph token operator">|</span>deepl<span class="ph token operator">|</span>watson<span class="ph token operator">|</span>yandex<span class="ph token punctuation">]</span> <span class="ph token punctuation">\</span>
@@ -585,7 +585,7 @@
                The XLIFF 2.1 File is auto-translated in place, with translated text as shown:
             </p>
             <div role="alert" class="note alert alert-info"><span class="note__title">Note:</span> 
-               Any <code class="keyword markupname xmlelement">&lt;segement&gt;</code> elements which are <code class="keyword markupname xmlatt">@state="final"</code>
+               Any <code class="keyword markupname xmlelement">&lt;segment&gt;</code> elements which are <code class="keyword markupname xmlatt">@state="final"</code>
                will not be re-translated.
             </div>
             <figure class="fig figure w-100 mw-100 p-3">
@@ -646,7 +646,7 @@
                content from the translation agency integrated into to the XLIFF. For XLIFF
                1.2, each <code class="keyword markupname xmlelement">&lt;trans-unit&gt;</code> should be marked <code class="keyword markupname xmlatt">@approved="yes"</code>
                when the <code class="keyword markupname xmlelement">&lt;target&gt;</code> element has been verified. Similarly
-               for XLIFF 2.1 each <code class="keyword markupname xmlelement">&lt;segement&gt;</code> should be marked as <code class="keyword markupname xmlatt">@state="final"</code>.
+               for XLIFF 2.1 each <code class="keyword markupname xmlelement">&lt;segment&gt;</code> should be marked as <code class="keyword markupname xmlatt">@state="final"</code>.
             </div>
         </section>
         <section class="section" id="usage__parameter-reference"><h3 class="title h4 text-secondary">Parameter Reference</h3>
@@ -689,7 +689,7 @@
                         </li>
                         <li class="li">
                            <span class="keyword option">dummy</span> - Avoids accessing a translation service, copies sources
-                           to target langauge directly without amendment.
+                           to target language directly without amendment.
                         </li>
                         <li class="li">
                            <span class="keyword option">watson</span> - Connects to the <strong class="ph b">IBM Cloud</strong> Translation service
