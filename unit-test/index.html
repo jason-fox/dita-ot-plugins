@@ -1,11 +1,11 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="abstract" content="This is a Unit Testing framework for the DITA Open Toolkit. This plug-in consists of seven DITA-OT transforms and an ANT library:"><meta name="description" content="This is a Unit Testing framework for the DITA Open Toolkit. This plug-in consists of seven DITA-OT transforms and an ANT library:"><meta name="keywords" content="XSL, coverage, unit-testing, plug-in, antro, installing, GitHub Actions, continuous integration, Travis CI, Coveralls, ANT"><title>Unit Test Plug-in</title><link rel="shortcut icon" href="../favicon/favicon.svg">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css">
 <link rel="stylesheet" type="text/css" href="../css/theme.css">
-<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" integrity="sha384-He3RckdFB2wffiHOcESa3sf4Ida+ni/fw9SSzAcfY2EPnU1zkK/sLUzw2C5Tyuhj" crossorigin="anonymous"></head><body id="unit-test-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy" data-bs-offset="10"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-menubar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to topic navigation</a></div></div><div class="bs-header bg-light"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous"></head><body id="unit-test-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy" data-bs-offset="10"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-menubar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to topic navigation</a></div></div><div class="bs-header bg-light"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
   <div class="container">
     <a class="navbar-brand" href="https://www.dita-ot.org/">
@@ -423,11 +423,16 @@
     <span class="ph token key atrule">runs-on</span><span class="ph token punctuation">:</span> ubuntu<span class="ph token punctuation">-</span>latest
     <span class="ph token key atrule">steps</span><span class="ph token punctuation">:</span>
       <span class="ph token punctuation">-</span> <span class="ph token key atrule">name</span><span class="ph token punctuation">:</span> Git checkout
-        <span class="ph token key atrule">uses</span><span class="ph token punctuation">:</span> actions/checkout@v2
+        <span class="ph token key atrule">uses</span><span class="ph token punctuation">:</span> actions/checkout@v3
       <span class="ph token punctuation">-</span> <span class="ph token key atrule">name</span><span class="ph token punctuation">:</span> Run DITA<span class="ph token punctuation">-</span>OT Unit Test
         <span class="ph token key atrule">uses</span><span class="ph token punctuation">:</span> jason<span class="ph token punctuation">-</span>fox/dita<span class="ph token punctuation">-</span>unit<span class="ph token punctuation">-</span>test<span class="ph token punctuation">-</span>action@master
         <span class="ph token key atrule">with</span><span class="ph token punctuation">:</span>
-          <span class="ph token key atrule">plugin</span><span class="ph token punctuation">:</span> <span class="ph token string">'com.oxygenxml.editlink'</span></code></pre>
+          <span class="ph token key atrule">plugin</span><span class="ph token punctuation">:</span> <span class="ph token string">'com.oxygenxml.editlink'</span>
+      <span class="ph token punctuation">-</span> <span class="ph token key atrule">uses</span><span class="ph token punctuation">:</span> actions/upload<span class="ph token punctuation">-</span>artifact@v3
+        <span class="ph token key atrule">if</span><span class="ph token punctuation">:</span> always()
+        <span class="ph token key atrule">with</span><span class="ph token punctuation">:</span>
+          <span class="ph token key atrule">name</span><span class="ph token punctuation">:</span> test<span class="ph token punctuation">-</span>results
+          <span class="ph token key atrule">path</span><span class="ph token punctuation">:</span> test<span class="ph token punctuation">-</span>results.html</code></pre>
         <ul class="ul">
             <li class="li">
                <span class="keyword parmname">plugin</span> - <strong class="ph b">Required</strong> The name of the DITA-OT plugin to
@@ -795,31 +800,31 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                Fail the test if the test output file does not match the expectation file.
             </p>
             <div><table class="table"><colgroup><col style="width:9%"><col style="width:63%"><col style="width:27%"></colgroup><thead class="thead">
-                        <tr class="">
+                        <tr>
                             <th class="entry align-left" id="api__compare-output__entry__1">Attribute</th>
                             <th class="entry align-left" id="api__compare-output__entry__2">Description</th>
                             <th class="entry align-left" id="api__compare-output__entry__3">Required</th>
                         </tr>
                     </thead><tbody class="tbody">
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__compare-output__entry__1">expectation</td>
                             <td class="entry align-left" headers="api__compare-output__entry__2">Location of the file that the output should match</td>
                                <td class="entry align-left" headers="api__compare-output__entry__3">No; defaults to <code class="ph codeph">expected.fo</code>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__compare-output__entry__1">os</td>
                             <td class="entry align-left" headers="api__compare-output__entry__2">Only make the comparison if the current operating system is of a given type</td>
                                <td class="entry align-left" headers="api__compare-output__entry__3">No; defaults to <code class="ph codeph">any</code>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__compare-output__entry__1">result</td>
                             <td class="entry align-left" headers="api__compare-output__entry__2">Location of the file output by the test</td>
                                <td class="entry align-left" headers="api__compare-output__entry__3">No; defaults to <code class="ph codeph">out/fragment.fo</code>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__compare-output__entry__1">suffix</td>
                             <td class="entry align-left" headers="api__compare-output__entry__2">File suffix used by the test expectation</td>
                                <td class="entry align-left" headers="api__compare-output__entry__3">No; defaults to <code class="ph codeph">.fo</code>
@@ -851,23 +856,23 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                Fail the test if the log from the test does not contain the given string.
             </p>
             <div><table class="table"><colgroup><col style="width:7%"><col style="width:63%"><col style="width:29%"></colgroup><thead class="thead">
-                        <tr class="">
+                        <tr>
                             <th class="entry align-left" id="api__contains-text__entry__1">Attribute</th>
                             <th class="entry align-left" id="api__contains-text__entry__2">Description</th>
                             <th class="entry align-left" id="api__contains-text__entry__3">Required</th>
                         </tr>
                     </thead><tbody class="tbody">
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__contains-text__entry__1">actual</td>
                             <td class="entry align-left" headers="api__contains-text__entry__2">The text actually output by the test</td>
                             <td class="entry align-left" headers="api__contains-text__entry__3">No; defaults to output from DITA-OT</td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__contains-text__entry__1">expected</td>
                             <td class="entry align-left" headers="api__contains-text__entry__2">The expected fragment of text</td>
                             <td class="entry align-left" headers="api__contains-text__entry__3">Yes</td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__contains-text__entry__1">os</td>
                             <td class="entry align-left" headers="api__contains-text__entry__2">Only make the comparison if the current operating system is of a given type</td>
                                <td class="entry align-left" headers="api__contains-text__entry__3">No; defaults to <code class="ph codeph">any</code>
@@ -894,13 +899,13 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                result was not as expected or took too long.
             </p>
             <div><table class="table"><colgroup><col style="width:7%"><col style="width:46%"><col style="width:47%"></colgroup><thead class="thead">
-                        <tr class="">
+                        <tr>
                             <th class="entry align-left" id="api__exec-html5__entry__1">Attribute</th>
                             <th class="entry align-left" id="api__exec-html5__entry__2">Description</th>
                             <th class="entry align-left" id="api__exec-html5__entry__3">Required</th>
                         </tr>
                     </thead><tbody class="tbody">
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-html5__entry__1">ditamap</td>
                                <td class="entry align-left" headers="api__exec-html5__entry__2">The DITA <code class="keyword markupname xmlelement">&lt;map&gt;</code> file
                                specifying which topics and other resources to use to create a document
@@ -908,24 +913,24 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                                <td class="entry align-left" headers="api__exec-html5__entry__3">No; defaults to <span class="ph filepath">document.ditamap</span>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-html5__entry__1">expectedresult</td>
                             <td class="entry align-left" headers="api__exec-html5__entry__2">The expected result when invoking the transform</td>
                                <td class="entry align-left" headers="api__exec-html5__entry__3">No; defaults to <code class="ph codeph">0</code> = success
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-html5__entry__1">maxwait</td>
                             <td class="entry align-left" headers="api__exec-html5__entry__2">The maximum time to create a document</td>
                             <td class="entry align-left" headers="api__exec-html5__entry__3">No; defaults to 100 seconds</td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-html5__entry__1">propertyfile</td>
                             <td class="entry align-left" headers="api__exec-html5__entry__2">The name of a file holding additional properties</td>
                                <td class="entry align-left" headers="api__exec-html5__entry__3">No; defaults to <span class="ph filepath">test.properties</span>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-html5__entry__1">transtype</td>
                             <td class="entry align-left" headers="api__exec-html5__entry__2">The transtype to invoke when creating the document</td>
                                <td class="entry align-left" headers="api__exec-html5__entry__3">No; this can be <code class="ph codeph">html5</code> or
@@ -945,13 +950,13 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                Execute the PDF DITA-OT transform in verbose mode.
             </p>
             <div><table class="table"><colgroup><col style="width:7%"><col style="width:47%"><col style="width:45%"></colgroup><thead class="thead">
-                        <tr class="">
+                        <tr>
                             <th class="entry align-left" id="api__exec-pdf__entry__1">Attribute</th>
                             <th class="entry align-left" id="api__exec-pdf__entry__2">Description</th>
                             <th class="entry align-left" id="api__exec-pdf__entry__3">Required</th>
                         </tr>
                     </thead><tbody class="tbody">
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-pdf__entry__1">ditamap</td>
                                <td class="entry align-left" headers="api__exec-pdf__entry__2">The DITA <code class="keyword markupname xmlelement">&lt;map&gt;</code> file
                                specifying which topics and other resources to use to create a document
@@ -959,24 +964,24 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                                <td class="entry align-left" headers="api__exec-pdf__entry__3">No; defaults to <span class="ph filepath">document.ditamap</span>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-pdf__entry__1">expectedresult</td>
                             <td class="entry align-left" headers="api__exec-pdf__entry__2">The expected result when invoking the transform</td>
                                <td class="entry align-left" headers="api__exec-pdf__entry__3">No; defaults to <code class="ph codeph">0</code> = success
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-pdf__entry__1">maxwait</td>
                             <td class="entry align-left" headers="api__exec-pdf__entry__2">The maximum time to create a document</td>
                             <td class="entry align-left" headers="api__exec-pdf__entry__3">No; defaults to 100 seconds</td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-pdf__entry__1">propertyfile</td>
                             <td class="entry align-left" headers="api__exec-pdf__entry__2">The name of a file holding additional properties</td>
                                <td class="entry align-left" headers="api__exec-pdf__entry__3">No; defaults to <span class="ph filepath">test.properties</span>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-pdf__entry__1">transtype</td>
                             <td class="entry align-left" headers="api__exec-pdf__entry__2">The transtype to invoke when creating the document</td>
                                <td class="entry align-left" headers="api__exec-pdf__entry__3">No; this can be <code class="ph codeph">pdf2</code> or any
@@ -998,13 +1003,13 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                fail if the result was not as expected or took too long.
             </p>
             <div><table class="table"><colgroup><col style="width:7%"><col style="width:47%"><col style="width:45%"></colgroup><thead class="thead">
-                        <tr class="">
+                        <tr>
                             <th class="entry align-left" id="api__exec-svrl__entry__1">Attribute</th>
                             <th class="entry align-left" id="api__exec-svrl__entry__2">Description</th>
                             <th class="entry align-left" id="api__exec-svrl__entry__3">Required</th>
                         </tr>
                     </thead><tbody class="tbody">
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-svrl__entry__1">ditamap</td>
                                <td class="entry align-left" headers="api__exec-svrl__entry__2">The DITA <code class="keyword markupname xmlelement">&lt;map&gt;</code> file
                                specifying which topics and other resources to use to create a document
@@ -1012,24 +1017,24 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                                <td class="entry align-left" headers="api__exec-svrl__entry__3">No; defaults to <span class="ph filepath">document.ditamap</span>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-svrl__entry__1">expectedresult</td>
                             <td class="entry align-left" headers="api__exec-svrl__entry__2">The expected result when invoking the transform</td>
                                <td class="entry align-left" headers="api__exec-svrl__entry__3">No; defaults to <code class="ph codeph">0</code> = success
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-svrl__entry__1">maxwait</td>
                             <td class="entry align-left" headers="api__exec-svrl__entry__2">The maximum time to create a document</td>
                             <td class="entry align-left" headers="api__exec-svrl__entry__3">No; defaults to 100 seconds</td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-svrl__entry__1">propertyfile</td>
                             <td class="entry align-left" headers="api__exec-svrl__entry__2">The name of a file holding additional properties</td>
                                <td class="entry align-left" headers="api__exec-svrl__entry__3">No; defaults to <span class="ph filepath">test.properties</span>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-svrl__entry__1">transtype</td>
                             <td class="entry align-left" headers="api__exec-svrl__entry__2">The transtype to invoke when creating the document</td>
                                <td class="entry align-left" headers="api__exec-svrl__entry__3">No; this can be <code class="ph codeph">svrl</code> or any
@@ -1054,13 +1059,13 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                the result was not as expected or took too long.
             </p>
             <div><table class="table"><colgroup><col style="width:7%"><col style="width:47%"><col style="width:45%"></colgroup><thead class="thead">
-                        <tr class="">
+                        <tr>
                             <th class="entry align-left" id="api__exec-transtype__entry__1">Attribute</th>
                             <th class="entry align-left" id="api__exec-transtype__entry__2">Description</th>
                             <th class="entry align-left" id="api__exec-transtype__entry__3">Required</th>
                         </tr>
                     </thead><tbody class="tbody">
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-transtype__entry__1">ditamap</td>
                                <td class="entry align-left" headers="api__exec-transtype__entry__2">The DITA <code class="keyword markupname xmlelement">&lt;map&gt;</code> file
                                specifying which topics and other resources to use to create a document
@@ -1068,24 +1073,24 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                                <td class="entry align-left" headers="api__exec-transtype__entry__3">No; defaults to <span class="ph filepath">document.ditamap</span>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-transtype__entry__1">expectedresult</td>
                             <td class="entry align-left" headers="api__exec-transtype__entry__2">The expected result when invoking the transform</td>
                                <td class="entry align-left" headers="api__exec-transtype__entry__3">No; defaults to <code class="ph codeph">0</code> = success
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-transtype__entry__1">maxwait</td>
                             <td class="entry align-left" headers="api__exec-transtype__entry__2">The maximum time to create a document</td>
                             <td class="entry align-left" headers="api__exec-transtype__entry__3">No; defaults to 100 seconds</td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-transtype__entry__1">propertyfile</td>
                             <td class="entry align-left" headers="api__exec-transtype__entry__2">The name of a file holding additional properties</td>
                                <td class="entry align-left" headers="api__exec-transtype__entry__3">No; defaults to <span class="ph filepath">test.properties</span>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__exec-transtype__entry__1">transtype</td>
                             <td class="entry align-left" headers="api__exec-transtype__entry__2">The transtype to invoke when creating the document</td>
                                <td class="entry align-left" headers="api__exec-transtype__entry__3">No; this can be <code class="ph codeph">svrl</code> or any
@@ -1110,24 +1115,24 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                element (which corresponds to a DITA topic) for further examination.
             </p>
             <div><table class="table"><colgroup><col style="width:8%"><col style="width:59%"><col style="width:32%"></colgroup><thead class="thead">
-                        <tr class="">
+                        <tr>
                             <th class="entry align-left" id="api__get-html-article__entry__1">Attribute</th>
                             <th class="entry align-left" id="api__get-html-article__entry__2">Description</th>
                             <th class="entry align-left" id="api__get-html-article__entry__3">Required</th>
                         </tr>
                     </thead><tbody class="tbody">
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__get-html-article__entry__1">dir</td>
                             <td class="entry align-left" headers="api__get-html-article__entry__2">Location of the files output by the test</td>
                                <td class="entry align-left" headers="api__get-html-article__entry__3">No; defaults to <code class="ph codeph">out/html</code>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__get-html-article__entry__1">from</td>
                             <td class="entry align-left" headers="api__get-html-article__entry__2">the name of the file to extract an HTML fragment from</td>
                             <td class="entry align-left" headers="api__get-html-article__entry__3">Yes</td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__get-html-article__entry__1">to</td>
                             <td class="entry align-left" headers="api__get-html-article__entry__2">Location of the output file holding the fragment of HTML to test</td>
                                <td class="entry align-left" headers="api__get-html-article__entry__3">No; defaults to <code class="ph codeph">out/fragment.html</code>
@@ -1148,19 +1153,19 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                remove colors, fonts and excess attributes.
             </p>
             <div><table class="table"><colgroup><col style="width:8%"><col style="width:60%"><col style="width:31%"></colgroup><thead class="thead">
-                        <tr class="">
+                        <tr>
                             <th class="entry align-left" id="api__get-pdf-article__entry__1">Attribute</th>
                             <th class="entry align-left" id="api__get-pdf-article__entry__2">Description</th>
                             <th class="entry align-left" id="api__get-pdf-article__entry__3">Required</th>
                         </tr>
                     </thead><tbody class="tbody">
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__get-pdf-article__entry__1">from</td>
                             <td class="entry align-left" headers="api__get-pdf-article__entry__2">Location of the file to extract an HTML fragment from</td>
                                <td class="entry align-left" headers="api__get-pdf-article__entry__3">No; defaults to <code class="ph codeph">out/topic.fo</code>
                             </td>
                         </tr>
-                        <tr class="">
+                        <tr>
                             <td class="entry align-left" headers="api__get-pdf-article__entry__1">to</td>
                             <td class="entry align-left" headers="api__get-pdf-article__entry__2">Location of the output file holding the fragment of FOP to test</td>
                                <td class="entry align-left" headers="api__get-pdf-article__entry__3">No; defaults to <code class="ph codeph">out/fragment.fo</code>
