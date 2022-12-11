@@ -1,0 +1,156 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="abstract" content="This is a DITA-OT Plug-in used to add open graph meta data to DITA HTML output."><meta name="description" content="This is a DITA-OT Plug-in used to add open graph meta data to DITA HTML output."><meta name="keywords" content="Facebook, Twitter, Open Graph, plug-in, installing"><meta property="og:type" content="website"><meta property="og:url" content="https://jason-fox.github.io/dita-ot-plugins/open-graph/index.html"><meta name="og:title" content="Extended CSS Plug-in"><meta property="og:description" content="This is a DITA-OT Plug-in used to add open graph meta data to DITA HTML output."><meta property="og:image" content="https://jason-fox.github.io/dita-ot-plugins/open-graph.svg"><meta name="twitter:title" content="Extended CSS Plug-in"><meta name="twitter:description" content="This is a DITA-OT Plug-in used to add open graph meta data to DITA HTML output."><meta property="twitter:url" content="https://jason-fox.github.io/dita-ot-plugins/open-graph/index.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://jason-fox.github.io/dita-ot-plugins/open-graph.svg"><title>Extended CSS Plug-in</title><link rel="shortcut icon" href="../favicon/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous"></head><body id="extended-css-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy" data-bs-offset="10"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-menubar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to topic navigation</a></div></div><div class="bs-header bg-light"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+  <div class="container">
+    <a class="navbar-brand" href="https://www.dita-ot.org/">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.083 2.083 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.922 1.922 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0zM5 4v2.5A2.5 2.5 0 0 0 7.5 9h1A2.5 2.5 0 0 0 11 6.5V4H5z"/>
+      </svg>
+      <span class="align-middle">Plugins for DITA Open Toolkit</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/dev">Docs</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/download">Download</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/plugins">Plugins</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></header><div class="container"><nav class="navbar navbar-light bg-light px-3" role="navigation" id="bs-menubar-nav"><ul class="nav nav-pills" role="menubar"><li class="nav-item" role="none"><a role="menuitem" class="nav-link" href="../index.html">DITA-OT Plugins</a></li><li class="nav-item dropdown" role="none"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">Plug-Ins</a><ul class="dropdown-menu" role="menu"><li role="none"><a role="menuitem" class="dropdown-item" href="../audiobook/index.html">Audiobook Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../extend.css/index.html">Extended CSS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../favicon/index.html">Favicon Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../javadoc/index.html">Javadoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pandoc/index.html">Pandoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../passthrough/index.html">Passthrough Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../postman/index.html">Postman Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../prismjs/index.html">Prism-JS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../readthedocs/index.html">ReadTheDocs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../splash/index.html">Splash Screen Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../swagger/index.html">Swagger Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../unit-test/index.html">Unit Test Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl/index.html">DITA Validator Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../watermark/index.html">Watermark Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../open-graph/index.html">Extended CSS Plug-in</a></li></ul></li></ul></nav></div></div><div class="bs-container" id="content"><nav class="bs-sidebar-nav" role="navigation" id="bs-sidebar-nav"><nav class="nav nav-pills flex-column navbar-light bg-light" id="bs-scrollspy">
+    <a class="my-1 nav-link" href="#ariaid-title1">Extended CSS Plug-in</a>
+    
+    
+    
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title2">Install</a>
+    
+    
+</nav>
+    <nav class="nav nav-pills flex-column ps-3">
+    <a class="my-1 nav-link" href="#ariaid-title3">Usage</a>
+    
+</nav>
+</nav></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span>Plug-Ins</span></li><li class="breadcrumb-item active" aria-current="page">Extended CSS Plug-in</li></ol></nav>
+    <h1 class="title text-primary" id="ariaid-title1">Extended CSS Plug-in</h1>
+    
+    
+    <div class="body"><div class="abstract">
+        <p class="shortdesc text-muted lead">
+           This is a DITA-OT Plug-in used to add open graph meta data to DITA HTML output.
+        </p>
+        <p class="p">
+           The Open Graph Protocol is a defined system to convey the contents of webpages on SNS.
+            By setting Open Graph properly, a specified <code class="ph codeph">image</code> <code class="ph codeph">title</code>  
+            and <code class="ph codeph">description</code> is displayed when a web content is shared.
+        </p>
+    </div></div>
+    <article class="topic nested1" aria-labelledby="ariaid-title2" id="install">
+    <h2 class="title text-primary" id="ariaid-title2">Install</h2>
+    
+    <div class="body">
+        <p class="p">
+           This is a standalone plug-in without dependencies which can be installed from
+           the command line.
+        </p>
+        <p class="p">
+           Run the plug-in installation commands:
+        </p>
+        <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/jason.fox.open-graph/archive/master.zip</code></pre>
+        <p class="p">
+           The <span class="keyword cmdname">dita</span> command line tool requires no additional configuration.
+        </p>
+    </div>
+</article>
+    <article class="topic nested1" aria-labelledby="ariaid-title3" id="usage">
+    <h2 class="title text-primary" id="ariaid-title3">Usage</h2>
+    <div class="body">
+        <section class="section" id="usage__adding-open-graph"><h3 class="title h4 text-secondary">Adding Open Graph Meta Data to HTML output</h3>
+            
+            <p class="p">
+               To run, use any <span class="keyword option">html</span> transform and add the<span class="keyword parmname">open-graph.url</span> parameter. The new <span class="keyword parmname">open-graph.*</span> parameters follow the existing syntax used by DITA-OT for CSS files.
+            </p>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">html5</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--output</span> out <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> PATH_TO_DITAMAP <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--open-graph.url</span><span class="ph token operator">=</span>WEBSITE_URL</code></pre>
+            <p class="p">
+               To refer to an existing file hosted on a server, add the<span class="keyword parmname">open-graph.image</span>
+            </p>
+            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">html5</span> <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--output</span> out <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--input</span> PATH_TO_DITAMAP <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--open-graph.url</span><span class="ph token operator">=</span>WEBSITE_URL <span class="ph token punctuation">\</span>
+    <span class="keyword parmname">--open-graph.image</span><span class="ph token operator">=</span><span class="ph filepath">https://example.com/static/assets/image.svg</span></code></pre>
+
+        </section>
+        <section class="section" id="usage__parameter-reference"><h3 class="title h4 text-secondary">Parameter Reference</h3>
+            
+               
+               
+               
+               
+               
+               
+               
+               
+            <ul class="ul">
+                <li class="li">
+                   <span class="keyword parmname">open-graph.image.root</span> - File Location of the Open Graph Image file.      
+                </li>
+                 <li class="li">
+                   <span class="keyword parmname">open-graph.image</span> - Relative path to an image for Open Graph and Twitter.
+                </li>
+                 <li class="li">
+                   <span class="keyword parmname">open-graph.image.alt</span> - Optional image description for Open Graph and Twitter.
+                </li>
+                 <li class="li">
+                   <span class="keyword parmname">open-graph.site.name</span> - Optional Site Name for Open Graph.
+                </li>
+                 <li class="li">
+                   <span class="keyword parmname">open-graph.title</span> - Fallback page title for Open Graph and Twitter.
+                </li>
+                 <li class="li">
+                   <span class="keyword parmname">open-graph.description</span> -  Fallback page description for Open Graph and Twitter.
+                </li>
+                 <li class="li">
+                   <span class="keyword parmname">open-graph.url</span> - Website URL for Open Graph and Twitter.
+                </li>
+                 <li class="li">
+                   <span class="keyword parmname">twitter.site</span> - he Twitter <code class="ph codeph">@username</code> the page should be attributed to.
+                </li>
+            </ul>
+        </section>
+    </div>
+</article>
+</article></main></div><footer role="contentinfo"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- Social Media -->
+        <p class="text-center p-3">
+          <!-- Linkedin -->
+          <a class="btn btn-primary btn-floating m-1 text-white" style="background-color: #0082ca" href="https://www.linkedin.com/in/jason-fox-8a79563/" role="button"><i class="bi bi-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn btn-primary btn-floating m-1 text-white" style="background-color: #333333" href="https://github.com/jason-fox/" role="button"><i class="bi bi-github"></i></a>
+        </p>
+      </div>
+      <div>
+        <!-- Copyright -->
+        <p class="text-muted p-3">
+          <small>
+            © 2021 <b>Jason Fox</b>
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><!-- Footer --></footer></body></html>
