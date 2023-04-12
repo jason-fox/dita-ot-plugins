@@ -23,6 +23,50 @@
         <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/download">Download</a></li>
         <li class="nav-item"><a class="nav-link" href="https://www.dita-ot.org/plugins">Plugins</a></li>
       </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item d-flex align-items-center">
+        <span class="nav-link py-2 pe-2"><i class="bi bi-search"></i></span>
+        <form class="bd-search position-relative me-auto" onsubmit="return search(this);">
+        <input type="search" class="form-control ds-input" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." dir="auto" style="position: relative; vertical-align: top;">
+        </form>
+      </li>
+       <!--
+        This is a dark/light color theme toggler
+        It requires JavaScript to function.
+      -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show" id="bd-theme" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+            <span class="bs-toggler-light">
+              <i class="bi bi-brightness-high-fill"></i>
+            </span>
+            <span class="bs-toggler-dark"><i class="bi bi-moon-stars-fill"></i></span>
+            <span class="bs-toggler-auto"><i class="bi bi-circle-half"></i>
+          </span>
+
+            <span class="d-lg-none ms-2">Toggle theme</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme" style="--bs-dropdown-min-width: 6rem;" data-bs-popper="static">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                <i class="bi bi-brightness-high-fill"></i>
+                <span class="ms-2"> Light </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                <i class="bi bi-moon-stars-fill"></i>
+                <span class="ms-2"> Dark </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+                <i class="bi bi-circle-half"></i>
+                <span class="ms-2"> Auto </span>
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </nav></header><div class="container"><nav class="navbar navbar-light bg-light px-3" role="navigation" id="bs-menubar-nav"><ul class="nav nav-pills" role="menubar"><li class="nav-item" role="none"><a role="menuitem" class="nav-link" href="../index.html">DITA-OT Plugins</a></li><li class="nav-item dropdown" role="none"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">Plug-Ins</a><ul class="dropdown-menu" role="menu"><li role="none"><a role="menuitem" class="dropdown-item" href="../audiobook/index.html">Audiobook Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../extend.css/index.html">Extended CSS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../favicon/index.html">Favicon Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../javadoc/index.html">Javadoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pandoc/index.html">Pandoc Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../passthrough/index.html">Passthrough Plugin</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../postman/index.html">Postman Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../prismjs/index.html">Prism-JS Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../readthedocs/index.html">ReadTheDocs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../splash/index.html">Splash Screen Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../swagger/index.html">Swagger Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../unit-test/index.html">Unit Test Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl/index.html">DITA Validator Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../watermark/index.html">Watermark Plug-in</a></li><li role="none"><a role="menuitem" class="dropdown-item" href="../open-graph/index.html">Extended CSS Plug-in</a></li></ul></li></ul></nav></div></div><div class="bs-container" id="content"><nav class="bs-sidebar-nav" role="navigation" id="bs-sidebar-nav"><nav class="nav nav-pills flex-column navbar-light bg-light" id="bs-scrollspy">
