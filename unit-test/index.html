@@ -1,11 +1,11 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2023"><meta name="generator" content="DITA-OT"><meta name="abstract" content="This is a Unit Testing framework for the DITA Open Toolkit. This plug-in consists of seven DITA-OT transforms and an ANT library:"><meta name="description" content="This is a Unit Testing framework for the DITA Open Toolkit. This plug-in consists of seven DITA-OT transforms and an ANT library:"><meta name="keywords" content="XSL, coverage, unit-testing, plug-in, antro, installing, GitHub Actions, continuous integration, Travis CI, Coveralls, ANT"><meta property="og:type" content="website"><meta property="og:url" content="https://jason-fox.github.io/dita-ot-plugins/unit-test/index.html"><meta property="og:title" content="Unit Test Plug-in"><meta property="og:description" content="This is a Unit Testing framework for the DITA Open Toolkit. This plug-in consists of seven DITA-OT transforms and an ANT library: Because of the nature of unit"><meta property="og:image" content="https://jason-fox.github.io/dita-ot-plugins/open-graph.svg"><meta name="twitter:title" content="Unit Test Plug-in"><meta name="twitter:description" content="This is a Unit Testing framework for the DITA Open Toolkit. This plug-in consists of seven DITA-OT transforms and an ANT library: Because of the nature of unit"><meta property="twitter:url" content="https://jason-fox.github.io/dita-ot-plugins/unit-test/index.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://jason-fox.github.io/dita-ot-plugins/open-graph.svg"><title>Unit Test Plug-in</title><script src="../js/lunr-client.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><link rel="shortcut icon" href="../favicon/favicon.svg">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css">
-<link rel="stylesheet" type="text/css" href="../css/theme.css">
-<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" integrity="sha384-Ay26V7L8bsJTsX9Sxclnvsn+hkdiwRnrjZJXqKmkIDobPgIIWBOVguEcQQLDuhfN" crossorigin="anonymous"></head><body id="unit-test-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy"><div class="visually-hidden-focusable overflow-hidden p-2 bg-body-tertiary"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" type="text/css" href="../css/theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous"></head><body id="unit-test-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy"><div class="visually-hidden-focusable overflow-hidden p-2 bg-body-tertiary"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
   <div class="container">
     <!-- This shows the menu on mobile -->
@@ -76,7 +76,7 @@
       </ul>
     </div>
   </div>
-</nav></header></div><div class="bs-container container-xxl bd-gutter mt-3 my-md-4" id="content"><div class="bs-sidebar"><div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel" aria-modal="true" role="dialog"><div class="offcanvas-header border-bottom"><h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">DITA Bootstrap</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button></div><div class="offcanvas-body"><nav role="navigation" id="bs-sidebar-nav" class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../index.html">DITA-OT Plugins</a></div></li><li><div class="d-flex flex-row"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 active" data-bs-target="#menu-collapse-d26304e19" aria-expanded="true" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-1 active" data-bs-target="#menu-collapse-d26304e19" aria-expanded="true" aria-current="true">Plug-Ins</span></div><div id="menu-collapse-d26304e19" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../audiobook/index.html">Audiobook Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../extend.css/index.html">Extended CSS Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../favicon/index.html">Favicon Plugin</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../doxygen/index.html">Doxygen Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../javadoc/index.html">Javadoc Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../pandoc/index.html">Pandoc Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../passthrough/index.html">Passthrough Plugin</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../postman/index.html">Postman Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../prismjs/index.html">Prism-JS Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../open-graph/index.html">Open Graph Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../readthedocs/index.html">ReadTheDocs Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../splash/index.html">Splash Screen Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../swagger/index.html">Swagger Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3 active" href="../unit-test/index.html">Unit Test Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../validate.svrl/index.html">DITA Validator Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../watermark/index.html">Watermark Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../open-graph/index.html">Open Graph Plug-in</a></div></li></ul></div></li></ul></nav></div></div></div><main role="main" class="bs-main me-3"><article role="article" class="bs-content" aria-labelledby="ariaid-title1"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span>Plug-Ins</span></li><li class="breadcrumb-item active" aria-current="page">Unit Test Plug-in</li></ol></nav>
+</nav></header></div><div class="bs-container container-xxl bd-gutter mt-3 my-md-4" id="content"><div class="overflow-y-auto bs-sidebar"><div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel" aria-modal="true" role="dialog"><div class="offcanvas-header border-bottom"><h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">DITA Bootstrap</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button></div><div class="offcanvas-body flex-column h-100"><nav class="d-flex flex-align-start flex-column h-100 overflow-y-auto" role="navigation" id="bs-sidebar-nav"><div class="overflow-y-auto"><div class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../index.html">DITA-OT Plugins</a></div></li><li><div class="d-flex flex-row"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0 active" data-bs-target="#menu-collapse-d26304e19" aria-expanded="true" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-1 active" data-bs-target="#menu-collapse-d26304e19" aria-expanded="true" aria-current="true">Plug-Ins</span></div><div id="menu-collapse-d26304e19" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../audiobook/index.html">Audiobook Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../extend.css/index.html">Extended CSS Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../favicon/index.html">Favicon Plugin</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../doxygen/index.html">Doxygen Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../javadoc/index.html">Javadoc Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../pandoc/index.html">Pandoc Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../passthrough/index.html">Passthrough Plugin</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../postman/index.html">Postman Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../prismjs/index.html">Prism-JS Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../open-graph/index.html">Open Graph Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../readthedocs/index.html">ReadTheDocs Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../splash/index.html">Splash Screen Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../swagger/index.html">Swagger Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3 active" href="../unit-test/index.html">Unit Test Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../validate.svrl/index.html">DITA Validator Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../watermark/index.html">Watermark Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../open-graph/index.html">Open Graph Plug-in</a></div></li></ul></div></li></ul></div></div></nav></div></div></div><main role="main" class="bs-main me-3"><article role="article" class="bs-content" aria-labelledby="ariaid-title1"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span>Plug-Ins</span></li><li class="breadcrumb-item active" aria-current="page">Unit Test Plug-in</li></ol></nav>
     <h1 class="title text-primary" id="ariaid-title1">Unit Test Plug-in</h1>
     
     
@@ -155,7 +155,7 @@
         <p class="p">
            Run the plug-in installation command:
         </p>
-        <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/fox.jason.unit-test/archive/master.zip</code></pre>
+        <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/fox.jason.unit-test/archive/master.zip</code></pre>
         <p class="p">
            The <span class="keyword cmdname">dita</span> command line tool requires no additional configuration.
         </p>
@@ -175,7 +175,7 @@
             <p class="p">
                To run, use the <span class="keyword option">unit-test</span> transform.
             </p>
-            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">unit-test</span> <span class="ph token punctuation">\</span>
+            <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">unit-test</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--output</span> out <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> PATH_TO_UNIT_TESTS</code></pre>
             <p class="p">
@@ -211,12 +211,12 @@
                coverage information. A copy of each <code class="ph codeph">*.xsl</code> file is also saved
                with the <code class="ph codeph">*.orig</code> suffix.
             </p>
-            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xsl-instrument</span> <span class="ph token punctuation">\</span>
+            <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xsl-instrument</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> PATH_TO_PLUG_IN</code></pre>
             <p class="p">
                To revert back to the original files just run the de-instrument transform as shown:
             </p>
-            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xsl-deinstrument</span> <span class="ph token punctuation">\</span>
+            <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xsl-deinstrument</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> PATH_TO_PLUG_IN</code></pre>
             <p class="p">
                Once a Plug-In has been <strong class="ph b">instrumented</strong> the test suite should contain a
@@ -224,7 +224,7 @@
                decision points. To obtain coverage information, use the <span class="keyword option">unit-test</span>
                transform as stated previously:
             </p>
-            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">unit-test</span> <span class="ph token punctuation">\</span>
+            <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">unit-test</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> PATH_TO_UNIT_TESTS</code></pre>
             <ul class="ul">
                 <li class="li">
@@ -245,7 +245,7 @@
                can be run directly from the command line by running the default target within
                that test. This can be followed by direct invocation of the coverage report.
             </p>
-            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">ant</span> <span class="keyword parmname">-f</span> PATH_TO_PLUGIN/test/TEST_NAME/build.xml
+            <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">ant</span> <span class="keyword parmname">-f</span> PATH_TO_PLUGIN/test/TEST_NAME/build.xml
 <span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">xsl-report</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> PATH_TO_PLUGIN</code></pre>
         </section>
@@ -270,7 +270,7 @@
                file which holds a series of tokens representing all potential output values.
                To obtain coverage information, use the <span class="keyword option">token-report</span> transform.
             </p>
-            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">token-report</span> <span class="ph token punctuation">\</span>
+            <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">token-report</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> PATH_TO_UNIT_TESTS</code></pre>
             <p class="p">
                Once the command has run, a coverage report is created.
@@ -319,7 +319,7 @@
                To obtain profile information, use the <span class="keyword option">antro</span> transform and
                supply an additional test transtype.
             </p>
-            <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">antro</span><span class="keyword parmname">--test.transform</span><span class="ph token operator">=</span>TRANSFORM_TO_PROFILE <span class="ph token punctuation">\</span>
+            <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">antro</span><span class="keyword parmname">--test.transform</span><span class="ph token operator">=</span>TRANSFORM_TO_PROFILE <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> document.ditamap</code></pre>
             <p class="p">
                A profiler JSON file will be generated.
@@ -333,7 +333,7 @@
                DITA-OT plug-ins, and should point to a real file, but is not used for this
                transform.
             </p>
-            <pre class="pre codeblock border rounded"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">antro-ui</span> \
+            <pre class="pre codeblock alert alert-secondary"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">antro-ui</span> \
      <span class="keyword parmname">--input</span> document.ditamap</code></pre>
             <p class="p">
                The Antro UI is the displayed, load the profiler json file from to display a bar
@@ -409,7 +409,7 @@
            directory under the root of the repository along with the <code class="ph codeph">ci.yml</code>
            in the <span class="ph filepath">.github/workflows</span> directory.
         </p>
-        <pre class="pre codeblock border rounded language-yaml scale-80"><code><span class="ph token key atrule">name</span><span class="ph token punctuation">:</span> CI
+        <pre class="pre codeblock alert alert-secondary language-yaml scale-80"><code><span class="ph token key atrule">name</span><span class="ph token punctuation">:</span> CI
 <span class="ph token key atrule">'on'</span><span class="ph token punctuation">:</span>
   <span class="ph token key atrule">push</span><span class="ph token punctuation">:</span>
     <span class="ph token key atrule">branches</span><span class="ph token punctuation">:</span>
@@ -478,7 +478,7 @@
            For example to test against DITA-OT 3.1 and DITA-OT 2.5.4, use the following
            <code class="ph codeph">.travis.yml</code>:
         </p>
-        <pre class="pre codeblock border rounded language-yml scale-80"><code><span class="ph token key atrule">language</span><span class="ph token punctuation">:</span> java
+        <pre class="pre codeblock alert alert-secondary language-yml scale-80"><code><span class="ph token key atrule">language</span><span class="ph token punctuation">:</span> java
 <span class="ph token key atrule">jdk</span><span class="ph token punctuation">:</span>
     <span class="ph token punctuation">-</span> oraclejdk8
 <span class="ph token key atrule">env</span><span class="ph token punctuation">:</span>
@@ -520,7 +520,7 @@
         <p class="p">
            The output will appear within the log as follows:
         </p>
-        <pre class="pre codeblock border rounded language-none scale-80"><code>[UNIT002I][INFO] Running tests for 'PLUGIN-NAME'
+        <pre class="pre codeblock alert alert-secondary language-none scale-80"><code>[UNIT002I][INFO] Running tests for 'PLUGIN-NAME'
   [antunit] Build File: /tmp/temp20180420185923919/unit-test/fixtures/PLUGIN-NAME/fixture.xml
   [antunit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 31.063 sec
   [antunit] Target: test:    Expect that ...  took 7.202 sec
@@ -558,7 +558,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
            file will be created along with the test results and a coverage report. This
            can be forwarded to Coveralls using the standard maven plug-in as shown:
         </p>
-        <pre class="pre codeblock border rounded language-yaml scale-80"><code><span class="ph token key atrule">language</span><span class="ph token punctuation">:</span> java
+        <pre class="pre codeblock alert alert-secondary language-yaml scale-80"><code><span class="ph token key atrule">language</span><span class="ph token punctuation">:</span> java
 <span class="ph token key atrule">jdk</span><span class="ph token punctuation">:</span>
     <span class="ph token punctuation">-</span> oraclejdk8
 <span class="ph token key atrule">env</span><span class="ph token punctuation">:</span>
@@ -586,7 +586,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
         <p class="p">
            The unit tests are organized in the following manner:
         </p>
-        <pre class="pre codeblock border rounded language-none scale-80"><code>├── test-suite-A
+        <pre class="pre codeblock alert alert-secondary language-none scale-80"><code>├── test-suite-A
 │   └── test
 │       ├── unit-test-1
 │       ├── unit-test-2
@@ -612,7 +612,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
            adding a <span class="ph filepath">test</span> directory to each plug-in and invoking the
            tests as shown:
         </p>
-        <pre class="pre codeblock border rounded language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">unit-test</span> <span class="ph token punctuation">\</span>
+        <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--format</span> <span class="keyword option">unit-test</span> <span class="ph token punctuation">\</span>
      <span class="keyword parmname">--input</span> ./plugins</code></pre>
     </div>
     <article class="topic nested2" aria-labelledby="ariaid-title9" id="test-suite-files">
@@ -625,7 +625,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                At the root of the tests lies a <code class="ph codeph">bootstrap.xml</code> file which
                references the <code class="ph codeph">antlib.xml</code> library as shown:
             </p>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>project</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>bootstrap.unit-test<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>project</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>bootstrap.unit-test<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>dirname</span> <span class="ph token attr-name">property</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>test.root.dir<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">file</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>${ant.file.bootstrap.unit-test}/..<span class="ph token punctuation">"</span></span> <span class="ph token punctuation">/&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>property</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>dita.dir<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">location</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>PATH_TO_DITA_OT<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>typedef</span> <span class="ph token attr-name">file</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>${dita.dir}/plugins/fox.jason.unit-test/resource/antlib.xml<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
@@ -654,7 +654,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                which should be present in a test-suite’s outputs. For example, PDF tests
                should cover all possible fop element and attributes.
             </p>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>package</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>org.dita.pdf2<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>package</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>org.dita.pdf2<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lines</span><span class="ph token punctuation">&gt;</span></span>
     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>line</span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>plain-text<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>font-family="STANDARD"<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>line</span><span class="ph token punctuation">&gt;</span></span>
     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>line</span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>monospace-text<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>font-family="MONOSPACE"<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>line</span><span class="ph token punctuation">&gt;</span></span>
@@ -674,7 +674,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                An XSL coverage file consists of a list of XSL elements which are present within
                a plug-in. This file is generated by the <span class="keyword option">xsl-instrument</span> transform.
             </p>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>package</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>fox.jason.unit-test<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>package</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>fox.jason.unit-test<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>classes</span><span class="ph token punctuation">&gt;</span></span>
     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>class</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>xsl/order<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">filename</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>xsl/order.xsl<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
       <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lines</span><span class="ph token punctuation">&gt;</span></span>
@@ -731,7 +731,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
         <p class="p">
            Each unit test is organized in the following manner:
         </p>
-        <pre class="pre codeblock border rounded language-none scale-80"><code>├── build.xml
+        <pre class="pre codeblock alert alert-secondary language-none scale-80"><code>├── build.xml
 ├── document.ditamap
 ├── expected.html
 ├── test.properties (optional)
@@ -763,7 +763,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
            the <span class="ph filepath">bootstrap.xml</span> file as shown. The <code class="ph codeph">description</code>
            is used within the test report.
         </p>
-        <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>project</span> <span class="ph token attr-name">basedir</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>.<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">default</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>unit-test<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+        <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>project</span> <span class="ph token attr-name">basedir</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>.<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">default</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>unit-test<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>import</span> <span class="ph token attr-name">file</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>../../bootstrap.xml<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>description</span><span class="ph token punctuation">&gt;</span></span>
     Body text should be displayed in the standard font
@@ -831,17 +831,17 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                             </td>
                         </tr>
                     </tbody></table></div>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>compare-output</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>compare-output</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                compares the file <code class="ph codeph">out/fragment.fo</code> with <code class="ph codeph">expected.fo</code>
                and fails if they do not match.
             </p>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>compare-output</span> <span class="ph token attr-name">suffix</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>.html<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>compare-output</span> <span class="ph token attr-name">suffix</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>.html<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                compares the file <code class="ph codeph">out/fragment.html</code> with <code class="ph codeph">expected.html</code>
                and fails if they do not match.
             </p>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>compare-output</span> <span class="ph token attr-name">suffix</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>.svrl<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">expectation</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>expected.svrl.win<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">os</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>windows<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>compare-output</span> <span class="ph token attr-name">suffix</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>.svrl<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">expectation</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>expected.svrl.win<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">os</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>windows<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                if running on a Windows system, compares the file <code class="ph codeph">out/fragment.svrl</code>
                with <code class="ph codeph">expected.svrl.win</code> and fails if they do not match.
@@ -879,11 +879,11 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                             </td>
                         </tr>
                     </tbody></table></div>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>contains-text</span> <span class="ph token attr-name">expected</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>Lorem Ipsum<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>contains-text</span> <span class="ph token attr-name">expected</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>Lorem Ipsum<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                compares the output of DITA-OT and fails if the text "Lorem Ipsum" cannot be found.
             </p>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>contains-text</span> <span class="ph token attr-name">expected</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>This is running on Windows<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">os</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>windows<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>contains-text</span> <span class="ph token attr-name">expected</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>This is running on Windows<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">os</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>windows<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                if running on a Windows system, compares the output of DITA-OT and fails if the
                text "This is running on Windows" cannot be found.
@@ -938,7 +938,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                             </td>
                         </tr>
                     </tbody></table></div>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-html5</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>custom-html<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-html5</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>custom-html<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                runs DITA-OT using the <code class="ph codeph">custom-html</code> HTML transtype. the output
                will be placed in the <code class="ph codeph">/out/html</code> directory.
@@ -989,7 +989,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                             </td>
                         </tr>
                     </tbody></table></div>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-pdf</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>custom-pdf<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-pdf</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>custom-pdf<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                runs DITA-OT using the <code class="ph codeph">custom-pdf</code> PDF transtype. <code class="ph codeph">topic.fo</code>
                and <code class="ph codeph">document.pdf</code> will be placed in the <code class="ph codeph">/out</code>
@@ -1042,11 +1042,11 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                             </td>
                         </tr>
                     </tbody></table></div>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-svrl</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>text-rules<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-svrl</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>text-rules<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                runs DITA-OT using the <code class="ph codeph">text-rules</code> SVRL transtype.
             </p>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-svrl</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>svrl-echo<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">expectedresult</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-svrl</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>svrl-echo<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">expectedresult</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                runs DITA-OT using the <code class="ph codeph">svrl-echo</code> SVRL transtype - the
                invocation is expected to fail with validation errors.
@@ -1098,11 +1098,11 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                             </td>
                         </tr>
                     </tbody></table></div>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-svrl</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>custom<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-svrl</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>custom<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                runs DITA-OT using the <code class="ph codeph">custom</code> transtype.
             </p>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-svrl</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>custom<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">expectedresult</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>exec-svrl</span> <span class="ph token attr-name">transtype</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>custom<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">expectedresult</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                runs DITA-OT using the <code class="ph codeph">custom</code> SVRL transtype - the invocation
                is expected to fail.
@@ -1139,7 +1139,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                             </td>
                         </tr>
                     </tbody></table></div>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>get-html-article</span> <span class="ph token attr-name">from</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>topics/body-text.html<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>get-html-article</span> <span class="ph token attr-name">from</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>topics/body-text.html<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                creates a file called <code class="ph codeph">fragment.html</code> holding the <code class="keyword markupname xmlelement">&lt;article&gt;</code>
                element from the <code class="ph codeph">topics/body-text.html</code> file.
@@ -1172,7 +1172,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
                             </td>
                         </tr>
                     </tbody></table></div>
-            <pre class="pre codeblock border rounded language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>get-pdf-article</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>get-pdf-article</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
             <p class="p">
                creates a file called <code class="ph codeph">fragment.fo</code> holding the final <code class="keyword markupname xmlelement">&lt;fo.flow&gt;</code>
                element from the <code class="ph codeph">topics.fo</code> file.
@@ -1231,7 +1231,7 @@ The command "dita-ot/bin/dita --input dita-ot/plugins/PLUGIN-NAME -f unit-test -
     
     
 </ul>
-</ul></nav></div></main></div><script language="javascript" src="../js/popovers.js"></script><script language="javascript" src="../js/dark-mode-toggler.js"></script><footer role="contentinfo"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+</ul></nav></div></main></div><script language="javascript" src="../js/popovers.js"></script><script language="javascript" src="../js/dark-mode-toggler.js"></script><footer role="contentinfo" class="mt-3 border-top bg-primary-subtle"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
   <div class="container">
     <div class="row">
       <div class="col">
