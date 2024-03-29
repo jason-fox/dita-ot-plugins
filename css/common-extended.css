@@ -104,10 +104,6 @@
   overflow: auto;
 }
 
-.bs-header {
-  z-index: 1020;
-}
-
 .search-box [type='search']::placeholder {
   color: var(--bs-link-color) !important;
 }
@@ -147,11 +143,6 @@
   min-width: 1px;
 }
 
-.bs-header {
-  position: sticky;
-  top: 0;
-}
-
 .bs-fixed-sidetoc {
   height: calc(100vh - 10rem);
 }
@@ -162,7 +153,6 @@
 
 @media (max-width: 991.98px) {
   .bs-main {
-    max-width: 760px;
     margin-inline: auto;
   }
   .bs-fixed-sidetoc {
