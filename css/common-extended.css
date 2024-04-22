@@ -105,12 +105,13 @@
 }
 
 .search-box [type='search']::placeholder {
-  color: rgba(var(--bs-body-color-rgb), 0.3);
+  color: var(--bs-link-color) !important;
 }
 
 .search-box:hover,
 .search-box:focus-visible {
-  outline: -webkit-focus-ring-color auto 1px;
+  outline: 2px solid;
+  outline-color: var(--bs-link-hover-color);
 }
 
 /*!
