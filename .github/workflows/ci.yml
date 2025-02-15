@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Build Bootstrap ⚙️
         uses: dita-ot/dita-ot-action@master
         with:
@@ -28,7 +28,7 @@ jobs:
             fox.jason.open-graph
           project: .github/dita-ot/html.xml
       - name: Deploy HTML 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@4.7.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
@@ -46,7 +46,7 @@ jobs:
             fox.jason.prismjs
           project: .github/dita-ot/pdf.xml
       - name: Upload PDF 📚
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: dita-artifact
           path: 'out/pdf'
