@@ -6,9 +6,19 @@
         <!-- Social Media -->
         <p class="text-center p-3">
           <!-- Linkedin -->
-          <a class="btn btn-primary btn-floating m-1 text-white" style="background-color: #0082ca" href="https://www.linkedin.com/in/jason-fox-8a79563/" role="button"><i class="bi bi-linkedin"></i></a>
+          <a
+            class="btn btn-primary btn-floating m-1 text-white"
+            style="background-color: #0082ca"
+            href="https://www.linkedin.com/in/jason-fox-8a79563/"
+            role="button"
+          ><i class="bi bi-linkedin"/></a>
           <!-- Github -->
-          <a class="btn btn-primary btn-floating m-1 text-white" style="background-color: #333333" href="https://github.com/jason-fox/" role="button"><i class="bi bi-github"></i></a>
+          <a
+            class="btn btn-primary btn-floating m-1 text-white"
+            style="background-color: #333333"
+            href="https://github.com/jason-fox/"
+            role="button"
+          ><i class="bi bi-github"/></a>
         </p>
       </div>
       <div>
