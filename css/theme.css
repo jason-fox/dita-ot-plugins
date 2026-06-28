@@ -1,4 +1,9 @@
 /* override part of the Bootstrap color scheme */
 :root {
   --bs-code-color: var(--bs-secondary-color);
+  --bs-primary: rgb(78, 151, 96);
+  --bs-primary-bg-subtle: #101e13;
+  --bs-primary-border-subtle: #2f5b3a;
+  --bs-primary-rgb: 78, 151, 96;
+  --bs-primary-text-emphasis: #95c1a0
 }
