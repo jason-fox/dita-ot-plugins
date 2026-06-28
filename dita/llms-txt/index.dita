@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="llms-txt-plug-in">
+    <title><filepath>llms.txt</filepath> Plug-in</title>
+    <abstract>
+        <shortdesc>
+           This is a DITA-OT Plug-in which creates a set of output files suitable for use with LLMs (Large Language Models), following the  
+           <xref href="https://llmstxt.org/" format="html" scope="external">llms.txt</xref>
+           specification. 
+        </shortdesc>
+        <p>
+           The transform is an extension of the existing DITA-OT
+           markdown plug-in (<codeph>org.lwdita</codeph>) and creates the following:
+        </p>
+        <ul>
+            <li>
+                A well-formatted <filepath
+        >llms.txt</filepath> file containing the TOC of the map, automatically enriched with <xmlelement
+        >shortdesc</xmlelement> elements.
+
+            </li>
+             <li>
+                A consolidated <filepath
+        >llms-full.txt</filepath> containing the full concatenated markdown content of all the referenced topics in map order.
+            </li>
+        </ul>
+    </abstract>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>llms.txt</indexterm>
+                <indexterm>plug-in</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body/>
+    <topic id="examples">
+        <title>Example</title>
+        <body>
+            <fig>
+                <title>Sample <filepath>llms.txt</filepath> File</title>
+                <codeblock scale="80" outputclass="markdown"><coderef href="./src/llms.txt"/></codeblock>
+            </fig>
+        </body>
+    </topic>
+    <topic id="install" conref="./install.dita#install">
+        <title/>
+        <body/>
+    </topic>
+    <topic id="usage" conref="./usage.dita#usage">
+        <title/>
+        <body/>
+    </topic>
+</topic>

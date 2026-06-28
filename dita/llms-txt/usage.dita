@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="usage">
+    <title>Usage</title>
+    <abstract>
+        <shortdesc>
+           Like any other transform, when invoked directly, the <option>llms.txt</option>
+           transform requires an input document.
+        </shortdesc>
+    </abstract>
+    <body>
+        <section id="creating-llms-txt-from-dita-content">
+            <title>Creating llms.txt files from DITA content</title>
+            <p>
+               To create the files for <filepath>llms.txt</filepath>, use the <option>llms.txt</option>
+               transform and set the <parmname>--input</parmname> parameter to point to a
+               <codeph>*.ditamap</codeph> file:
+            </p>
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>llms.txt</option> \
+    <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
+    <parmname>--args.llms.template</parmname> <filepath>/sample/header.txt</filepath> </codeblock>
+        </section>
+        <section id="parameter-reference">
+            <title>Parameter Reference</title>
+               <indexterm><parmname>args.llms.txt.template</parmname>
+            </indexterm>
+            <ul>
+                <li>
+                   <parmname>args.llms.txt.template</parmname> -  Specifies a template <codeph
+          >.txt</codeph> file to prepend to the generated <filepath
+          >llms.txt</filepath> file (typically contains the project header description).
+                </li>
+            </ul>
+        </section>
+    </body>
+</topic>

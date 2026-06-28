@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <title><codeph>llms.txt</codeph> Plug-in</title>
+    <frontmatter>
+        <bookabstract format="md" href="index.md"/>
+        <booklists>
+            <toc/>
+        </booklists>
+    </frontmatter>
+    <chapter>
+        <topicmeta>
+            <navtitle><codeph>llms.txt</codeph></navtitle>
+        </topicmeta>
+        <topicref format="md" href="topics/examples.md"/>
+        <topicref format="md" href="topics/features-full.md"/>
+        <topicref format="md" href="topics/basic-usage.md"/>
+    </chapter>
+</bookmap>
