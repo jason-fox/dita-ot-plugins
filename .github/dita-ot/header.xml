@@ -43,7 +43,7 @@
         <li class="nav-item d-flex align-items-center">
           <form class="position-relative me-auto search-box rounded">
             <div class="input-group">
-              <span class="input-group-text bg-primary-subtle">
+              <span class="input-group-text bg-secondary-subtle">
                 <i class="bi bi-search"/>
               </span>
               <input
