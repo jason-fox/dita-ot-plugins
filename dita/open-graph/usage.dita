@@ -6,7 +6,7 @@
         <section id="adding-open-graph">
             <title>Adding Open Graph Meta Data to HTML output</title>
             <p>
-               To run, use any <option>html</option> transform and add the<parmname
+               To run, use any <option>html</option> transform and add the <parmname
         >open-graph.url</parmname> parameter. The new <parmname
         >open-graph.*</parmname> parameters follow the existing syntax used by DITA-OT for CSS files.
             </p>
@@ -16,7 +16,7 @@
     <parmname>--input</parmname> PATH_TO_DITAMAP \
     <parmname>--open-graph.url</parmname>=WEBSITE_URL</codeblock>
             <p>
-               To refer to an existing file hosted on a server, add the<parmname>open-graph.image</parmname>
+               To refer to an existing file hosted on a server, add the <parmname>open-graph.image</parmname>
             </p>
             <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
         >--format</parmname> <option>html5</option> \
