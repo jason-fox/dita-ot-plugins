@@ -14,7 +14,8 @@
         <p>
            The plugin extends standard PDF processing:
         </p>
-        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>pdf</option> \
+        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option
+      >pdf</option> \
      <parmname>--output</parmname> out \
      <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
      <parmname>--pdf.watermark</parmname>=<option>draft|review|final</option></codeblock>

@@ -34,7 +34,12 @@
         </div>
         <fig>
             <title>Coveralls</title>
-            <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.unit-test/coveralls.png" scope="external">
+            <image
+        outputclass="img-thumbnail"
+        scalefit="yes"
+        href="https://jason-fox.github.io/fox.jason.unit-test/coveralls.png"
+        scope="external"
+      >
                 <alt/>
             </image>
         </fig>
@@ -51,15 +56,20 @@ env:
     - DITA_OT=3.1
     - DITA_OT=2.5.4
 before_script:
-    - <cmdname>zip</cmdname> <parmname>-r</parmname> PLUGIN-NAME.zip . <parmname>-x</parmname> *.zip* *.git/* *temp/* *out/*
-    - <cmdname>curl</cmdname> <parmname>-LO</parmname> https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT/dita-ot-$DITA_OT.zip
+    - <cmdname>zip</cmdname> <parmname>-r</parmname> PLUGIN-NAME.zip . <parmname
+      >-x</parmname> *.zip* *.git/* *temp/* *out/*
+    - <cmdname>curl</cmdname> <parmname
+      >-LO</parmname> https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT/dita-ot-$DITA_OT.zip
     - <cmdname>unzip</cmdname> <parmname>-q</parmname> dita-ot-$DITA_OT.zip
     - <cmdname>chmod</cmdname> <parmname>+x</parmname> dita-ot-$DITA_OT/bin/dita
-    - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname>install</parmname> https://github.com/jason-fox/fox.jason.unit-test/archive/master.zip
+    - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname
+      >install</parmname> https://github.com/jason-fox/fox.jason.unit-test/archive/master.zip
     - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname>install</parmname> PLUGIN-NAME.zip
-    - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname>--input</parmname> dita-ot-$DITA_OT/plugins/PLUGIN-NAME -f <option>xsl-instrument</option>
+    - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname
+      >--input</parmname> dita-ot-$DITA_OT/plugins/PLUGIN-NAME -f <option>xsl-instrument</option>
 script:
-    - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname>--input</parmname> dita-ot-$DITA_OT/plugins/PLUGIN-NAME -f <option>unit-test</option><parmname
+    - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname
+      >--input</parmname> dita-ot-$DITA_OT/plugins/PLUGIN-NAME -f <option>unit-test</option><parmname
       >--output</parmname> . <parmname>-v</parmname>
 after_success:
     - <cmdname>cp</cmdname> dita-ot-$DITA_OT/plugins/fox.jason.unit-test/resource/pom.xml pom.xml

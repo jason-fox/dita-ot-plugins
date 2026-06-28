@@ -52,12 +52,14 @@
                    transform.
                 </p>
                 <p>
-                   In general, the structure of a ReadTheDocs project is more limited than a typical <codeph>*.ditamap</codeph>,
+                   In general, the structure of a ReadTheDocs project is more limited than a typical <codeph
+          >*.ditamap</codeph>,
                    for example, an <codeph>index.md</codeph> summary file is should be found root
                    of the project - this is the equivalent of a <xmlelement>bookabstract</xmlelement>.
                    For the <codeph>readthedocs</codeph> transform, the opening topic of the
                    ditamap will be used as the <codeph>index.md</codeph> if no <xmlelement>bookabstract</xmlelement>
-                   is found. Also <xmlelement>chapter</xmlelement> divisions should be given a <xmlelement>navtitle</xmlelement>
+                   is found. Also <xmlelement>chapter</xmlelement> divisions should be given a <xmlelement
+          >navtitle</xmlelement>
                    only and no <xmlatt>href</xmlatt> if they are to be recognized as such in the
                    ReadTheDocs navigation sidebar.
                 </p>

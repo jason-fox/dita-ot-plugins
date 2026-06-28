@@ -32,7 +32,8 @@
            adding a <filepath>test</filepath> directory to each plug-in and invoking the
            tests as shown:
         </p>
-        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>unit-test</option> \
+        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option
+      >unit-test</option> \
      <parmname>--input</parmname> ./plugins</codeblock>
     </body>
     <topic id="test-suite-files" conref="./test-suite-files.dita#test-suite-files">

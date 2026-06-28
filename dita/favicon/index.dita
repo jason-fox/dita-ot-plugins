@@ -13,7 +13,12 @@
            displaying the icon on the associated browser tab.
         </p>
         <fig>
-            <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.favicon/favicon.png" scope="external">
+            <image
+        outputclass="img-thumbnail"
+        scalefit="yes"
+        href="https://jason-fox.github.io/fox.jason.favicon/favicon.png"
+        scope="external"
+      >
                 <alt/>
             </image>
         </fig>

@@ -4,8 +4,16 @@
     <title>Javadoc Plug-in</title>
     <abstract>
         <shortdesc>
-           This is a <xref href="https://www.dita-ot.org/plugins" format="html" scope="external">DITA-OT Plug-in</xref> used to auto-create valid DITA-based
-           <xref href="https://docs.oracle.com/javase/1.5.0/docs/guide/javadoc/index.html" format="html" scope="external">Javadoc</xref> documentation. The initial source
+           This is a <xref
+        href="https://www.dita-ot.org/plugins"
+        format="html"
+        scope="external"
+      >DITA-OT Plug-in</xref> used to auto-create valid DITA-based
+           <xref
+        href="https://docs.oracle.com/javase/1.5.0/docs/guide/javadoc/index.html"
+        format="html"
+        scope="external"
+      >Javadoc</xref> documentation. The initial source
            of the documentation can be generated directly using the <xref
         href="https://github.com/markusbernhardt/xml-doclet"
         format="html"
@@ -51,7 +59,11 @@
             </p>
             <p>
                A library exists to preprocess Javadoc comments from Java source code to a XML
-               document. It can be downloaded <xref href="https://github.com/markusbernhardt/xml-doclet" format="html" scope="external">here</xref>.
+               document. It can be downloaded <xref
+          href="https://github.com/markusbernhardt/xml-doclet"
+          format="html"
+          scope="external"
+        >here</xref>.
                This DITA-OT plugin processes a JavaDoc XML and the converts it to DITA
                allowing the generation of PDF API documentation.
             </p>
@@ -74,7 +86,12 @@ public interface Effector {
             </fig>
             <fig>
                 <title>Javadoc PDF Output</title>
-                <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.passthrough.javadoc/javadoc-output.png" scope="external">
+                <image
+          outputclass="img-thumbnail"
+          scalefit="yes"
+          href="https://jason-fox.github.io/fox.jason.passthrough.javadoc/javadoc-output.png"
+          scope="external"
+        >
                     <alt/>
                 </image>
             </fig>

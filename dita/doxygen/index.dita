@@ -4,7 +4,11 @@
     <title>Doxygen Plug-in</title>
     <abstract>
         <shortdesc>
-           This is a <xref href="https://www.dita-ot.org/plugins" format="html" scope="external">DITA-OT Plug-in</xref>  used to auto-create valid DITA-based Doxygen documentation.
+           This is a <xref
+        href="https://www.dita-ot.org/plugins"
+        format="html"
+        scope="external"
+      >DITA-OT Plug-in</xref>  used to auto-create valid DITA-based Doxygen documentation.
            The initial source of the documentation can be generated directly using the
            <xref
         href="http://www.doxygen.nl/manual/customize.html#xmlgenerator"
@@ -75,7 +79,12 @@
             </fig>
             <fig>
                 <title>Doxygen PDF Output</title>
-                <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.passthrough.doxygen/mountainbike.png" scope="external">
+                <image
+          outputclass="img-thumbnail"
+          scalefit="yes"
+          href="https://jason-fox.github.io/fox.jason.passthrough.doxygen/mountainbike.png"
+          scope="external"
+        >
                     <alt/>
                 </image>
             </fig>

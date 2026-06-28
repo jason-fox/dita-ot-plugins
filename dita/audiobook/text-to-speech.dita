@@ -39,7 +39,11 @@
             </p>
             <ol>
                 <li>
-                   Go to the <xref href="https://cloud.ibm.com/catalog/services/text-to-speech" format="html" scope="external">Text to Speech</xref> External link icon page in
+                   Go to the <xref
+            href="https://cloud.ibm.com/catalog/services/text-to-speech"
+            format="html"
+            scope="external"
+          >Text to Speech</xref> External link icon page in
                    the IBM Cloud Catalog.
                 </li>
                 <li>
@@ -54,8 +58,11 @@
             </p>
             <ol>
                 <li>
-                   From the <xref href="https://cloud.ibm.com/dashboard/apps" format="html" scope="external">IBM Cloud dashboard</xref> External link icon, click on your <b
-          >Text to Speech</b>
+                   From the <xref
+            href="https://cloud.ibm.com/dashboard/apps"
+            format="html"
+            scope="external"
+          >IBM Cloud dashboard</xref> External link icon, click on your <b>Text to Speech</b>
                    service instance to go to the <b>Text to Speech</b> service dashboard page.
                 </li>
                 <li>
@@ -101,7 +108,11 @@
             </p>
             <ol>
                 <li>
-                   Go to Try <xref href="https://azure.microsoft.com/try/cognitive-services/" format="html" scope="external">Cognitive Services</xref>
+                   Go to Try <xref
+            href="https://azure.microsoft.com/try/cognitive-services/"
+            format="html"
+            scope="external"
+          >Cognitive Services</xref>
                 </li>
                 <li>
                    Select the Speech APIs tab.

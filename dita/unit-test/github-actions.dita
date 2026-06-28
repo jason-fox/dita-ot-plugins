@@ -25,13 +25,22 @@
                 <p>
                    <term>GitHub Actions</term> are a CI/CD environment integrated directly with
                    GitHub. More information about how to set up GitHub Actions can be found on the
-                   <xref href="https://docs.github.com/en/free-pro-team@latest/actions" format="html" scope="external">GitHub website</xref>.
+                   <xref
+            href="https://docs.github.com/en/free-pro-team@latest/actions"
+            format="html"
+            scope="external"
+          >GitHub website</xref>.
                 </p>
             </div>
         </div>
         <fig>
             <title>GitHub Actions</title>
-            <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.unit-test/github-actions.png" scope="external">
+            <image
+        outputclass="img-thumbnail"
+        scalefit="yes"
+        href="https://jason-fox.github.io/fox.jason.unit-test/github-actions.png"
+        scope="external"
+      >
                 <alt/>
             </image>
         </fig>

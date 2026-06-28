@@ -13,7 +13,8 @@
                read the contents or examine the <codeph>*.dita</codeph> files directly.
             </p>
             <p>
-               A complete list of rules covered by the plug-in can be found below. The final <xmlelement>chapters</xmlelement>
+               A complete list of rules covered by the plug-in can be found below. The final <xmlelement
+        >chapters</xmlelement>
                of the sample document contain a set of test DITA <xmlelement>topics</xmlelement>,
                each demonstrating a broken validation rule.
             </p>
@@ -53,7 +54,10 @@
                     <tbody>
                         <row>
                             <entry colname="col1" align="left">a-followed-by-vowel</entry>
-                            <entry colname="col2" align="left">In the following text, change  to  where appropriate:</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >In the following text, change  to  where appropriate:</entry>
                             <entry
                 colname="col3"
                 align="left"
@@ -61,7 +65,10 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">an-followed-by-consonant</entry>
-                            <entry colname="col2" align="left">In the following text, change  to  where appropriate:</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >In the following text, change  to  where appropriate:</entry>
                             <entry
                 colname="col3"
                 align="left"
@@ -70,36 +77,69 @@
                         <row>
                             <entry colname="col1" align="left">blacklisted-word</entry>
                             <entry colname="col2" align="left">The word  is not allowed in the following text:</entry>
-                            <entry colname="col3" align="left">The indicated word has been banned from use. Rewrite the phrase using alternatives.</entry>
+                            <entry
+                colname="col3"
+                align="left"
+              >The indicated word has been banned from use. Rewrite the phrase using alternatives.</entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">duplicated-punctuation</entry>
-                            <entry colname="col2" align="left">The punctuation mark  is duplicated in the following text:</entry>
-                            <entry colname="col3" align="left">The indicated punctuation mark is duplicated. Delete the duplicated punctuation mark.</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The punctuation mark  is duplicated in the following text:</entry>
+                            <entry
+                colname="col3"
+                align="left"
+              >The indicated punctuation mark is duplicated. Delete the duplicated punctuation mark.</entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">duplicated-words</entry>
                             <entry colname="col2" align="left">The word  is duplicated in the following text:</entry>
-                            <entry colname="col3" align="left">The indicated word is duplicated. Delete the duplicated word..</entry>
+                            <entry
+                colname="col3"
+                align="left"
+              >The indicated word is duplicated. Delete the duplicated word..</entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">incorrect-capitalization</entry>
-                            <entry colname="col2" align="left">The word  is incorrectly capitalized in the following text:</entry>
-                            <entry colname="col3" align="left">The indicated word is not capitalized correctly. Fix the capitalization.</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The word  is incorrectly capitalized in the following text:</entry>
+                            <entry
+                colname="col3"
+                align="left"
+              >The indicated word is not capitalized correctly. Fix the capitalization.</entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">incorrect-grammar</entry>
-                            <entry colname="col2" align="left">The phrase  is grammatically incorrect in the following text:</entry>
-                            <entry colname="col3" align="left">The indicated phrase does not make sense. Rewrite the phrase using the correct grammar.</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The phrase  is grammatically incorrect in the following text:</entry>
+                            <entry
+                colname="col3"
+                align="left"
+              >The indicated phrase does not make sense. Rewrite the phrase using the correct grammar.</entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">incorrect-punctuation</entry>
-                            <entry colname="col2" align="left">The punctuation mark  has been used incorrectly in the following text:</entry>
-                            <entry colname="col3" align="left">The indicated punctuation mark is non-standard. Replace with a corrected punctuation mark.</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The punctuation mark  has been used incorrectly in the following text:</entry>
+                            <entry
+                colname="col3"
+                align="left"
+              >The indicated punctuation mark is non-standard. Replace with a corrected punctuation mark.</entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">incorrect-spelling</entry>
-                            <entry colname="col2" align="left">The word  is a spelling mistake in the following text:</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The word  is a spelling mistake in the following text:</entry>
                             <entry
                 colname="col3"
                 align="left"
@@ -107,7 +147,10 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">latin-abbreviation</entry>
-                            <entry colname="col2" align="left">The acronym i.e or e.g has been used in the following text:</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The acronym i.e or e.g has been used in the following text:</entry>
                             <entry
                 colname="col3"
                 align="left"
@@ -115,12 +158,21 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">sentence-capitalization</entry>
-                            <entry colname="col2" align="left">The run on sentence in the following text does not start with a capital letter</entry>
-                            <entry colname="col3" align="left">The indicated sentence is not punctuated correctly. Fix the punctuation.</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The run on sentence in the following text does not start with a capital letter</entry>
+                            <entry
+                colname="col3"
+                align="left"
+              >The indicated sentence is not punctuated correctly. Fix the punctuation.</entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">split-infinitive</entry>
-                            <entry colname="col2" align="left">The phrase  is written using a split-infinitive in the following text:</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The phrase  is written using a split-infinitive in the following text:</entry>
                             <entry
                 colname="col3"
                 align="left"
@@ -128,8 +180,14 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">where-not-were</entry>
-                            <entry colname="col2" align="left">The word  has been used to start a subordinate clause in the following text:</entry>
-                            <entry colname="col3" align="left">The indicated sentence does not make sense. Rewrite the phrase using the correct grammar.</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The word  has been used to start a subordinate clause in the following text:</entry>
+                            <entry
+                colname="col3"
+                align="left"
+              >The indicated sentence does not make sense. Rewrite the phrase using the correct grammar.</entry>
                         </row>
                     </tbody>
                 </tgroup>

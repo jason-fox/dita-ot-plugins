@@ -9,26 +9,37 @@
                The plugin is pre-configured to run as part of the <parmname>depend.preprocess.pre</parmname>
                build step. Running any ordinary build job will display a random cat photo.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>pdf</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>pdf</option> \
     <parmname>--output</parmname> out \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
         </section>
         <section id="displaying-a-random-cat-photo">
             <title>Displaying a random Cat Photo</title>
             <p>
-               To display a random photo from the <xref href="https://thecatapi.com/" format="html" scope="external">Cat API</xref>, use the <option>cats</option>
+               To display a random photo from the <xref
+          href="https://thecatapi.com/"
+          format="html"
+          scope="external"
+        >Cat API</xref>, use the <option>cats</option>
                transform.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>cats</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>cats</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
         </section>
         <section id="displaying-a-random-xkcd-comic-strip">
             <title>Displaying a random XKCD Comic Strip</title>
             <p>
-               To display a random XKCD comic strip from <xref href="https://xkcd.com/" format="html" scope="external">xkcd.com</xref>, use the <option>xkcd</option>
+               To display a random XKCD comic strip from <xref
+          href="https://xkcd.com/"
+          format="html"
+          scope="external"
+        >xkcd.com</xref>, use the <option>xkcd</option>
                transform.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>xkcd</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>xkcd</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
         </section>
         <section id="displaying-a-random-anime-character">
@@ -41,16 +52,22 @@
         >thisanimedoesnotexist.ai</xref>, use the <option>anime</option>
                transform.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>anime</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>anime</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
         </section>
         <section id="displaying-a-random-placeholder-image">
             <title>Displaying a random placeholder image</title>
             <p>
-               To display a random placeholder image from <xref href="https://picsum.photos/" format="html" scope="external">picsum.photos</xref>, use the <option>picsum</option>
+               To display a random placeholder image from <xref
+          href="https://picsum.photos/"
+          format="html"
+          scope="external"
+        >picsum.photos</xref>, use the <option>picsum</option>
                transform.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>picsum</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>picsum</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
         </section>
     </body>

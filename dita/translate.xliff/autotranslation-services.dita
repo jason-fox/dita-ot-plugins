@@ -57,7 +57,11 @@
             </p>
             <ol>
                 <li>
-                   From the <xref href="https://cloud.ibm.com/dashboard/apps" format="html" scope="external">IBM Cloud dashboard</xref> External link icon, click on your
+                   From the <xref
+            href="https://cloud.ibm.com/dashboard/apps"
+            format="html"
+            scope="external"
+          >IBM Cloud dashboard</xref> External link icon, click on your
                    <b>Language Translator</b> service instance to go to the <b>Language Translator</b>
                    service dashboard page.
                 </li>
@@ -107,7 +111,11 @@
             </p>
             <ol>
                 <li>
-                   Go to Try <xref href="https://azure.microsoft.com/try/cognitive-services/" format="html" scope="external">Cognitive Services</xref>
+                   Go to Try <xref
+            href="https://azure.microsoft.com/try/cognitive-services/"
+            format="html"
+            scope="external"
+          >Cognitive Services</xref>
                 </li>
                 <li>
                    Select the Translator Text APIs tab.
@@ -169,24 +177,40 @@
                </div>
             </div>
             <p>
-               Introduction: <xref href="https://tech.yandex.com/translate/" format="html" scope="external">Overview</xref>
+               Introduction: <xref
+          href="https://tech.yandex.com/translate/"
+          format="html"
+          scope="external"
+        >Overview</xref>
             </p>
             <p>
                To sign-up to the service:
             </p>
             <ol>
                 <li>
-                   Review the <xref href="http://legal.yandex.com/translate-api/" format="html" scope="external">user agreement</xref> and rules for <xref
+                   Review the <xref
+            href="http://legal.yandex.com/translate-api/"
+            format="html"
+            scope="external"
+          >user agreement</xref> and rules for <xref
             href="https://tech.yandex.com/translate/doc/dg/concepts/design-requirements-docpage"
             format="html"
             scope="external"
           >formatting translation results</xref>.
                 </li>
                 <li>
-                   Get a free <xref href="https://translate.yandex.com/developers/keys" format="html" scope="external">API key</xref>.
+                   Get a free <xref
+            href="https://translate.yandex.com/developers/keys"
+            format="html"
+            scope="external"
+          >API key</xref>.
                 </li>
                 <li>
-                   Read the <xref href="https://tech.yandex.com/translate/doc/dg/concepts/about-docpage" format="html" scope="external">documentation</xref>, where you will find
+                   Read the <xref
+            href="https://tech.yandex.com/translate/doc/dg/concepts/about-docpage"
+            format="html"
+            scope="external"
+          >documentation</xref>, where you will find
                    instructions on enabling the API and detailed descriptions of its features.
                 </li>
             </ol>
@@ -242,7 +266,11 @@
             </p>
             <ol>
                 <li>
-                   Open a <xref href="https://www.deepl.com/pro.html#developer" format="html" scope="external">DeepL API</xref><b>developers</b> account. Note that not all
+                   Open a <xref
+            href="https://www.deepl.com/pro.html#developer"
+            format="html"
+            scope="external"
+          >DeepL API</xref><b>developers</b> account. Note that not all
                    accounts offer access to the DeepL API. It is <b>essential</b> that the account
                    type includes REST API access.
                 </li>
@@ -252,7 +280,11 @@
                    for the trial period.
                 </li>
                 <li>
-                   Read the <xref href="https://www.deepl.com/docs-api.html" format="html" scope="external">documentation</xref>, where you will find instructions on
+                   Read the <xref
+            href="https://www.deepl.com/docs-api.html"
+            format="html"
+            scope="external"
+          >documentation</xref>, where you will find instructions on
                    enabling the API and detailed descriptions of its features.
                 </li>
             </ol>

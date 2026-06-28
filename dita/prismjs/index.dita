@@ -42,7 +42,11 @@
           />
                     <p>
                        <term>Prism</term> is a lightweight, extensible syntax highlighter, built with
-                       modern web standards in mind. It’s a spin-off project from <xref href="http://dabblet.com/" format="html" scope="external"> Dabblet</xref>.
+                       modern web standards in mind. It’s a spin-off project from <xref
+              href="http://dabblet.com/"
+              format="html"
+              scope="external"
+            > Dabblet</xref>.
                     </p>
                 </div>
             </div>
@@ -62,7 +66,11 @@
                 </li>
             </ul>
             <p>
-               You can learn more on <xref href="http://prismjs.com/" format="html" scope="external">http://prismjs.com/</xref>.
+               You can learn more on <xref
+          href="http://prismjs.com/"
+          format="html"
+          scope="external"
+        >http://prismjs.com/</xref>.
             </p>
             <p>
                <xref

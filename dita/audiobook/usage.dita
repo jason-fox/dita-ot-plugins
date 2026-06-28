@@ -17,11 +17,13 @@
         <section id="obtaining-a-series-of-ssml-files">
             <title>Obtaining a series of SSML Files</title>
             <p>
-               To run the SSML transformation, set the <parmname>transtype</parmname> parameter to <option>ssml</option>,
+               To run the SSML transformation, set the <parmname>transtype</parmname> parameter to <option
+        >ssml</option>,
                or pass the <parmname>--format</parmname>=<option>ssml</option> option to the <cmdname>dita</cmdname>
                command line.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>ssml</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>ssml</option> \
     <parmname>--output</parmname> out \
     <parmname>--input</parmname> PATH_TO_DITAMAP</codeblock>
             <p>
@@ -36,7 +38,8 @@
                or pass the <parmname>--format</parmname>=<option>mp3</option> option to the <cmdname>dita</cmdname>
                command line.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>mp3</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>mp3</option> \
     <parmname>--output</parmname> out \
     <parmname>--input</parmname> PATH_TO_DITAMAP \
     <parmname>--ssml.service</parmname>=<option>[bing|watson]</option></codeblock>
@@ -49,10 +52,12 @@
             <title>Creating an audiobook</title>
             <p>
                To run the audiobook transformation, set the <parmname>transtype</parmname>
-               parameter to <option>audiobook</option>, or pass the <parmname>--format</parmname>=<option>audiobook</option>
+               parameter to <option>audiobook</option>, or pass the <parmname>--format</parmname>=<option
+        >audiobook</option>
                option to the <cmdname>dita</cmdname> command line.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>audiobook</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>audiobook</option> \
     <parmname>--output</parmname> out \
     <parmname>--input</parmname> PATH_TO_DITAMAP \
     <parmname>--ssml.service</parmname>=<option>[bing|watson]</option></codeblock>
@@ -93,8 +98,16 @@
                         </li>
                         <li>
                            <option>custom</option> - Sends the SSML to an arbitrary URL using POST - use
-                           this to connect to proxies for Amazon <xref href="https://docs.aws.amazon.com/polly/" format="html" scope="external">Polly</xref>
-                           or Google Cloud <xref href="https://cloud.google.com/text-to-speech/" format="html" scope="external">Text-to-Speech</xref>
+                           this to connect to proxies for Amazon <xref
+                href="https://docs.aws.amazon.com/polly/"
+                format="html"
+                scope="external"
+              >Polly</xref>
+                           or Google Cloud <xref
+                href="https://cloud.google.com/text-to-speech/"
+                format="html"
+                scope="external"
+              >Text-to-Speech</xref>
                         </li>
                         <li>
                            <option>watson</option> - Connects to the IBM Cloud Speech-to-Text service
@@ -143,7 +156,8 @@
                 </li>
                 <li>
                    <parmname>mp3.cover.art.image</parmname> - Specifies the cover art to be used
-                   for an album, the default will use the image plug-in alter the file <filepath>cfg/coverart.png</filepath>
+                   for an album, the default will use the image plug-in alter the file <filepath
+          >cfg/coverart.png</filepath>
                 </li>
                 <li>
                    <parmname>audiobook.format</parmname> - mp4 output format (with or without DRM):

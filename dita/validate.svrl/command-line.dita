@@ -22,7 +22,8 @@
                    transform:
                 </li>
             </ul>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>svrl</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>svrl</option> \
      <parmname>--args.validate.mode</parmname>=<option>report</option> \
      <parmname>--output</parmname> out \
      <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
@@ -46,7 +47,8 @@
                    transform:
                 </li>
             </ul>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>svrl</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>svrl</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
             <p>
                Once the command has run, all errors and warnings are echoed to the command line.
@@ -66,7 +68,8 @@
                Optionally, the output can be highlighted using ANSI color codes by adding the
                <parmname>args.validate.color</parmname> parameter.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>svrl-echo</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>svrl-echo</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
     <parmname>--args.validate.color</parmname>=<option>true</option></codeblock>
         </section>
@@ -76,7 +79,8 @@
                To run the auto-fix command from the command line use the <option>svrl</option>
                transform with the <parmname>--args.validate.mode</parmname>=<option>fix-dita</option> parameter.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>svrl</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>svrl</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
     <parmname>--args.validate.mode</parmname>=<option>fix-dita</option></codeblock>
             <p>

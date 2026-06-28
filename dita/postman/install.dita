@@ -14,19 +14,29 @@
         <p>
            This plug-in needs <xref href="https://pandoc.org/" format="html" scope="external">Pandoc</xref>
            running on  user's machine  to function correctly. It also requires the
-           presence of the <xref href="http://www.oopsconsultancy.com/software/xmltask/" format="html" scope="external">xmltask</xref> jar to edit XML files as part of
+           presence of the <xref
+        href="http://www.oopsconsultancy.com/software/xmltask/"
+        format="html"
+        scope="external"
+      >xmltask</xref> jar to edit XML files as part of
            the ANT build. It therefore requires a series of commands to install the
            relevant plug-in dependencies and configure Pandoc.
         </p>
         <p>
            Run the plug-in installation commands:
         </p>
-        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>install</parmname> https://github.com/doctales/org.doctales.xmltask/archive/master.zip
-<cmdname>dita</cmdname> <parmname>install</parmname> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
-<cmdname>dita</cmdname> <parmname>install</parmname> https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
-<cmdname>dita</cmdname> <parmname>install</parmname> https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
-<cmdname>dita</cmdname> <parmname>install</parmname> https://github.com/jason-fox/fox.jason.passthrough.swagger/archive/master.zip
-<cmdname>dita</cmdname> <parmname>install</parmname> https://github.com/jason-fox/fox.jason.passthrough.postman/archive/master.zip</codeblock>
+        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+      >install</parmname> https://github.com/doctales/org.doctales.xmltask/archive/master.zip
+<cmdname>dita</cmdname> <parmname
+      >install</parmname> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+<cmdname>dita</cmdname> <parmname
+      >install</parmname> https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
+<cmdname>dita</cmdname> <parmname
+      >install</parmname> https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
+<cmdname>dita</cmdname> <parmname
+      >install</parmname> https://github.com/jason-fox/fox.jason.passthrough.swagger/archive/master.zip
+<cmdname>dita</cmdname> <parmname
+      >install</parmname> https://github.com/jason-fox/fox.jason.passthrough.postman/archive/master.zip</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>

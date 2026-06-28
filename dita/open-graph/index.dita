@@ -25,7 +25,12 @@
     <body>
         <fig>
             <title>Open Graph Output</title>
-            <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.open-graph/open-graph.png" scope="external">
+            <image
+        outputclass="img-thumbnail"
+        scalefit="yes"
+        href="https://jason-fox.github.io/fox.jason.open-graph/open-graph.png"
+        scope="external"
+      >
                 <alt/>
             </image>
         </fig>

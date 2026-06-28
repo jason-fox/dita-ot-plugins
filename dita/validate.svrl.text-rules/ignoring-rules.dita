@@ -21,7 +21,8 @@
                For example to ignore the <codeph>latin-abbreviation</codeph> validation rule
                within a document you would run:
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> -f text-rules-echo <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> -f text-rules-echo <parmname
+        >--input</parmname> <filepath>document.ditamap</filepath> \
     <parmname>--args.validate.ignore.rules</parmname>=latin-abbreviation</codeblock>
         </section>
         <section id="ignoring-a-specific-instance-of-a-rule">

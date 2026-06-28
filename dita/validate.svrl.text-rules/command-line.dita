@@ -21,7 +21,8 @@
                    SVRL file creation can be run like any other DITA-OT transform:
                 </li>
             </ul>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>text-rules</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>text-rules</option> \
     <parmname>--output</parmname> out \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
     <parmname>--args.validate.mode</parmname>=<option>report</option></codeblock>
@@ -45,7 +46,8 @@
                    transform:
                 </li>
             </ul>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>text-rules</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>text-rules</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
             <p>
                Once the command has run, all errors and warnings are echoed to the command line:
@@ -74,7 +76,8 @@
                    DITA-OT transform:
                 </li>
             </ul>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>auto-correct</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>auto-correct</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
             <p>
                Once the command has run spelling mistakes will have been removed from the document.

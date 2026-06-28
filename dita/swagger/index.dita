@@ -5,7 +5,11 @@
     <abstract>
         <shortdesc>
            This is a DITA-OT Plug-in used to auto-create valid DITA-based REST API
-           documentation. The documentation can be generated directly from a <xref href="https://github.com/swagger-api" format="html" scope="external"><term>Swagger</term></xref>
+           documentation. The documentation can be generated directly from a <xref
+        href="https://github.com/swagger-api"
+        format="html"
+        scope="external"
+      ><term>Swagger</term></xref>
            file and processed as if it had been written in DITA.
         </shortdesc>
         <p>
@@ -38,12 +42,20 @@
                        RESTful Web services. While most users identify Swagger by the Swagger UI tool,
                        the Swagger toolset includes support for automated documentation, code
                        generation, and test-case generation. More information about
-                       <term>Swagger</term> can be found at <xref href="https://swagger.io/" format="html" scope="external">swagger.io</xref>.
+                       <term>Swagger</term> can be found at <xref
+              href="https://swagger.io/"
+              format="html"
+              scope="external"
+            >swagger.io</xref>.
                     </p>
                 </div>
             </div>
             <p>
-               <xref href="https://github.com/swagger2markup/swagger2markup" format="html" scope="external">Swagger2Markup</xref> converts a Swagger JSON or YAML file
+               <xref
+          href="https://github.com/swagger2markup/swagger2markup"
+          format="html"
+          scope="external"
+        >Swagger2Markup</xref> converts a Swagger JSON or YAML file
                into one or more AsciiDoc or GitHub Flavored Markdown documents which can be
                combined with hand-written documentation. The Swagger source file can be
                located locally or remotely via HTTP. Swagger2Markup supports the Swagger 1.2
@@ -87,7 +99,12 @@
             </fig>
             <fig>
                 <title>Swagger PDF Output</title>
-                <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.passthrough.swagger/request-formatted.png" scope="external">
+                <image
+          outputclass="img-thumbnail"
+          scalefit="yes"
+          href="https://jason-fox.github.io/fox.jason.passthrough.swagger/request-formatted.png"
+          scope="external"
+        >
                     <alt/>
                 </image>
             </fig>

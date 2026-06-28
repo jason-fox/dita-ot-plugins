@@ -20,7 +20,8 @@
       >jar-with-dependencies</xref>, which contains all
            required libraries.
         </p>
-        <codeblock scale="80" outputclass="language-bash"><cmdname>javadoc</cmdname> <parmname>-doclet</parmname> com.github.markusbernhardt.xmldoclet.XmlDoclet \
+        <codeblock scale="80" outputclass="language-bash"><cmdname>javadoc</cmdname> <parmname
+      >-doclet</parmname> com.github.markusbernhardt.xmldoclet.XmlDoclet \
      <parmname>-docletpath</parmname> xml-doclet-1.0.5-jar-with-dependencies.jar \
    [Javadoc- and XmlDoclet-Options]</codeblock>
         <p>

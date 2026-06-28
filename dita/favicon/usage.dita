@@ -11,7 +11,8 @@
            The new <parmname>args.favicon.*</parmname> parameters follow the existing
            syntax used by DITA-OT for CSS files.
         </p>
-        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>[html5|xhtml]</option> \
+        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option
+      >[html5|xhtml]</option> \
   <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
   <parmname>--args.faviconpath</parmname>=<filepath>DESTINATION_PATH_OF_FAVICON</filepath>  \
   <parmname>--args.faviconroot</parmname>=<filepath>SOURCE_PATH_OF_FAVICON</filepath></codeblock>
@@ -19,7 +20,8 @@
            To refer to an existing file hosted on a server, use a URL as the
            <parmname>--args.faviconpath</parmname> parameter
         </p>
-        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>[html5|xhtml]</option> \
+        <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option
+      >[html5|xhtml]</option> \
   <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
   <parmname>--args.faviconpath</parmname>=<filepath>https://example.com/static/assets</filepath></codeblock>
         <section id="parameter-reference">
@@ -35,8 +37,10 @@
                    <parmname>args.favicon</parmname> - Specifies the name of the favicon file. The
                    value of this parameter should be only the file name. The absolute path to the
                    parent directory should be specified with <parmname>args.faviconroot</parmname>.
-                   Defaults to <xref href="https://github.com/jason-fox/fox.jason.favicon/blob/master/includes/favicon.svg" scope="external"><codeph
-            >favicon.svg</codeph></xref> - the name of the default
+                   Defaults to <xref
+            href="https://github.com/jason-fox/fox.jason.favicon/blob/master/includes/favicon.svg"
+            scope="external"
+          ><codeph>favicon.svg</codeph></xref> - the name of the default
                    image found within the plugin itself.
                 </li>
                 <li>

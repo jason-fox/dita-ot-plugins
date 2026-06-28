@@ -75,7 +75,8 @@
             </p>
             <ul>
                 <li>
-                   Body elements: <xmlelement>ph</xmlelement>, <xmlelement>codeph</xmlelement>, <xmlelement>synph</xmlelement>,
+                   Body elements: <xmlelement>ph</xmlelement>, <xmlelement>codeph</xmlelement>, <xmlelement
+          >synph</xmlelement>,
                    <xmlelement>term</xmlelement>, <xmlelement>xref</xmlelement>, <xmlelement>cite</xmlelement>,
                    <xmlelement>q</xmlelement>, <xmlelement>boolean</xmlelement>, <xmlelement>state</xmlelement>,
                    <xmlelement>keyword</xmlelement>, <xmlelement>option</xmlelement>,
@@ -86,7 +87,8 @@
                 </li>
                 <li>
                    Typographic elements: <xmlelement>b</xmlelement>, <xmlelement>i</xmlelement>,
-                   <xmlelement>sup</xmlelement>, <xmlelement>sub</xmlelement>, <xmlelement>tt</xmlelement>, <xmlelement>u</xmlelement>
+                   <xmlelement>sup</xmlelement>, <xmlelement>sub</xmlelement>, <xmlelement>tt</xmlelement>, <xmlelement
+          >u</xmlelement>
                 </li>
                 <li>
                    Software elements: <xmlelement>filepath</xmlelement>, <xmlelement>msgph</xmlelement>,
@@ -100,7 +102,8 @@
                 <li>
                    XML Mention Domain: <xmlelement>numcharref</xmlelement>, <xmlelement>parameterentity</xmlelement>,
                    <xmlelement>textentity</xmlelement>, <xmlelement>xmlatt</xmlelement>,
-                   <xmlelement>xmlelement</xmlelement>, <xmlelement>xmlnsname</xmlelement>, <xmlelement>xmlpi</xmlelement>
+                   <xmlelement>xmlelement</xmlelement>, <xmlelement>xmlnsname</xmlelement>, <xmlelement
+          >xmlpi</xmlelement>
                 </li>
             </ul>
             <codeblock scale="80" outputclass="language-xml">&lt;p&gt;
@@ -169,7 +172,10 @@
                <xmlelement>codeblock</xmlelement> elements containing <xmlelement>coderef</xmlelement>
                elements are indented as shown:
             </p>
-            <codeblock scale="80" outputclass="language-xml">&lt;codeblock outputclass="language-markup"&gt;&lt;coderef href="../src/logo.svg"/&gt;
+            <codeblock
+        scale="80"
+        outputclass="language-xml"
+      >&lt;codeblock outputclass="language-markup"&gt;&lt;coderef href="../src/logo.svg"/&gt;
 &lt;/codeblock&gt;</codeblock>
             <p>
                Other white-space sensitive elements such as <xmlelement>lines</xmlelement> are

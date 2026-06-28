@@ -64,7 +64,8 @@
                    to create a PDF with highlighted code snippets run:
                 </li>
             </ul>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>pdf</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>pdf</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
     <parmname>--output</parmname> out</codeblock>
             <fig>
@@ -76,7 +77,8 @@
                    to create static HTML with highlighted code snippets run:
                 </li>
             </ul>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>html5</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>html5</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath> \
     <parmname>--output</parmname> out</codeblock>
             <fig>
@@ -86,7 +88,8 @@
         </section>
         <section id="line-numbering">
             <title>Line numbering</title>
-            <p>To display line numbers in codeblocks in HTML and PDF, add the  <xmlatt> outputclass="show-line-numbers"</xmlatt> to the <xmlelement>codeblock</xmlelement></p>
+            <p>To display line numbers in codeblocks in HTML and PDF, add the  <xmlatt
+        > outputclass="show-line-numbers"</xmlatt> to the <xmlelement>codeblock</xmlelement></p>
 
             <fig>
                 <title>Line numbering</title>
@@ -118,7 +121,8 @@
                     </ul>
                 </li>
                 <li>
-                    <parmname>prism.css.theme</parmname> - Specifies the location of a custom color theme file relative to the output directory.
+                    <parmname
+          >prism.css.theme</parmname> - Specifies the location of a custom color theme file relative to the output directory.
                 </li>
             </ul>
         </section>
@@ -128,7 +132,11 @@
                Prism-JS is easily extended to other languages since it purely relies on regular
                expressions. Additional languages are loaded dynamically during processing. A
                large number of additional languages are supported - just look at the list on
-               <xref href="https://github.com/prismjs/prism/tree/master/components" format="html" scope="external">https://github.com/PrismJS/prism/tree/master/components</xref>.
+               <xref
+          href="https://github.com/prismjs/prism/tree/master/components"
+          format="html"
+          scope="external"
+        >https://github.com/PrismJS/prism/tree/master/components</xref>.
             </p>
             <p>
                Extend with an additional plug-in which overrides the default <parmname>prismjs.css.file</parmname>

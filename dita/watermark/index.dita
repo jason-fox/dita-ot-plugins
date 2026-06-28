@@ -4,7 +4,11 @@
     <title>Watermark Plug-in</title>
     <abstract>
         <shortdesc>
-           This is a <xref href="https://www.dita-ot.org/plugins" format="html" scope="external">DITA-OT Plug-in</xref> to add a watermark to generated PDF
+           This is a <xref
+        href="https://www.dita-ot.org/plugins"
+        format="html"
+        scope="external"
+      >DITA-OT Plug-in</xref> to add a watermark to generated PDF
            files. The plugin extends standard PDF processing. It offers an extension-point
            for further processing.
         </shortdesc>
@@ -17,7 +21,10 @@
                 <indexterm>plug-in</indexterm>
                 <indexterm>watermark</indexterm>
             </keywords>
-            <othermeta name="og:image" content="https://repository-images.githubusercontent.com/325056157/00d0f080-494b-11eb-91c6-93b43ad5b6a8"/>
+            <othermeta
+        name="og:image"
+        content="https://repository-images.githubusercontent.com/325056157/00d0f080-494b-11eb-91c6-93b43ad5b6a8"
+      />
         </metadata>
     </prolog>
     <body/>
@@ -26,7 +33,12 @@
         <body>
             <fig>
                 <title>Sample PDF Watermark</title>
-                <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.watermark/watermark-pdf.png" scope="external">
+                <image
+          outputclass="img-thumbnail"
+          scalefit="yes"
+          href="https://jason-fox.github.io/fox.jason.watermark/watermark-pdf.png"
+          scope="external"
+        >
                     <alt/>
                 </image>
             </fig>

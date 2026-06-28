@@ -14,7 +14,8 @@
             <p>
                To run, use the <option>unit-test</option> transform.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>unit-test</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>unit-test</option> \
      <parmname>--output</parmname> out \
      <parmname>--input</parmname> PATH_TO_UNIT_TESTS</codeblock>
             <p>
@@ -27,7 +28,12 @@
                two test suites (PDF and HTML processing) - a third test suite has been disabled.
                 <fig id="unformatted-dita">
                     <title>Test Report</title>
-                    <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.unit-test/results.png" scope="external">
+                    <image
+            outputclass="img-thumbnail"
+            scalefit="yes"
+            href="https://jason-fox.github.io/fox.jason.unit-test/results.png"
+            scope="external"
+          >
                         <alt/>
                     </image>
                 </fig>
@@ -51,12 +57,14 @@
                coverage information. A copy of each <codeph>*.xsl</codeph> file is also saved
                with the <codeph>*.orig</codeph> suffix.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>xsl-instrument</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>xsl-instrument</option> \
      <parmname>--input</parmname> PATH_TO_PLUG_IN</codeblock>
             <p>
                To revert back to the original files just run the de-instrument transform as shown:
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>xsl-deinstrument</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>xsl-deinstrument</option> \
      <parmname>--input</parmname> PATH_TO_PLUG_IN</codeblock>
             <p>
                Once a Plug-In has been <b>instrumented</b> the test suite should contain a
@@ -64,7 +72,8 @@
                decision points. To obtain coverage information, use the <option>unit-test</option>
                transform as stated previously:
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>unit-test</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>unit-test</option> \
      <parmname>--input</parmname> PATH_TO_UNIT_TESTS</codeblock>
             <ul>
                 <li>
@@ -85,7 +94,8 @@
                can be run directly from the command line by running the default target within
                that test. This can be followed by direct invocation of the coverage report.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>ant</cmdname> <parmname>-f</parmname> PATH_TO_PLUGIN/test/TEST_NAME/build.xml
+            <codeblock scale="80" outputclass="language-bash"><cmdname>ant</cmdname> <parmname
+        >-f</parmname> PATH_TO_PLUGIN/test/TEST_NAME/build.xml
 <cmdname>dita</cmdname> <parmname>--format</parmname> <option>xsl-report</option> \
      <parmname>--input</parmname> PATH_TO_PLUGIN</codeblock>
         </section>
@@ -97,7 +107,12 @@
             </p>
             <fig>
                 <title>XSL coverage</title>
-                <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.unit-test/xsl-coverage.png" scope="external">
+                <image
+          outputclass="img-thumbnail"
+          scalefit="yes"
+          href="https://jason-fox.github.io/fox.jason.unit-test/xsl-coverage.png"
+          scope="external"
+        >
                     <alt/>
                 </image>
             </fig>
@@ -111,7 +126,8 @@
                file which holds a series of tokens representing all potential output values.
                To obtain coverage information, use the <option>token-report</option> transform.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>token-report</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>token-report</option> \
      <parmname>--input</parmname> PATH_TO_UNIT_TESTS</codeblock>
             <p>
                Once the command has run, a coverage report is created.
@@ -136,7 +152,12 @@
             </ul>
             <fig>
                 <title>Token report</title>
-                <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.unit-test/coverage.png" scope="external">
+                <image
+          outputclass="img-thumbnail"
+          scalefit="yes"
+          href="https://jason-fox.github.io/fox.jason.unit-test/coverage.png"
+          scope="external"
+        >
                     <alt/>
                 </image>
             </fig>
@@ -161,8 +182,8 @@
                To obtain profile information, use the <option>antro</option> transform and
                supply an additional test transtype.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>antro</option><parmname
-        >--test.transform</parmname>=TRANSFORM_TO_PROFILE \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>antro</option><parmname>--test.transform</parmname>=TRANSFORM_TO_PROFILE \
      <parmname>--input</parmname> document.ditamap</codeblock>
             <p>
                A profiler JSON file will be generated.
@@ -188,7 +209,12 @@
             </p>
             <fig>
                 <title>Antro</title>
-                <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.unit-test/profiler-bar.png" scope="external">
+                <image
+          outputclass="img-thumbnail"
+          scalefit="yes"
+          href="https://jason-fox.github.io/fox.jason.unit-test/profiler-bar.png"
+          scope="external"
+        >
                     <alt/>
                 </image>
             </fig>
@@ -198,7 +224,12 @@
             </p>
             <fig>
                 <title>Antro Details</title>
-                <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.unit-test/profiler.png" scope="external">
+                <image
+          outputclass="img-thumbnail"
+          scalefit="yes"
+          href="https://jason-fox.github.io/fox.jason.unit-test/profiler.png"
+          scope="external"
+        >
                     <alt/>
                 </image>
             </fig>

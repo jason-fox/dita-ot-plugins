@@ -11,13 +11,16 @@
             <title>Prettifying DITA files for a document</title>
             <p>
                To prettify DITA files for a document, set the <parmname>transtype</parmname>
-               parameter to <option>pretty-dita</option>, or pass the <parmname>--format</parmname>=<option>pretty-dita</option>
+               parameter to <option>pretty-dita</option>, or pass the <parmname>--format</parmname>=<option
+        >pretty-dita</option>
                option to the <cmdname>dita</cmdname> command line.
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>pretty-dita</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>pretty-dita</option> \
     <parmname>--input</parmname> <filepath>document.ditamap</filepath></codeblock>
             <p>
-               All <codeph>*.dita</codeph><xmlelement>topic</xmlelement> and <codeph>*.ditamap</codeph><xmlelement>map</xmlelement>
+               All <codeph>*.dita</codeph><xmlelement>topic</xmlelement> and <codeph>*.ditamap</codeph><xmlelement
+        >map</xmlelement>
                files under that directory will be updated in place.
             </p>
         </section>
@@ -27,7 +30,8 @@
                Alternatively, to prettify a single DITA file, set the <parmname>--input</parmname>
                parameter to point to a <codeph>*.dita</codeph> file:
             </p>
-            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--format</parmname> <option>pretty-dita</option> \
+            <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >--format</parmname> <option>pretty-dita</option> \
     <parmname>--input</parmname> topic.dita</codeblock>
             <p>
                The specified file will be updated in place.

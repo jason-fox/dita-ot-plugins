@@ -34,8 +34,11 @@ Body of topic 2 goes here.
            Ideally input files should only contain a single <codeph>#</codeph> header.
         </p>
         <p>
-           Pandoc <xref href="http://pandoc.org/manual.html#extension-header-attributes" format="html" scope="external">header_attributes</xref> can be used to define <xmlatt
-      >id</xmlatt>
+           Pandoc <xref
+        href="http://pandoc.org/manual.html#extension-header-attributes"
+        format="html"
+        scope="external"
+      >header_attributes</xref> can be used to define <xmlatt>id</xmlatt>
            or <xmlatt>outputclass</xmlatt> attributes:
         </p>
         <fig>

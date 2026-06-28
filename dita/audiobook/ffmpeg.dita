@@ -21,7 +21,11 @@
            </div>
         </div>
         <p>
-           To download a copy follow the instructions on the <xref href="https://ffmpeg.org/download.html" format="html" scope="external">Download page</xref>.
+           To download a copy follow the instructions on the <xref
+        href="https://ffmpeg.org/download.html"
+        format="html"
+        scope="external"
+      >Download page</xref>.
         </p>
     </body>
 </topic>

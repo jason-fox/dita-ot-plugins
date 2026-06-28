@@ -39,7 +39,10 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">os</entry>
-                            <entry colname="col2" align="left">Only make the comparison if the current operating system is of a given type</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >Only make the comparison if the current operating system is of a given type</entry>
                                <entry colname="col3" align="left">No; defaults to <codeph>any</codeph>
                             </entry>
                         </row>
@@ -68,7 +71,10 @@
                compares the file <codeph>out/fragment.html</codeph> with <codeph>expected.html</codeph>
                and fails if they do not match.
             </p>
-            <codeblock scale="80" outputclass="language-xml">&lt;compare-output suffix=".svrl" expectation="expected.svrl.win" os="windows"/&gt;</codeblock>
+            <codeblock
+        scale="80"
+        outputclass="language-xml"
+      >&lt;compare-output suffix=".svrl" expectation="expected.svrl.win" os="windows"/&gt;</codeblock>
             <p>
                if running on a Windows system, compares the file <codeph>out/fragment.svrl</codeph>
                with <codeph>expected.svrl.win</codeph> and fails if they do not match.
@@ -107,7 +113,10 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">os</entry>
-                            <entry colname="col2" align="left">Only make the comparison if the current operating system is of a given type</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >Only make the comparison if the current operating system is of a given type</entry>
                                <entry colname="col3" align="left">No; defaults to <codeph>any</codeph>
                             </entry>
                         </row>
@@ -118,7 +127,10 @@
             <p>
                compares the output of DITA-OT and fails if the text "Lorem Ipsum" cannot be found.
             </p>
-            <codeblock scale="80" outputclass="language-xml">&lt;contains-text expected="This is running on Windows" os="windows"/&gt;</codeblock>
+            <codeblock
+        scale="80"
+        outputclass="language-xml"
+      >&lt;contains-text expected="This is running on Windows" os="windows"/&gt;</codeblock>
             <p>
                if running on a Windows system, compares the output of DITA-OT and fails if the
                text "This is running on Windows" cannot be found.
@@ -173,9 +185,13 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">transtype</entry>
-                            <entry colname="col2" align="left">The transtype to invoke when creating the document</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The transtype to invoke when creating the document</entry>
                                <entry colname="col3" align="left">No; this can be <codeph>html5</codeph> or
-                               any DITA-OT transform that extends <codeph>base-html</codeph>; defaults to <codeph>html5</codeph>
+                               any DITA-OT transform that extends <codeph>base-html</codeph>; defaults to <codeph
+                >html5</codeph>
                             </entry>
                         </row>
                     </tbody>
@@ -232,7 +248,10 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">transtype</entry>
-                            <entry colname="col2" align="left">The transtype to invoke when creating the document</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The transtype to invoke when creating the document</entry>
                                <entry colname="col3" align="left">No; this can be <codeph>pdf2</codeph> or any
                                DITA-OT transform that extends <codeph>pdf2</codeph>; defaults to <codeph>pdf2</codeph>
                             </entry>
@@ -293,7 +312,10 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">transtype</entry>
-                            <entry colname="col2" align="left">The transtype to invoke when creating the document</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The transtype to invoke when creating the document</entry>
                                <entry colname="col3" align="left">No; this can be <codeph>svrl</codeph> or any
                                DITA-OT transform that extends <codeph>svrl</codeph>; defaults to <codeph>svrl</codeph>
                             </entry>
@@ -305,7 +327,10 @@
             <p>
                runs DITA-OT using the <codeph>text-rules</codeph> SVRL transtype.
             </p>
-            <codeblock scale="80" outputclass="language-xml">&lt;exec-svrl transtype="svrl-echo" expectedresult="1"/&gt;</codeblock>
+            <codeblock
+        scale="80"
+        outputclass="language-xml"
+      >&lt;exec-svrl transtype="svrl-echo" expectedresult="1"/&gt;</codeblock>
             <p>
                runs DITA-OT using the <codeph>svrl-echo</codeph> SVRL transtype - the
                invocation is expected to fail with validation errors.
@@ -357,7 +382,10 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">transtype</entry>
-                            <entry colname="col2" align="left">The transtype to invoke when creating the document</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >The transtype to invoke when creating the document</entry>
                                <entry colname="col3" align="left">No; this can be <codeph>svrl</codeph> or any
                                DITA-OT transform that extends <codeph>svrl</codeph>; defaults to <codeph>svrl</codeph>
                             </entry>
@@ -369,7 +397,10 @@
             <p>
                runs DITA-OT using the <codeph>custom</codeph> transtype.
             </p>
-            <codeblock scale="80" outputclass="language-xml">&lt;exec-svrl transtype="custom" expectedresult="1"/&gt;</codeblock>
+            <codeblock
+        scale="80"
+        outputclass="language-xml"
+      >&lt;exec-svrl transtype="custom" expectedresult="1"/&gt;</codeblock>
             <p>
                runs DITA-OT using the <codeph>custom</codeph> SVRL transtype - the invocation
                is expected to fail.
@@ -402,19 +433,28 @@
                         </row>
                         <row>
                             <entry colname="col1" align="left">from</entry>
-                            <entry colname="col2" align="left">the name of the file to extract an HTML fragment from</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >the name of the file to extract an HTML fragment from</entry>
                             <entry colname="col3" align="left">Yes</entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">to</entry>
-                            <entry colname="col2" align="left">Location of the output file holding the fragment of HTML to test</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >Location of the output file holding the fragment of HTML to test</entry>
                                <entry colname="col3" align="left">No; defaults to <codeph>out/fragment.html</codeph>
                             </entry>
                         </row>
                     </tbody>
                 </tgroup>
             </table>
-            <codeblock scale="80" outputclass="language-xml">&lt;get-html-article from="topics/body-text.html"/&gt;</codeblock>
+            <codeblock
+        scale="80"
+        outputclass="language-xml"
+      >&lt;get-html-article from="topics/body-text.html"/&gt;</codeblock>
             <p>
                creates a file called <codeph>fragment.html</codeph> holding the <xmlelement>article</xmlelement>
                element from the <codeph>topics/body-text.html</codeph> file.
@@ -442,13 +482,19 @@
                     <tbody>
                         <row>
                             <entry colname="col1" align="left">from</entry>
-                            <entry colname="col2" align="left">Location of the file to extract an HTML fragment from</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >Location of the file to extract an HTML fragment from</entry>
                                <entry colname="col3" align="left">No; defaults to <codeph>out/topic.fo</codeph>
                             </entry>
                         </row>
                         <row>
                             <entry colname="col1" align="left">to</entry>
-                            <entry colname="col2" align="left">Location of the output file holding the fragment of FOP to test</entry>
+                            <entry
+                colname="col2"
+                align="left"
+              >Location of the output file holding the fragment of FOP to test</entry>
                                <entry colname="col3" align="left">No; defaults to <codeph>out/fragment.fo</codeph>
                             </entry>
                         </row>

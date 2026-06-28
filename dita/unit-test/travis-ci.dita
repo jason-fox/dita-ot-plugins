@@ -25,13 +25,22 @@
                 <p>
                    <term>Travis CI</term> is a hosted, distributed continuous integration service
                    used to build and test software projects hosted at GitHub. More information
-                   about how to set up travis integration can be found on the <xref href="https://docs.travis-ci.com/" format="html" scope="external">travis website</xref>.
+                   about how to set up travis integration can be found on the <xref
+            href="https://docs.travis-ci.com/"
+            format="html"
+            scope="external"
+          >travis website</xref>.
                 </p>
             </div>
         </div>
         <fig>
             <title>Travis</title>
-            <image outputclass="img-thumbnail" scalefit="yes" href="https://jason-fox.github.io/fox.jason.unit-test/travis.png" scope="external">
+            <image
+        outputclass="img-thumbnail"
+        scalefit="yes"
+        href="https://jason-fox.github.io/fox.jason.unit-test/travis.png"
+        scope="external"
+      >
                 <alt/>
             </image>
         </fig>
@@ -51,16 +60,19 @@ env:
     - DITA_OT=3.1
     - DITA_OT=2.5.4
 before_script:
-    - <cmdname>zip</cmdname> <parmname>-r</parmname> PLUGIN-NAME.zip . <parmname>-x</parmname> *.zip* *.git/* *temp/* *out/*
-    - <cmdname>curl</cmdname> <parmname>-LO</parmname> https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT/dita-ot-$DITA_OT.zip
+    - <cmdname>zip</cmdname> <parmname>-r</parmname> PLUGIN-NAME.zip . <parmname
+      >-x</parmname> *.zip* *.git/* *temp/* *out/*
+    - <cmdname>curl</cmdname> <parmname
+      >-LO</parmname> https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT/dita-ot-$DITA_OT.zip
     - <cmdname>unzip</cmdname> <parmname>-q</parmname> dita-ot-$DITA_OT.zip
     - <cmdname>mv</cmdname> dita-ot*/ dita-ot/
     - <cmdname>chmod</cmdname> <parmname>+x</parmname> dita-ot/bin/dita
-    - <cmdname>dita-ot/bin/dita</cmdname> <parmname>install</parmname> https://github.com/jason-fox/fox.jason.unit-test/archive/master.zip
+    - <cmdname>dita-ot/bin/dita</cmdname> <parmname
+      >install</parmname> https://github.com/jason-fox/fox.jason.unit-test/archive/master.zip
     - <cmdname>dita-ot/bin/dita</cmdname> <parmname>install</parmname> PLUGIN-NAME.zip
 script:
-    - <cmdname>dita-ot/bin/dita</cmdname> <parmname>--input</parmname> dita-ot/plugins/PLUGIN-NAME <parmname>--format</parmname> <option>unit-test</option><parmname
-      >-v</parmname></codeblock>
+    - <cmdname>dita-ot/bin/dita</cmdname> <parmname>--input</parmname> dita-ot/plugins/PLUGIN-NAME <parmname
+      >--format</parmname> <option>unit-test</option><parmname>-v</parmname></codeblock>
         <p>
            This will do the following:
         </p>

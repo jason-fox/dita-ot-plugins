@@ -29,7 +29,8 @@
                a DITA document
             </li>
             <li>
-               <option>text-rules</option> - create an error report in <term>Schematron Validation Report Language</term>
+               <option>text-rules</option> - create an error report in <term
+        >Schematron Validation Report Language</term>
                (<codeph>SVRL</codeph>) format
             </li>
             <li>
