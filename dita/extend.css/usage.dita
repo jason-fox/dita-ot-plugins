@@ -69,14 +69,9 @@
             </fig>
             <p>
                Working examples can be found in the <xref
-          href="http://swaggerdita-ot.rtfd.io/"
-          format="html"
-          scope="external"
-        >DITA-OT Swagger plug-in</xref> and <xref
-          href="https://prismjsdita-ot.rtfd.io/"
-          format="html"
-          scope="external"
-        >DITA-OT
+          href="../swagger/index.dita"
+          format="dita"
+        >DITA-OT Swagger plug-in</xref> and <xref href="../prismjs/index.dita" format="dita">DITA-OT
                Prism-JS plug-in</xref> repositories.
             </p>
         </section>
