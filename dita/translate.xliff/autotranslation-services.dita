@@ -243,7 +243,7 @@
                   <image
             deliveryTarget="html"
             scope="external"
-            href="https://www.deepl.com/img/logo/DeepL_LogoAndText_darkBlue.svg"
+            href="https://www.deepl.com/img/logo/deepl-logo-blue.svg"
             outputclass="float-start mt-1 me-3"
             height="55"
           />
