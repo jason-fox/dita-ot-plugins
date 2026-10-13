@@ -32,7 +32,7 @@
                     <image
             deliveryTarget="html"
             scope="external"
-            href="https://swagger.io/swagger/media/assets/images/swagger_logo.svg"
+            href="https://jason-fox.github.io/fox.jason.passthrough.swagger/swagger.svg"
             outputclass="float-start mt-1 me-3"
             height="55"
           />
