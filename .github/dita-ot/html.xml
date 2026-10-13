@@ -34,7 +34,7 @@
         name="open-graph.url"
         value="https://jason-fox.github.io/dita-ot-plugins"
       />
-      <param name="prism.use.theme" value="solarized"/>
+      <param name="prism.use.theme" value="solarize"/>
     </publication>
   </deliverable>
 </project>
