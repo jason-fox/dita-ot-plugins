@@ -48,12 +48,8 @@
                 </div>
             </div>
             <p>
-               This plugin processes a Postman collection to Pandoc markdown, and the converts
-               the markdown to DITA using the <xref
-          href="../pandoc/index.dita"
-          format="dita"
-        >Pandoc DITA-OT Plugin</xref> allowing the generation of PDF API
-               documentation.
+               This plugin processes a Postman collection and the converts
+               the JSON to DITA.
             </p>
             <fig id="sample-postman">
                 <title>Sample Postman</title>

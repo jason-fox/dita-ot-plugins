@@ -21,8 +21,7 @@
         </p>
         <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
       >install</parmname> fox.jason.extend.css
-<cmdname>dita</cmdname> <parmname
-      >install</parmname> fox.jason.tabs.css</codeblock>
+<cmdname>dita</cmdname> <parmname>install</parmname> fox.jason.tabs.css</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>

@@ -6,37 +6,19 @@
         <metadata>
             <keywords>
                 <indexterm>installing</indexterm>
-                <indexterm>Pandoc</indexterm>
             </keywords>
         </metadata>
     </prolog>
     <body>
         <p>
-           This plug-in needs <xref href="https://pandoc.org/" format="html" scope="external">Pandoc</xref>
-           running on  user's machine  to function correctly. It also requires the
-           presence of the <xref
-        href="http://www.oopsconsultancy.com/software/xmltask/"
-        format="html"
-        scope="external"
-      >xmltask</xref> jar to edit XML files as part of
-           the ANT build. It therefore requires a series of commands to install the
-           relevant plug-in dependencies and configure Pandoc.
-        </p>
-        <p>
            Run the plug-in installation commands:
         </p>
         <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
       >install</parmname> fox.jason.extend.css
-<cmdname>dita</cmdname> <parmname
-      >install</parmname> fox.jason.passthrough
-<cmdname>dita</cmdname> <parmname
-      >install</parmname> fox.jason.passthrough.postman</codeblock>
+<cmdname>dita</cmdname> <parmname>install</parmname> fox.jason.passthrough
+<cmdname>dita</cmdname> <parmname>install</parmname> fox.jason.passthrough.postman</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>
     </body>
-    <topic id="installing-pandoc" conref="../pandoc/installing-pandoc.dita#installing-pandoc">
-        <title/>
-        <body/>
-    </topic>
 </topic>

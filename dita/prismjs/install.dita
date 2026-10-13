@@ -31,8 +31,7 @@
         </p>
         <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
       >install</parmname> fox.jason.extend.css
-<cmdname>dita</cmdname> <parmname
-      >install</parmname> fox.jason.prismjs</codeblock>
+<cmdname>dita</cmdname> <parmname>install</parmname> fox.jason.prismjs</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>

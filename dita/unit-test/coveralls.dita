@@ -62,8 +62,7 @@ before_script:
       >-LO</parmname> https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT/dita-ot-$DITA_OT.zip
     - <cmdname>unzip</cmdname> <parmname>-q</parmname> dita-ot-$DITA_OT.zip
     - <cmdname>chmod</cmdname> <parmname>+x</parmname> dita-ot-$DITA_OT/bin/dita
-    - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname
-      >install</parmname> fox.jason.unit-test
+    - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname>install</parmname> fox.jason.unit-test
     - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname>install</parmname> PLUGIN-NAME.zip
     - <cmdname>dita-ot-$DITA_OT/bin/dita</cmdname> <parmname
       >--input</parmname> dita-ot-$DITA_OT/plugins/PLUGIN-NAME -f <option>xsl-instrument</option>

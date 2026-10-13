@@ -63,8 +63,7 @@
                markup-document-builder.
             </p>
             <p>
-               This plugin processes the Swagger file to Pandoc markdown, and the converts the
-               markdown to DITA using the <xref href="../pandoc/index.dita" format="dita">Pandoc DITA-OT Plugin</xref>
+               This plugin processes the Swagger file and converts the JSON to DITA.
             </p>
             <fig id="sample-swagger">
                 <title>Sample Swagger</title>

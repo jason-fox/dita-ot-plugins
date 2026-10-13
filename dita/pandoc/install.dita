@@ -27,8 +27,7 @@
         </p>
         <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
       >install</parmname> fox.jason.passthrough
-<cmdname>dita</cmdname> <parmname
-      >install</parmname> fox.jason.passthrough.pandoc</codeblock>
+<cmdname>dita</cmdname> <parmname>install</parmname> fox.jason.passthrough.pandoc</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>

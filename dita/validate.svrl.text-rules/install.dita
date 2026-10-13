@@ -22,8 +22,7 @@
         </p>
         <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
       >install</parmname> com.here.validate.svrl
-<cmdname>dita</cmdname> <parmname
-      >install</parmname> com.here.validate.svrl.text-rules</codeblock>
+<cmdname>dita</cmdname> <parmname>install</parmname> com.here.validate.svrl.text-rules</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>

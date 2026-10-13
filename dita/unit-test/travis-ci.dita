@@ -67,8 +67,7 @@ before_script:
     - <cmdname>unzip</cmdname> <parmname>-q</parmname> dita-ot-$DITA_OT.zip
     - <cmdname>mv</cmdname> dita-ot*/ dita-ot/
     - <cmdname>chmod</cmdname> <parmname>+x</parmname> dita-ot/bin/dita
-    - <cmdname>dita-ot/bin/dita</cmdname> <parmname
-      >install</parmname> fox.jason.unit-test
+    - <cmdname>dita-ot/bin/dita</cmdname> <parmname>install</parmname> fox.jason.unit-test
     - <cmdname>dita-ot/bin/dita</cmdname> <parmname>install</parmname> PLUGIN-NAME.zip
 script:
     - <cmdname>dita-ot/bin/dita</cmdname> <parmname>--input</parmname> dita-ot/plugins/PLUGIN-NAME <parmname
