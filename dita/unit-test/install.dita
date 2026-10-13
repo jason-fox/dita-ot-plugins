@@ -20,7 +20,7 @@
            Run the plug-in installation command:
         </p>
         <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-      >install</parmname> https://github.com/jason-fox/fox.jason.unit-test/archive/master.zip</codeblock>
+      >install</parmname> fox.jason.unit-test</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>

@@ -30,9 +30,9 @@
            Run the plug-in installation commands:
         </p>
         <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-      >install</parmname> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+      >install</parmname> fox.jason.extend.css
 <cmdname>dita</cmdname> <parmname
-      >install</parmname> https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip</codeblock>
+      >install</parmname> fox.jason.prismjs</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>

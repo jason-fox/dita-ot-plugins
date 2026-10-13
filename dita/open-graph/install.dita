@@ -18,7 +18,7 @@
            Run the plug-in installation commands:
         </p>
         <codeblock scale="80" outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-      >install</parmname> https://github.com/jason-fox/jason.fox.open-graph/archive/master.zip</codeblock>
+      >install</parmname> jason.fox.open-graph</codeblock>
         <p>
            The <cmdname>dita</cmdname> command line tool requires no additional configuration.
         </p>
